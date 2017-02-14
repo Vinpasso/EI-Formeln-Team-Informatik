@@ -614,8 +614,16 @@ Drei Grundgatter der CMOS-Technologie:\\
 	\includegraphics{./img/ds/char_inverter.pdf}\\
 	\emph{Achtung:} Logikpegel sind über die Steigung der $|VTC|\le 1$ des Inverters definiert.\\
 	\emph{Zusammensetzung $I_{short}$:}\\
-	$(V_{tn},V_{DD}/2)\rightarrow$ nMOS-Sättigung\\
-	$(V_{DD}/2, V_{DD} - V_{tp})\rightarrow$ pMOS-Sättigung\\
+	
+	\resizebox{0.95\linewidth}{!}{
+			\begin{tabular} {c||c|c|c|c|c}
+				Transistor & $(0,V_{tn})$ & $(V_{tn}, V_{DD}/2)$ & Um $V_{DD}/2$ & $(V_{DD}/2,V_{DD}-|V_{tp}|)$ & $(V_{DD}-V_{tp},V_{DD})$ \\
+				\hline
+				n-MOS & Sperrt & Sättigung & Sättigung & Linear & Linear \\
+				p-MOS & Linear & Linear & Sättigung & Sättigung & Sperrt \\
+			\end{tabular}
+	}\\
+
 	Mittig beide gesättigt.\\
 	\emph{Dynamische Verlustleistung} \qquad \ $P_{dyn} = P_{cap} + P_{short}$\\
 	\begin{tabular}{ll}
