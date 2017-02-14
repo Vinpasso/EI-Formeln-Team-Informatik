@@ -497,11 +497,13 @@ $N \cdot M: n+m$ Bit
 		Verstärkung & $\beta = \frac{\mu_n \varepsilon_{ox} \varepsilon_0}{t_{ox}} \cdot \frac{W}{L} = K' \frac{W}{L} = \frac{\mu_n C_G}{L^2}$ \\
 		Kapazität & $C_G = \varepsilon_{ox} \varepsilon_0 \frac{WL}{t_{ox}}$ \\
 		Verzögerungszeit & $t_{pHL} \propto \frac{C_L t_{ox} L_p}{W_p \mu_p \varepsilon_{ox} (V_{DD} - |V_{th}|)}$ \\
+		Verzögerungszeit & $t_{pHL}$ Propagation delay von 90\% auf 10\% \\
+		Verzögerungszeit & $t_{pLH}$ Propagation delay von 10\% auf 90\%
 	\end{tabular}
 	\begin{itemize}
 		\item große Kanalweite $\Ra$ große Drain-Störme \\ $\Ra$ schnelle Schaltgeschwindigkeit (da $i_d \propto \beta \propto \frac{W}{L}$) \\
 		Aber: große Fläche.
-		\item nMos schaltet schneller als pMOS 
+		\item nMos schaltet schneller als pMOS
 	\end{itemize}
 	
 	\subsection{Drainstrom}
@@ -624,7 +626,6 @@ Drei Grundgatter der CMOS-Technologie:\\
 			\end{tabular}
 	}\\
 
-	Mittig beide gesättigt.\\
 	\emph{Dynamische Verlustleistung} \qquad \ $P_{dyn} = P_{cap} + P_{short}$\\
 	\begin{tabular}{ll}
 		\quad Kapazitive Verluste \qquad \ \quad \ & $P_{cap} = \alpha_{01} f C_L V_{DD}^2$\\
@@ -634,7 +635,9 @@ Drei Grundgatter der CMOS-Technologie:\\
 	\end{tabular}\\
 	Abhängig von den Signalflanken, mit Schaltfunktionen verknüpft\\ 
 	$\approx \;$ $V_{DD} 1/\propto $ Schaltzeit: $\frac{V_{DD2}}{V_{DD1}} = \frac{t_{D1}}{t_{D2}}$ (bei Schaltnetzen $t_{log}$)\\
-	\textbf{Verzögerungszeit} $\propto$ $\frac{C_Lt_{ox}L_p}{W_p\mu_p\varepsilon(V_{DD} - V_{th})}$
+	\textbf{Verzögerungszeit} $t_{pd}\propto$ $\frac{C_Lt_{ox}L_p}{W_p\mu_p\varepsilon(V_{DD} - V_{th})}$
+	
+	$t_{pd}$ ist Zeit zwischen crossover 50\% von Eingang zu crossover 50\% am Ausgang.
 	
 	Steigend mit: Kapazitiver Last, Oxiddicke, Kanallänge, Schwellspannung
 	
@@ -780,7 +783,7 @@ $g$ & Ausgaberelation \\
 \end{tabular}
 
 \includegraphics{./img/ds/automaten.pdf}\\
-
+\emph{Zustandsnummerierung} immer einfügen.\\
 
 \begin{tabular}{c | c}
  Moore & Mealy \\ \hline
