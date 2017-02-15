@@ -1,3 +1,4 @@
+# soruce: https://drewsilcock.co.uk/using-make-and-latexmk
 LATEX=pdflatex
 LATEXOPT=--shell-escape
 NONSTOP=--interaction=nonstopmode
