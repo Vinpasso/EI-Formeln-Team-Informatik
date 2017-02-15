@@ -323,7 +323,7 @@ $N \cdot M: n+m$ Bit
 
 
 	\subsection{Wichtige Begriffe}
-	\begin{tabular}{l|l|l}
+	\begin{tabular}{l|p{4cm}|p{2.2 cm}}
 		Wichtige Begriffe: & Definition & Bemerkung\\ \hline
 		Signalvariable & $x$ & $\hat x \in \eset{0,1}$ \\
 		Literal & $l_i = x_i$ oder $\overline{x_i}$ & $i \in I_0=\eset{1,...,n}$\\
@@ -331,7 +331,10 @@ $N \cdot M: n+m$ Bit
 		d-Kuben & MC $\ni c_j = \prod\limits_{i\in I_j \subseteq I_0} l_i$ & $|$MC$|=3^n$\\
 		Distanz & $\delta(c_i,c_j) = \bigl| \iset{l}{l \in c_i \land \overline{l}\in c_j}  \bigr|$ & $\delta_{ij} = \delta(c_i,c_j)$ \\
 		Implikanten & $MI = \iset{c \in MC}{c \subseteq f}$ &  \\
+		& Terme, dessen Erfüllbarkeit identisch mit die der Formel sind & \\
 		Primimplikanten & $MPI = \iset{p \in MI}{p \not\subset c \ \forall c \in MI}$ & $MPI \subseteq MI \subseteq MC$\\
+		& Implikanten, die maximal freie Variablen besitzen & \\
+		Kernprimimplikanten & Primimplikanten die für Überdeckung zwingend notwendig sind & Spalten mit 1 Eintrag in Überdeckungstabelle\\
 	\end{tabular}\\ \\ \\
 	\begin{tabular}{l|l|l}
 		DNF (DNF) & eine Summe von Produkttermen & Terme sind ODER-verknüpft \\
@@ -501,6 +504,7 @@ $N \cdot M: n+m$ Bit
 		Kapazität & $C_G = \varepsilon_{ox} \varepsilon_0 \frac{WL}{t_{ox}}$ \\
 		Verzögerungszeit & $t_{pHL} \propto \frac{C_L t_{ox} L_p}{W_p \mu_p \varepsilon_{ox} (V_{DD} - |V_{th}|)}$ \\
 		Verzögerungszeit (2 Signale) & Zeit zwischen $S_1=50\% $ und $S_2=50\% $\\
+		& $LH/HL$ bezieht sich auf Ausgang \\
 		Anstiegszeit (Selbes Signal) & $t_{r}$ Zeit zwischen 10\% und 90\% \\
 		Abfallzeit (Selbes Signal) & $t_{f}$ Zeit zwischen 90\% und 10\% \\
 	\end{tabular}
