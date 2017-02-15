@@ -212,7 +212,59 @@ $N \cdot M: n+m$ Bit
 		$e=E+127 \rightarrow e_2$ & $e=3+127=130=10000010_2$\\
 		$f=\left(\frac{\abs{Z}}{2^E}-1\right) \cdot 2^{23} \rightarrow f_2$  & $f=\left(\frac{\abs{11.25}}{2^3}-1\right)\cdot 2^{23}=3407872= 01101000\dots_2 $
 	\end{tabular}
-
+\subsection{Zahlenoperationen}
+% \begin{tabular}{p{0.15\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}}
+\begin{tabular}{p{0.15\linewidth}|p{0.25\linewidth}|p{0.075\linewidth}|p{0.2\linewidth}|p{0.1\linewidth}}
+	Zahlensystem & Add & Sub & Mul & Div \\
+  \hline
+	Vorzeichenlos & Normal & Normal & Normal & Normal \\
+  \hline
+	Einser Komplement & Vorzeichen Vergleichen & & & \\
+  \hline
+	Zweier Komplement & Normal & Normal & $n+m bit$ Vordere Bits mit Multiplikant MSB auffüllen & \\
+  \hline
+	Float &&&& \\
+\end{tabular}
+\begin{itemize}
+	\item Festkomma (Vorzeichenlos)
+	\begin{itemize}
+		\item Erweiterung: Null vorne anhängen
+		\item Addition: Bitweise
+		\item Subtraktion: Bitweise
+		\item Multiplikation: Add-Shift (Add für jede 1 im Multiplikant) (Resultat eins rechts Shiften)\\
+		Sonderfall: Multiplikation mit 2-er Potenz $\rightarrow$ um Potenz mal shiften.
+		\item Division:
+	\end{itemize}
+	\item Festkomma (Einser Komplement)
+	\begin{itemize}
+		\item Erweiterung: Null an Stelle 2 einfügen.
+		\item Addition:
+		\begin{enumerate}
+			\item Prüfe Beide Vorzeichen
+			\item Gleiches Vorzeichen $\rightarrow$ reguläre Addition
+			\item Verschieden $\rightarrow$ Subtraktion kleiner Operator von großem Operator. Übernahme Vorzeichen des großen Operators.
+		\end{enumerate}
+	\end{itemize}
+	\item Festkomma (Zweier Komplement)
+	\begin{itemize}
+		\item Erweiterung: 1 vorne anhängen
+		\item Addition: Regulär (Gleiche Parameterlänge) (Overflow ignorieren)
+		\item Subtraktion: Addition mit komplementiertem Subtraktor (Gleiche Parameterlänge)(Overflow ignorieren)
+		\item Multiplikation:
+		\begin{enumerate}
+			\item Zahlen auf Produktlänge erweitern.
+			\item Zahlen mittels Add-Shift multiplizieren (Überflüssige Bits nach links rausschieben und ignorieren)
+		\end{enumerate}
+	\end{itemize}
+	\item Gleitkomma (IEEE Float)
+	\begin{itemize}
+		\item Addition: Exponenten auf größeren angleichen, Mantissen addieren. Vorzeichen inspizieren.\\
+		\item Subtraktion:
+		\item Multiplikation: Exponenten auf größeren angleichen, Mantissen multiplizieren. Vorzeichen multiplizieren.\\
+		Sonderfall: Multiplikation mit 2-er Potenz $\rightarrow$ Potenz zu Exponent addieren.
+		\item Division:
+	\end{itemize}
+\end{itemize}
 \section{Zeichenkodierung}
 	\subsection{ASCII}
 	American Standard Code for Information Exchange \\
@@ -279,7 +331,7 @@ $N \cdot M: n+m$ Bit
 		            & $x + (y + z) = (x + y) + z$                           & $(A \cup B) \cup C = A \cap (B \cup C)$               \\
 		Distributiv & $x \cdot (y + z) = x \cdot y + x \cdot z$             & $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$      \\
 		            & $x + (y \cdot z) = (x + y) \cdot (x + z)$             & $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$      \\
-		Indempotenz & $x \cdot x = x$                                       & $A \cap A = A$                                        \\
+		Idempotenz  & $x \cdot x = x$                                       & $A \cap A = A$                                        \\
 		            & $x + x = x$                                           & $A \cup A = A$                                        \\
 		Absorption  & $x \cdot (x+y) = x$                                   & $A \cap (A \cup B) = A$                               \\
 		            & $x + (x \cdot y) = x$                                 & $A \cup (A \cap B) = A$                               \\
@@ -319,10 +371,8 @@ $N \cdot M: n+m$ Bit
 		$f = \ol x_1 \ol x_2 a + \ol x_1 x_2 b + x_1  \ol x_2 c + x_1 x_2d$ & (Eingänge: $a,b,c,d$  Steuerung: $x_1$, $x_2$)\\
 	\end{tabular}
 
-
-
 	\subsection{Wichtige Begriffe}
-	\begin{tabular}{l|l|l}
+	\begin{tabular}{l|p{4cm}|p{2.2 cm}}
 		Wichtige Begriffe: & Definition & Bemerkung\\ \hline
 		Signalvariable & $x$ & $\hat x \in \eset{0,1}$ \\
 		Literal & $l_i = x_i$ oder $\overline{x_i}$ & $i \in I_0=\eset{1,...,n}$\\
@@ -330,7 +380,10 @@ $N \cdot M: n+m$ Bit
 		d-Kuben & MC $\ni c_j = \prod\limits_{i\in I_j \subseteq I_0} l_i$ & $|$MC$|=3^n$\\
 		Distanz & $\delta(c_i,c_j) = \bigl| \iset{l}{l \in c_i \land \overline{l}\in c_j}  \bigr|$ & $\delta_{ij} = \delta(c_i,c_j)$ \\
 		Implikanten & $MI = \iset{c \in MC}{c \subseteq f}$ &  \\
+		& Terme, dessen Erfüllbarkeit identisch mit die der Formel sind & \\
 		Primimplikanten & $MPI = \iset{p \in MI}{p \not\subset c \ \forall c \in MI}$ & $MPI \subseteq MI \subseteq MC$\\
+		& Implikanten, die maximal freie Variablen besitzen & \\
+		Kernprimimplikanten & Primimplikanten die für Überdeckung zwingend notwendig sind & Spalten mit 1 Eintrag in Überdeckungstabelle\\
 	\end{tabular}\\ \\ \\
 	\begin{tabular}{l|l|l}
 		DNF (DNF) & eine Summe von Produkttermen & Terme sind ODER-verknüpft \\
@@ -344,8 +397,6 @@ $N \cdot M: n+m$ Bit
 	\\ \\
 	FPGA: Field Programmable Gate Array\\
 	LUT: Look Up Table\\
-
-
 
 
 \section{Beschreibungsformen}
@@ -501,8 +552,10 @@ $N \cdot M: n+m$ Bit
 		Verstärkung & $\beta = \frac{\mu_n \varepsilon_{ox} \varepsilon_0}{t_{ox}} \cdot \frac{W}{L} = K' \frac{W}{L} = \frac{\mu_n C_G}{L^2}$ \\
 		Kapazität & $C_G = \varepsilon_{ox} \varepsilon_0 \frac{WL}{t_{ox}}$ \\
 		Verzögerungszeit & $t_{pHL} \propto \frac{C_L t_{ox} L_p}{W_p \mu_p \varepsilon_{ox} (V_{DD} - |V_{th}|)}$ \\
-		Verzögerungszeit & $t_{pHL}$ Propagation delay von 90\% auf 10\% \\
-		Verzögerungszeit & $t_{pLH}$ Propagation delay von 10\% auf 90\%
+		Verzögerungszeit (2 Signale) & Zeit zwischen $S_1=50\% $ und $S_2=50\% $\\
+		& $LH/HL$ bezieht sich auf Ausgang \\
+		Anstiegszeit (Selbes Signal) & $t_{r}$ Zeit zwischen 10\% und 90\% \\
+		Abfallzeit (Selbes Signal) & $t_{f}$ Zeit zwischen 90\% und 10\% \\
 	\end{tabular}
 	\begin{itemize}
 		\item große Kanalweite $\Ra$ große Drain-Störme \\ $\Ra$ schnelle Schaltgeschwindigkeit (da $i_d \propto \beta \propto \frac{W}{L}$) \\
@@ -562,7 +615,7 @@ $N \cdot M: n+m$ Bit
 	\begin{minipage}{0.55\linewidth}
 		\subsubsection{Laden}
 		Kondensator $C$ lädt, solange $I_D>0$\\
-		$\rightarrow C$ lädt, solange $u_{gs}-U_{th}\ge u_{ds}\ge 0$
+		$\rightarrow C$ lädt, solange $u_{gs}-U_{th}\ge 0$ und $u_{ds}\ge 0$
 		\subsubsection{Entladen}
 		Source und Drain werden vertauscht.\\
 		Auf Gatespannung achten.
@@ -808,14 +861,15 @@ $g$ & Ausgaberelation \\
 
 \includegraphics{./img/ds/automaten.pdf}\\
 \emph{Zustandsnummerierung} immer einfügen.\\
-
-\begin{tabular}{c | c}
- Moore & Mealy \\ \hline
- Ouput hängt nur vom Zustand ab & Output hängt von Zustand und Eingabe ab\\
- Kein direkter kombinatorischer Pfad Eingang$\Rightarrow$Ausgang & Generell weniger Zustände als Moore.\\
- $s'=f(s,i)$, $o=g(s)$ & $s'=f(s,i)$, $o=g(s,i)$ \\
- $g: S \ra O$ & $g: S \times I \ra O$
-\end{tabular}
+\resizebox{0.95\linewidth}{!}{
+  \begin{tabular}{c | c}
+   Moore & Mealy \\ \hline
+   Ouput hängt nur vom Zustand ab & Output hängt von Zustand und Eingabe ab\\
+   Kein direkter kombinatorischer Pfad Eingang$\Rightarrow$Ausgang & Generell weniger Zustände als Moore.\\
+   $s'=f(s,i)$, $o=g(s)$ & $s'=f(s,i)$, $o=g(s,i)$ \\
+   $g: S \ra O$ & $g: S \times I \ra O$
+  \end{tabular}
+}
 \subsection{Wahrheitstabelle einer FSM}
 \begin{tabular}{c|c|c|c}
 	$i$ & $S=S_0...S_n$ & $o$ & $S'=S'_1...S'_n$\\
