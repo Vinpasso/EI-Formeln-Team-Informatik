@@ -255,7 +255,7 @@ $N \cdot M: n+m$ Bit
 	\end{tabular}
 \section{Boolsche Algebra}
 
-	\subsection{Boolesche Operatoren (Wahrheitstabelle WT)}
+	\subsection{Boolsche Operatoren (Wahrheitstabelle WT)}
 	\begin{tabular}{c|c!{\vrule width 1pt}c|c|c|c|c|c}
 		& & \imglog{./img/logic/and-us.png} & \imglog{./img/logic/or-us.png} & \imglog{./img/logic/xor-us.png} & \imglog{./img/logic/nand-us.png} & \imglog{./img/logic/nor-us.png} & \imglog{./img/logic/xnor-us.png} \\
 		& & \imglog{./img/logic/and-din.png} & \imglog{./img/logic/or-din.png} & \imglog{./img/logic/xor-din.png} & \imglog{./img/logic/nand-din.png} & \imglog{./img/logic/nor-din.png} & \imglog{./img/logic/xnor-din.png} \\
@@ -267,11 +267,11 @@ $N \cdot M: n+m$ Bit
 		1 & 0 &     0      &   1   &      1      &           1           &        0         &           0            \\ \hline
 		1 & 1 &     1      &   1   &      0      &           0           &        0         &           1
 	\end{tabular}
-	Konfiguration: $f = c_1 + c_2 + c_3 \Ra cov(f) = \eset{c_1, c_2, c_3}$
+	Konfiguration: $f = c_1 + c_2 + c_3 \Ra cov(f) = \eset{c_1, c_2, c_3}$ \quad $x \oplus y \equiv x \overline{y} + \overline{x} y$
 
-	\subsection{Gesetze der booleschen Algebra}
+	\subsection{Gesetze der boolschen Algebra}
 	\begin{tabular}{l|l|l}
-		            & Boolesche Algebra                                     & Mengenalgebra                                         \\
+		            & Boolsche Algebra                                      & Mengenalgebra                                         \\
 		            & $({0,1};\cdot , +, \overline{x})$                     & $(P(G);\cap , \cup, \overline{A};G,\emptyset )$       \\ \hline
 		Kommutativ  & $x \cdot y = y \cdot x$                               & $A \cap B = B \cap A$                                 \\
 		            & $x + y = y + x$                                       & $A \cup B = B \cup A$                                 \\
@@ -291,7 +291,9 @@ $N \cdot M: n+m$ Bit
 		            & $x + \overline{x} = 1$                                & $A \cup \overline{A} = G$                             \\
 		            & $\overline{\overline{x}} = x$                         & $\overline{\overline{A}} = A$                         \\
 		De Morgan   & $\overline{x \cdot y} = \overline{x} + \overline{y}$  & $\overline{A \cap B} = \overline{A} \cup \overline{B}$\\
-		            & $\overline{x + y} = \overline{x} \cdot \overline{y}$ & $\overline{A \cup B} = \overline{A} \cap \overline{B}$
+		            & $\overline{x + y} = \overline{x} \cdot \overline{y}$ & $\overline{A \cup B} = \overline{A} \cap \overline{B}$ \\
+    Resolutionsgesetz (allgemein) &  $x \cdot y + x \cdot z + y \cdot z  = x \cdot y + x \cdot z$&\\
+    Resolutionsgesetz (speziell)  & $x \cdot y + \overline{x} \cdot y$ &\\
 	\end{tabular}
 
 
