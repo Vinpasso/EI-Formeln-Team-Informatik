@@ -226,7 +226,8 @@ $N \cdot M: n+m$ Bit
 		\item Erweiterung: Null vorne anhängen
 		\item Addition: Bitweise
 		\item Subtraktion: Bitweise
-		\item Multiplikation: Add-Shift (Add für jede 1 im Multiplikant) (Resultat eins rechts Shiften)
+		\item Multiplikation: Add-Shift (Add für jede 1 im Multiplikant) (Resultat eins rechts Shiften)\\
+		Sonderfall: Multiplikation mit 2-er Potenz $\rightarrow$ um Potenz mal shiften.
 		\item Division:
 	\end{itemize}
 	\item Festkomma (Einser Komplement)
@@ -252,9 +253,10 @@ $N \cdot M: n+m$ Bit
 	\end{itemize}
 	\item Gleitkomma (IEEE Float)
 	\begin{itemize}
-		\item Addition: Exponenten auf größeren angleichen, Mantissen addieren. Vorzeichen inspizieren.
+		\item Addition: Exponenten auf größeren angleichen, Mantissen addieren. Vorzeichen inspizieren.\\
 		\item Subtraktion: 
-		\item Multiplikation: Exponenten auf größeren angleichen, Mantissen multiplizieren. Vorzeichen multiplizieren.
+		\item Multiplikation: Exponenten auf größeren angleichen, Mantissen multiplizieren. Vorzeichen multiplizieren.\\
+		Sonderfall: Multiplikation mit 2-er Potenz $\rightarrow$ Potenz zu Exponent addieren.
 		\item Division:
 	\end{itemize}
 \end{itemize}
