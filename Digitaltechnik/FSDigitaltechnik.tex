@@ -1,5 +1,5 @@
 % DigitaltechnikFS										Stand: 14.01.12
-% Digitaltechnik Formelsammlung für SoSe 2011			
+% Digitaltechnik Formelsammlung für SoSe 2011
 % 8 Seiten
 % Dokumenteinstellungen
 % ======================================================================
@@ -9,20 +9,20 @@
 
 % Seitenlayout und Ränder:
 \usepackage{geometry}
-\geometry{a4paper,landscape, left=6mm,right=6mm, top=0mm, bottom=3mm,includeheadfoot} 
+\geometry{a4paper,landscape, left=6mm,right=6mm, top=0mm, bottom=3mm,includeheadfoot}
 
 % Dokumentbeschreibung
 \title{Digitaltechnik Formelsammlung}
 \author{Emanuel Regnath, Martin Zellner, Hendrik Böttcher}
 
 % Pakete laden
-\usepackage[utf8x]{inputenc}	% Zeichenkodierung: UTF-8 (für Umlaute)   
+\usepackage[utf8x]{inputenc}	% Zeichenkodierung: UTF-8 (für Umlaute)
 \usepackage[german]{babel}		% Deutsche Sprache
 \usepackage{multicol}			% Spaltenpaket
 \usepackage{amsmath}			% Mathematische Formelzeichen
 \usepackage{amssymb}			% Mathematische Formelzeichen
 \usepackage{esint}				% erweiterte Integralsymbole
-\usepackage{multicol}			% ermöglicht Seitenspalten  
+\usepackage{multicol}			% ermöglicht Seitenspalten
 \usepackage{booktabs}			% bessere Tabellenlinien
 \usepackage{color}				% Farben
 \usepackage{colortbl}			% für die Hintergrundfarbe einzelner Zellen in Tabellen
@@ -47,9 +47,9 @@
    \renewcommand{\footrulewidth}{0.1pt} %obere Linie ausblenden
    \fancyfoot[R]{(Gekürzt, überarbeitet - lukas.kompatscher@tum.de) Stand: \todayV \qquad \thepage}
    \fancyfoot[L]{Homepage: www.latex4ei.de -  Fehler bitte \emph{sofort} melden.}
-	
+
 % Schriftart SANS für bessere Lesbarkeit bei kleiner Schrift
-\renewcommand{\familydefault}{\sfdefault} 
+\renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\emph}[1]{\textsf{\textbf{#1}}}
 
 % Array- und Tabellenabstände vergrößern
@@ -130,7 +130,7 @@
 	$10^{6}$ & M \\
 	$10^{3}$ & k \\
 	$10^{2}$ & h \\
-	$10^{1}$ & da 
+	$10^{1}$ & da
 \end{tabular}
 \begin{tabular}{c | c}
 	Potenz & Vorsatz \\ \midrule
@@ -176,7 +176,7 @@ $N \cdot M: n+m$ Bit
 			& $Z \ge 1$ & $Z < 1$\\ \midrule
 		$r \rightarrow 10$ & $Z_{10} = \sum r^i \cdot d_i$ & $Z_{10} = \sum r^{-i} \cdot d_{-i}$\\
 		& $101_2 \ra 1 \cdot 4 + 0\cdot 2 + 1 \cdot 1$ & $0.11_2 \ra 1\cdot 0.5 + 1\cdot 0.25$\\ \midrule
-		$10 \rightarrow r$ & $d_i = Z_{10} \% r^i$ & \\
+		$10 \rightarrow r$ & $d_i = Z_{10} \% r^i$ ($d_i=Z_{10}\bmod r^i$) & \\
 		& $58 / 8 = 7\text{ Rest}\ 2 (LSB)$ & $0.4 \cdot 2 = 0.8 \text{ Übertrag } 0 (MSB)$\\
 		& $7 / 8 = 0\text{ Rest } 7 (MSB)$ & $0.8 \cdot 2 = 1.6 \text{ Übertrag } 1$ \\
 		& (Ende wenn 0 erreicht) & (Wiederholen bis 1 oder Periodizität)\\
@@ -192,13 +192,13 @@ $N \cdot M: n+m$ Bit
 		\end{tabular}
 	\subsection{Gleitkommadarstellung nach IEEE 754}
 	Bitverteilung(single/double):\\
-	\begin{tabular}{|c|c|c|} \hline 
+	\begin{tabular}{|c|c|c|} \hline
 		$s(1)$ & \quad $e(8/11)$ \quad\qquad & \qquad\qquad\qquad\ $f(23/52)$ \qquad\qquad\qquad\qquad \\ \hline
 	\end{tabular} \\[0.5em]
 	$s$: Vorzeichen, $e$: Exponent, $f$: Mantisse (\textbf{Nachkommastellen!} $2^{-1}2^{-2}...)$ \\ \\
 	\textbf{Spezialwerte:} $Z = 0 \Leftrightarrow e=0$ \qquad $Z = + (-)\infty \Leftrightarrow e=255, s=0(1)$ \\ \\
 	\begin{tabular}{l|p{4.5cm}}
-		\textbf{IEEE $\rightarrow$ Wert $Z$} & Bsp: $s = 1$, $e = 126$, $f = 01_2$\\		
+		\textbf{IEEE $\rightarrow$ Wert $Z$} & Bsp: $s = 1$, $e = 126$, $f = 01_2$\\
 		$Z = (-1)^s \cdot  (1+0.f) \cdot 2^{e-127}$ & $Z=-1 \cdot 2^{-1} \cdot 1.01_2 = -0.101_2= -0.625$ \\ \midrule
 		\textbf{Wert $Z$ $\rightarrow$ IEEE} (Binärdarstellung) & Bsp: $Z=11.25$ \\
 		$s=0$(positiv), $s=1$(negativ) & $s=0$\\
@@ -212,7 +212,7 @@ $N \cdot M: n+m$ Bit
 		$e=E+127 \rightarrow e_2$ & $e=3+127=130=10000010_2$\\
 		$f=\left(\frac{\abs{Z}}{2^E}-1\right) \cdot 2^{23} \rightarrow f_2$  & $f=\left(\frac{\abs{11.25}}{2^3}-1\right)\cdot 2^{23}=3407872= 01101000\dots_2 $
 	\end{tabular}
-	
+
 \section{Zeichenkodierung}
 	\subsection{ASCII}
 	American Standard Code for Information Exchange \\
@@ -221,37 +221,37 @@ $N \cdot M: n+m$ Bit
 	\subsection{UTF-8}
 	Universal Character Set Transformation Format \\
 	Variable Codewortlänge (1-4 Byte) $\rightarrow$ Effizient \\
-	\paragraph{Schema}	
+	\paragraph{Schema}
 	\begin{itemize}
 	\item MSB = 0 $\rightarrow$ 8 Bit (restliche Bit nach ASCII)
-	\item MSB = 1 $\rightarrow$ 16, 24 oder 32 Bit 
+	\item MSB = 1 $\rightarrow$ 16, 24 oder 32 Bit
 	 \begin{itemize}
-	
+
 	\item Byte 1: Die ersten 3, 4, 5 Bit geben die Länge des Codewortes an (110, 1110, 11110)
 	\item Byte 2-4: Beginnen mit Bitfolge 10
 	\end{itemize}
 	\end{itemize}
-	
+
 	\subsection{Zahlensysteme}
 	\begin{tabular} {c|c|c|c}
 		Base 10 & Base 2 & Base 8 & Base 16 \\
 		\hline
-			00 & 0000 & 0x0 & 0o00 \\ 
-			01 & 0001 & 0x1 & 0o01 \\ 
-			02 & 0010 & 0x2 & 0o02 \\ 
-			03 & 0011 & 0x3 & 0o03 \\ 
-			04 & 0100 & 0x4 & 0o04 \\ 
-			05 & 0101 & 0x5 & 0o05 \\ 
-			06 & 0110 & 0x6 & 0o06 \\ 
-			07 & 0111 & 0x7 & 0o07 \\ 
-			08 & 1000 & 0x8 & 0o10 \\ 
-			09 & 1001 & 0x9 & 0o11 \\ 
-			10 & 1010 & 0xA & 0o12 \\ 
-			11 & 1011 & 0xB & 0o13 \\ 
-			12 & 1100 & 0xC & 0o14 \\ 
-			13 & 1101 & 0xD & 0o15 \\ 
-			14 & 1110 & 0xE & 0o16 \\ 
-			15 & 1111 & 0xF & 0o17
+			00 & 0000 & \emph{0o}00 & \emph{0x}0 \\
+			01 & 0001 & \emph{0o}01 & \emph{0x}1 \\
+			02 & 0010 & \emph{0o}02 & \emph{0x}2 \\
+			03 & 0011 & \emph{0o}03 & \emph{0x}3 \\
+			04 & 0100 & \emph{0o}04 & \emph{0x}4 \\
+			05 & 0101 & \emph{0o}05 & \emph{0x}5 \\
+			06 & 0110 & \emph{0o}06 & \emph{0x}6 \\
+			07 & 0111 & \emph{0o}07 & \emph{0x}7 \\
+			08 & 1000 & \emph{0o}10 & \emph{0x}8 \\
+			09 & 1001 & \emph{0o}11 & \emph{0x}9 \\
+			10 & 1010 & \emph{0o}12 & \emph{0x}A \\
+			11 & 1011 & \emph{0o}13 & \emph{0x}B \\
+			12 & 1100 & \emph{0o}14 & \emph{0x}C \\
+			13 & 1101 & \emph{0o}15 & \emph{0x}D \\
+			14 & 1110 & \emph{0o}16 & \emph{0x}E \\
+			15 & 1111 & \emph{0o}17 & \emph{0x}F
 	\end{tabular}
 \section{Boolsche Algebra}
 
@@ -281,7 +281,7 @@ $N \cdot M: n+m$ Bit
 		            & $x + (y \cdot z) = (x + y) \cdot (x + z)$             & $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$      \\
 		Indempotenz & $x \cdot x = x$                                       & $A \cap A = A$                                        \\
 		            & $x + x = x$                                           & $A \cup A = A$                                        \\
-		Absorbtion  & $x \cdot (x+y) = x$                                   & $A \cap (A \cup B) = A$                               \\
+		Absorption  & $x \cdot (x+y) = x$                                   & $A \cap (A \cup B) = A$                               \\
 		            & $x + (x \cdot y) = x$                                 & $A \cup (A \cap B) = A$                               \\
 		Neutral     & $x \cdot 1 = x$                                       & $A \cap G = A$                                        \\
 		            & $x + 0 = x$                                           & $A \cup \emptyset = A$                                \\
@@ -295,9 +295,9 @@ $N \cdot M: n+m$ Bit
 	\end{tabular}
 
 
-	\subsection{Boolesche Funktionen}	
+	\subsection{Boolesche Funktionen}
 	\begin{equation*}
-	f:\{0,1\}^n\ra \{0,1\} \qquad \qquad f(\vec{x})=f(x_1,x_2,\dots,x_n) 
+	f:\{0,1\}^n\ra \{0,1\} \qquad \qquad f(\vec{x})=f(x_1,x_2,\dots,x_n)
 	\end{equation*} \\
 	Einsmenge $F$ von $f$: $F=\{\vec{x}\in \{0,1\}^n|f(\vec{x})=1\}$ \\
 	Nullmenge $\overline F$ von $f$: $\overline F=\{\vec{x}\in \{0,1\}^n|f(\vec{x})=0\}$
@@ -309,12 +309,11 @@ $N \cdot M: n+m$ Bit
 	\paragraph{Eigenschaften von $f(\vec{x})$}
 	\begin{itemize}\itemsep0pt
 		\item tautologisch $\Leftrightarrow f(\vec{x})=1 \qquad \forall \vec x \in \{0,1\}^n$
-		\item tautologisch $\Leftrightarrow f(\vec{x})=1 \qquad \forall \vec x \in \{0,1\}^n$
 		\item kontradiktorisch $\Leftrightarrow f(\vec{x})=0 \qquad \forall \vec x \in \{0,1\}^n$
-				\item unabhängig von $x_i \Leftrightarrow f_{x_i} = f_{\overline x_i}$
-						\item abhängig von $x_i \Leftrightarrow f_{x_i} \ne f_{\overline x_i}$
-			\end{itemize}
-	
+		\item unabhängig von $x_i \Leftrightarrow f_{x_i} = f_{\overline x_i}$
+		\item abhängig von $x_i \Leftrightarrow f_{x_i} \ne f_{\overline x_i}$
+	\end{itemize}
+
 	\subsection{Multiplexer}
 	\begin{tabular}{ll}
 		$f = x \cdot a + \overline x \cdot b$ & (2 Eingänge $a,b$ und 1 Steuereingang $x$)\\
@@ -334,7 +333,7 @@ $N \cdot M: n+m$ Bit
 		Implikanten & $MI = \iset{c \in MC}{c \subseteq f}$ &  \\
 		Primimplikanten & $MPI = \iset{p \in MI}{p \not\subset c \ \forall c \in MI}$ & $MPI \subseteq MI \subseteq MC$\\
 	\end{tabular}\\ \\ \\
-	\begin{tabular}{l|l|l}	
+	\begin{tabular}{l|l|l}
 		DNF (DNF) & eine Summe von Produkttermen & Terme sind ODER-verknüpft \\
 		KNF (KNF) & ein Produkt von Summentermen & Terme sind UND-verknüpft\\
 		KDNF (KDNF)& Summe aller Minterme & WT: 1-Zeilen sind Minterme\\
@@ -353,19 +352,19 @@ $N \cdot M: n+m$ Bit
 \section{Beschreibungsformen}
 	\subsection{Disjunktive Normalform/Sum of products (DNF/DNF)}
 	\textbf{Eins-Zeilen} als \textbf{Implikanten} (UND) schreiben und alle Implikanten mit \textbf{ODER} verknüpfen: \\
-	$Z = \overline A \cdot \overline B + \overline C \cdot D$ 
-	
+	$Z = \overline A \cdot \overline B + \overline C \cdot D$
+
 	\subsection{Konjunktive Normalform/Product of sums (KNF/KNF)}
-	\textbf{Null-Zeilen negiert als Implikat} (ODER)  schreiben und alle Implikaten \textbf{UND} verknüpfen: \\	
+	\textbf{Null-Zeilen negiert als Implikat} (ODER)  schreiben und alle Implikaten \textbf{UND} verknüpfen: \\
 	$Z = ( \ol A + \ol C) \cdot ( \ol A + \ol D) \cdot ( \ol B + \ol C) \cdot ( \ol B + D)$
-	
+
 	\subsection{Umwandlung in jeweils andere Form}
 	1. Doppeltes Negieren der Funktion: $ Z = \overline {\overline{\overline A \cdot \overline B + \overline C \cdot D}}$\\
 	2. Umformung "'untere"'  Negation (DeMorgan) : $ Z = \ol{\ol{\ol A \cdot \ol B} \cdot \ol{\ol C \cdot D}} = \ol{(A+B) \cdot (C+\ol D)}$\\
 	3. Ausmultiplizieren: $ Z = \ol{(A+B) \cdot (C+\ol D)} = \ol{A\cdot C + A\cdot \ol D + B \cdot C + B \cdot \ol D}$\\
 	4. Umformung "'obere"'  Negation (DeMorgan) :\\ $ Z= \ol{AC} \cdot \ol{A \ol D} \cdot \ol{BC} \cdot \ol{B\ol D} = ( \ol A + \ol C) \cdot ( \ol A + D) \cdot ( \ol B + \ol C) \cdot ( \ol B + D)$\\ \\
 	Analog von KNF (KNF) nach DNF (DNF).
-	
+
 	\subsection{Shannon Entwicklung}
 		$f = x_i \cdot f_{x_i} + \ol x_i \cdot f_{\ol x_i} = (x_i + f_{\ol x_i})\cdot ( \ol x_i + f_{x_i}) = (f_{x_i} \oplus f_{\ol x_i}) \cdot x_i \oplus f_{\ol x_i}$ \\
 		$\ol f = x_i \cdot \ol f_{x_i} + \ol x_i \cdot \ol f_{\ol x_i}$
@@ -382,25 +381,29 @@ $N \cdot M: n+m$ Bit
 	\end{itemize}
 
 	\subsection{Karnaugh-Diagramm} % (fold)
-		Zyklische Gray-Codierung: 2dim:$00,01,11,10$ 3dim:$000,001,011,010,110,111,101,100$
-		
+		Zyklische Gray-Codierung:
+    \begin{tabular}{ r|l }
+      2-\textbf{dim}& $\mathtt{00} ~ \mathtt{01} ~ \mathtt{11} ~ \mathtt{10}$ \\
+      3-\textbf{dim}& $\mathtt{000} ~ \mathtt{001} ~ \mathtt{011} ~ \mathtt{010} ~ \mathtt{110} ~ \mathtt{111} ~ \mathtt{101} ~ \mathtt{100}$
+    \end{tabular}
+
 	\begin{tabular}{l | c | c |  c | r}
 	$_z\!\!\diagdown \!\!^{xy}$ & 00 	& 	01	&	11 	&	10	 	\\ \midrule
-	0		&	1 \cellcolor{gray}	&	0	&	0	&	0		\\	
-	1		&	X \cellcolor{gray}	&	1 \cellcolor{lightgray}	&	1 \cellcolor{lightgray}	&	0		\\	
+	0		&	1 \cellcolor{gray}	&	0	&	0	&	0		\\
+	1		&	X \cellcolor{gray}	&	1 \cellcolor{lightgray}	&	1 \cellcolor{lightgray}	&	0		\\
 	\end{tabular}
 	Gleiche Zellen zusammenfassen: z.B. $\overline x \overline y + y \cdot z$\\
 	Don't Care Werte ausnutzen!\\
 	\emph{Achtung:} Auf eventuelle Unterdefiniertheit überprüfen (Redundante Zeilen) (Kreiert Don't Cares)\\
-	\emph{Immer vollständig Nullen und Eines ausfüllen}
+	\emph{Immer vollständig mit Nullen und Einsen ausfüllen}
 	% subsection Karnaugh- Diagramm (end)
 
 	\subsection{Quine Methode}
 	geg.: DNF/DNF oder Wertetabelle von $f(x)$ \\
 	ges.: alle Primimplikanten $p_i$ (VollSOP)  \\ \\
-	Spezielles Resoltuionsgesetz: $x\cdot a + \overline x \cdot a = a$ \\
+	Spezielles Resoltutionsgesetz: $x\cdot a + \overline x \cdot a = a$ \\
 	Absorptionsgesetz: $a + a\cdot b = a$
-	
+
 	\begin{enumerate}
 		\item KDNF/KDNF bestimmen (z.B. $f(x,y,z) = xy = xyz + xy\overline z$)
 		\item Alle Minterme in Tabelle eintragen (Index von m ist (binär)Wert des Minterms)
@@ -410,7 +413,7 @@ $N \cdot M: n+m$ Bit
 		\item Wenn keine Kubenbildung mehr möglich $\ra$ Primimplikanten
 	\end{enumerate}
 	Beispiel (Quine Methode):
-	
+
 	\begin{tabular}{l | c | c  || c | c | c || c | c | r}
 	      & 0-Kubus & A & 1-Kubus & R & A & 2-Kubus  & A \\
 	$m_1$ & $\overline x_1 \overline x_2 x_3$ & $\surd$ & $\overline x_2 x_3$ & $m_1 \& m_5$ & $p_1$ & &\\
@@ -420,7 +423,7 @@ $N \cdot M: n+m$ Bit
 	$m_7$ & $x_1 x_2 x_3$ & $\surd$ & $x_1 x_2$ & $m_6 \& m_7 $ & $ \surd$ & &\\
 	\end{tabular} \\ \\
 	$\Ra f(x_1,x_2,x_3)=p_1+p_2=\ol x_2x_3 + x_1$
-	
+
 	\subsection{Resolventenmethode} % (fold)
 	\label{sec:Resolventenmethode}
 		Ziel: alle Primimplikanten \\ \\
@@ -432,12 +435,12 @@ $N \cdot M: n+m$ Bit
 		\begin{enumerate}
 			\item schreibe die Funktion $f$ in die 0. Schicht
 			\item bilde \textbf{alle möglichen} Resolventen aus der 0. Schicht und schreibe sie in die nächste Schicht als ODER Verknüpfungen (Resolventen zu $f$ "hinzufügen")
-			\item überprüfe ob Resolventen aus der 1. Schicht Kuben aus Schicht 0 überdecken(Absorbtion) und streiche diese Kuben aus Schicht 0
+			\item überprüfe ob Resolventen aus der 1. Schicht Kuben aus Schicht 0 überdecken(Absorption) und streiche diese Kuben aus Schicht 0
 			\item Schicht i besteht aus den möglichen Resolventen von Schicht 0 bis $(i-1)$. Abgestrichene Kuben aus vorherigen Schichten brauchen \textbf{nicht} mehr beachtet werden.
-			\item Sobald in der i-ten Schicht +1 steht oder keine weiteren Resolventen gebildet werden können, ist man fertig. 
+			\item Sobald in der i-ten Schicht +1 steht oder keine weiteren Resolventen gebildet werden können, ist man fertig.
 			$\Ra $ alle nicht ausgestrichenen Terme bilden die VollSOP
 		\end{enumerate}
-		
+
 		\begin{tabular}{l | r}
 		$f(x_1, \ldots, x_n)$ & Schicht \\ \midrule
 		$x \cdot w + \overline x \cdot w + x \cdot y \cdot w \cdot \overline z + \overline x \cdot y \cdot w \cdot \overline z + \overline y \cdot w \cdot \overline z $& $0$ \\
@@ -469,23 +472,23 @@ $N \cdot M: n+m$ Bit
 	$K$: Anzahl der Primterme\\
 	$N$: Anzahl der Minterme \\
 	$L(p_i)$: Kosten/Länge der Primimplikanten
-	
+
 \section{Halbleiter}
 \begin{tabular}{l|c|c|c|c|c}
 	& Isolator & Metall & undotiert & N-Typ & P-Typ \\ \hline
 	Ladungsträger & Keine & $e^-$ & $e^- / e^+$ & $e^-$ & $e^+$ \\
-	Leitfähigkeit & Keine & Sehr hoch & $\propto T$ & Hoch & Mittel\\  
+	Leitfähigkeit & Keine & Sehr hoch & $\propto T$ & Hoch & Mittel\\
 \end{tabular}
 
 \section{MOS-FET's}
 % ======================================================================
 \textbf{M}etal \textbf{O}xide \textbf{S}emiconductor \textbf{F}ield \textbf{E}ffekt \textbf{T}ransistor\\
-\parbox{4.0cm}{ \includegraphics{./img/ds/mosfet.pdf} \\ $V_{Pinch-Off} = V_{GS} - V_{th}$ } \parbox{3.0cm}{ \includegraphics{./img/ds/char_nmos.pdf} } 
+\parbox{4.0cm}{ \includegraphics{./img/ds/mosfet.pdf} \\ $V_{Pinch-Off} = V_{GS} - V_{th}$ } \parbox{3.0cm}{ \includegraphics{./img/ds/char_nmos.pdf} }
 
 
 	\subsection{Bauteilparameter}
 	Verstärkung: \framebox{
-			$\beta = K' \frac{W}{L} \text{ mit } K' = \frac{\mu \varepsilon_{ox} \varepsilon_0}{t_{0x}} \qquad [\beta]=\frac{A}{V^2}$ 
+			$\beta = K' \frac{W}{L} \text{ mit } K' = \frac{\mu \varepsilon_{ox} \varepsilon_0}{t_{0x}} \qquad [\beta]=\frac{A}{V^2}$
 		} \\
 	\begin{tabular} {r | l}
 		Kanalweite & W  \\
@@ -505,7 +508,7 @@ $N \cdot M: n+m$ Bit
 		Aber: große Fläche.
 		\item nMos schaltet schneller als pMOS
 	\end{itemize}
-	
+
 	\subsection{Drainstrom}
 		\textbf{nMos} (p-dotiertes Substrat, n-dotierte Drain/Source), schlechter pull up (Pegeldegenerierung)
 		\begin{equation*}
@@ -521,13 +524,13 @@ $N \cdot M: n+m$ Bit
 		0, &\text{ für }  U_{gs} - U_{th} \ge 0 \qquad \qquad  \text{(Sperrber.)}\\[0.2em]
 		- \beta [(u_{gs} - U_{th}) \cdot u_{ds} - \frac{1}{2} u_{ds}^2] , &\text{ für }  0 \ge U_{gs} - U_{th} \le u_{ds} \  \text{(linearer Ber.)}\\\\[0.2em]
 		- \frac{1}{2} \beta \cdot (u_{gs} - U_{th})^2, &\text{ für }  0 \ge U_{gs} - U_{th} \ge u_{ds} \  \text{(Sättigungsber.)}\\
-	
+
 		\end{cases}
 		\end{equation*}
 
-	
+
 	\subsection{pMos und nMos}
-	\pbox{3.0cm}{ \includegraphics{./img/ds/cmos.pdf} } 
+	\pbox{3.0cm}{ \includegraphics{./img/ds/cmos.pdf} }
 	\pbox{10.0cm}{
 	\begin{tabular}{c|c|c|c}
 		Transistor & Source liegt immer am & $V_{GS},V_{DS},I_D$ & Substrat \\ \midrule
@@ -600,7 +603,7 @@ Drei Grundgatter der CMOS-Technologie:\\
 	\end{tabular}\\
 	Falls $GND$ und $V_{DD}$ vertauscht würden, dann $NAND \ra AND$ und $NOR \ra OR$\\
 	Allerdings schlechte Pegelgenerierung.
-	
+
 	\subsection{Gatterdesign}
 	\begin{tabular}{l|l|l}
 		Netzwerk & Pull-Dow\bf{n} & Pull-U\bf{p} \\
@@ -610,13 +613,13 @@ Drei Grundgatter der CMOS-Technologie:\\
 	\end{tabular}\\ \\
 	1. Möglichkeit: Direkt; ggf. Inverter vor die Eingänge und Ausgänge schalten.\\
 	2. Möglichkeit: Mit bullshit Algebra die Funktion nur mit NAND und NOR darstellen.
-	
+
 	\subsection{CMOS Verlustleistung}
 	Inverterschaltvorgang $V_A: 0 \ra 1$:\\
 	\includegraphics{./img/ds/char_inverter.pdf}\\
 	\emph{Achtung:} Logikpegel sind über die Steigung der $|VTC|\le 1$ des Inverters definiert.\\
 	\emph{Zusammensetzung $I_{short}$:}\\
-	
+
 	\resizebox{0.95\linewidth}{!}{
 			\begin{tabular} {c||c|c|c|c|c}
 				Transistor & $(0,V_{tn})$ & $(V_{tn}, V_{DD}/2)$ & Um $V_{DD}/2$ & $(V_{DD}/2,V_{DD}-|V_{tp}|)$ & $(V_{DD}-V_{tp},V_{DD})$ \\
@@ -633,14 +636,14 @@ Drei Grundgatter der CMOS-Technologie:\\
 		\quad Schalthäufigkeit & $\alpha_{0 \rightarrow 1} = \frac{\text{Schaltvorgänge(pos. Flanke)}}{\text{\# Betrachtete Takte}}$ (max 0.5)\\
 		\quad Schalthäufigkeit (periodisch) & $\alpha = \frac{f_\text{switch}}{f_\text{clk}}$\\
 	\end{tabular}\\
-	Abhängig von den Signalflanken, mit Schaltfunktionen verknüpft\\ 
+	Abhängig von den Signalflanken, mit Schaltfunktionen verknüpft\\
 	$\approx \;$ $V_{DD} 1/\propto $ Schaltzeit: $\frac{V_{DD2}}{V_{DD1}} = \frac{t_{D1}}{t_{D2}}$ (bei Schaltnetzen $t_{log}$)\\
 	\textbf{Verzögerungszeit} $t_{pd}\propto$ $\frac{C_Lt_{ox}L_p}{W_p\mu_p\varepsilon(V_{DD} - V_{th})}$
-	
+
 	$t_{pd}$ ist Zeit zwischen crossover 50\% von Eingang zu crossover 50\% am Ausgang.
-	
+
 	Steigend mit: Kapazitiver Last, Oxiddicke, Kanallänge, Schwellspannung
-	
+
 	Sinkend mit: Kanalweite, Ladungsträger Beweglichkeit, Oxyd Dielektrizität, Versorgungsspannung \\ \\
 	\emph{Statische Verlustleistung} $P_{stat}$: Sub-Schwellströme, Leckströme, Gate-Ströme
 	Abhängigkeit: $V_{DD}\uparrow:P_{stat}\uparrow$ \qquad $V_{th}\uparrow:P_{stat}\downarrow$ \quad (aber nicht proportional)
@@ -657,7 +660,7 @@ $c_{n+1}=\underbrace{a_nb_n\ol{c_n} + a_n\ol{b_n}c_n + \ol{a_n}b_nc_n}_{\text{zw
 \\ \\
 \textbf{Laufzeiten} \\
 $t_{sn} = \begin{cases} t_{cn} + t_{xor} & t_{cn} > t_{xor} \\ 2 t_{xor} & sonst \end{cases}$\\ \\
-$t_{cn+1} = 
+$t_{cn+1} =
 \begin{cases}
 	t_{and} + t_{or}           & a_n = b_n = 1 \qquad \qquad (g_n=1)   \\
 	t_{xor} + t_{and} + t_{or} & a_n = b_n = 0 \qquad \qquad  (p_n = 0, g_n = 0) \\
@@ -677,8 +680,8 @@ Logik mit Gedächtnis (Speicher).
 	 Durchsatz & $\frac{1 \text{Sample}}{t_{clk,pipe}} = f$ \\
 	 Latenz & $t_{clk} \cdot \#$Pipelinestufen (das zwischen den FFs) \\
 	\end{tabular}
-	
-	
+
+
 	\subsection{Pipelining} % (fold)
 	Nur bei synchronen(taktgesteuerten) Schaltungen möglich!
 	\begin{itemize} \itemsep0pt
@@ -690,9 +693,9 @@ Logik mit Gedächtnis (Speicher).
 		\item Taktfrequenz erhöht sich
 	\end{itemize}
 	% subsection Pipelining (end)
-	
+
 	\subsection{Parallel Processing} % (fold)
-	
+
 	Durchsatz = $\frac{\#\text{Modul}}{t_{clk,Modul}} = f$ \qquad \quad Latenz = $t_{clk}$
 	\begin{itemize} \itemsep0pt
 		\item Paralleles, gleichzeitiges Verwenden mehrere identischer Schaltnetze
@@ -711,10 +714,10 @@ Logik mit Gedächtnis (Speicher).
 	\emph{Synchron} Daten werden erst mit $clk_{0 \ra 1}$ geschrieben.\\
 	\emph{Dynamisch} Ohne Refreshzyklen gehen auch bei angelegter $V_{DD}$ Daten verloren -  Bsp: DRAM\\
 	\emph{Statisch} Behält den Zustand bei solange $V_{DD}$ anliegt (keine Refreshzyklen nötig) - Bsp: SRAM\\
-	\emph{Bandbreite:} Bitanzahl, die gleichzeitig gelesen/geschrieben werden kann.
-	\emph{Latenz:} Zeitverzögerung zwischen Anforderung und Ausgabe von Daten.
-	\emph{Zykluszeit:} Minimale Zeitdifferenz zweier Schreib/Lesezugriffe.
-	
+	\emph{Bandbreite:} Bitanzahl, die gleichzeitig gelesen/geschrieben werden kann.\\
+	\emph{Latenz:} Zeitverzögerung zwischen Anforderung und Ausgabe von Daten.\\
+	\emph{Zykluszeit:} Minimale Zeitdifferenz zweier Schreib/Lesezugriffe.\\
+
 	\framebox{$\text{Speicherkapazität} = \text{Wortbreite} \cdot 2^\text{Adressbreite}$ }
 
 	\subsection{Speicherzelle/Register}
@@ -735,7 +738,7 @@ Logik mit Gedächtnis (Speicher).
 			Ring aus zwei Invertern.\\
 			Logikpegel kann nur mit öffnen des Inverter-Rings gesetzt werden.
 	\end{minipage}
-	
+
 	\subsection{Latch}
 	\begin{minipage}{0.35\linewidth}
 		\includegraphics[width=\linewidth]{img/logic/rs-latch}
@@ -750,30 +753,28 @@ Logik mit Gedächtnis (Speicher).
 					$1$ & $0$ & $1$ \\
 					$0$ & $0$ & $Q=\n{Q}$
 				\end{tabular}
-				\\\\\\	
+				\\\\\\
 				\emph{Enable-Latch:} ändert Speicherzustand auf $D$ nur wenn $e=1$.\\Level-Controlled $\Leftrightarrow$ Latch.\\
 				\begin{tabular}{c|c} e & Q \\ \hline 0 & Q \\ 1 & D \end{tabular}
 	\end{minipage}
-	
+
 
 	\subsection{Flip-Flop}
-		\parbox{5cm}{
+		\parbox{5cm} {
 						\includegraphics[width=\linewidth]{img/logic/flip-flop}
 			Besteht aus zwei enable-Latches \\
 			\emph{Flip-Flop:} Ändert Zustand bei steigender/(fallender) Taktflanke.\\
 		}
-		\parbox{.5cm}{\ }
+		\parbox{.25cm}{\ }
 		\parbox{2cm}{
-
 			\begin{tabular}{c|c|c} clk & $Q$ & $\ol Q$ \\ \hline $0 \ra 1$ & $D$ & $\ol D$ \\ sonst & $Q$ & $\ol Q$ \end{tabular}
 		}
-
 
 \section{Automaten} % (fold)
 
 DFA 6-Tupel $\eset{I, O, S, R, f, g}$ \\
 
-\begin{tabular}{r | l} 
+\begin{tabular}{r | l}
 $I$ & Eingabealphabet \\
 $O$ &  Ausgabealphabet \\
 $S$ & Menge von Zuständen \\
@@ -798,7 +799,7 @@ $g$ & Ausgaberelation \\
 	\hline
 	$0$ & $0...0$ & $o_{0,0...0}$ & $S'_{0,0...0}$ \\
 	\vdots & \vdots & \vdots & \vdots \\
-	$1$ & $1...1$ & $o_{1,1...1}$ & $S'_{1,1...1}$ 
+	$1$ & $1...1$ & $o_{1,1...1}$ & $S'_{1,1...1}$
 \end{tabular}
 \\
 \emph{Moore:} $o$ ist $f(S)$, nächster Zustand $S'=f(i, S)$\\
