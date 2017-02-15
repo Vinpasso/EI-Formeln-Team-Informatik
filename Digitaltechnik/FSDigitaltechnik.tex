@@ -212,7 +212,52 @@ $N \cdot M: n+m$ Bit
 		$e=E+127 \rightarrow e_2$ & $e=3+127=130=10000010_2$\\
 		$f=\left(\frac{\abs{Z}}{2^E}-1\right) \cdot 2^{23} \rightarrow f_2$  & $f=\left(\frac{\abs{11.25}}{2^3}-1\right)\cdot 2^{23}=3407872= 01101000\dots_2 $
 	\end{tabular}
-
+\subsection{Zahlenoperationen}
+\begin{tabular}{p{0.15\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}}
+	Zahlensystem & Add & Sub & Mul & Div \\
+	Vorzeichenlos & Normal & Normal & Normal & Normal \\
+	Einser Komplement & Vorzeichen Vergleichen & & & \\
+	Zweier Komplement & Normal & Normal & $n+m bit$ Vordere Bits mit Multiplikant MSB auffüllen & \\
+	Float \\
+\end{tabular}
+\begin{itemize}
+	\item Festkomma (Vorzeichenlos)
+	\begin{itemize}
+		\item Erweiterung: Null vorne anhängen
+		\item Addition: Bitweise
+		\item Subtraktion: Bitweise
+		\item Multiplikation: Add-Shift (Add für jede 1 im Multiplikant) (Resultat eins rechts Shiften)
+		\item Division:
+	\end{itemize}
+	\item Festkomma (Einser Komplement)
+	\begin{itemize}
+		\item Erweiterung: Null an Stelle 2 einfügen.
+		\item Addition:
+		\begin{enumerate}
+			\item Prüfe Beide Vorzeichen
+			\item Gleiches Vorzeichen $\rightarrow$ reguläre Addition
+			\item Verschieden $\rightarrow$ Subtraktion kleiner Operator von großem Operator. Übernahme Vorzeichen des großen Operators.
+		\end{enumerate}
+	\end{itemize}
+	\item Festkomma (Zweier Komplement)
+	\begin{itemize}
+		\item Erweiterung: 1 vorne anhängen
+		\item Addition: Regulär (Gleiche Parameterlänge) (Overflow ignorieren)
+		\item Subtraktion: Addition mit komplementiertem Subtraktor (Gleiche Parameterlänge)(Overflow ignorieren)
+		\item Multiplikation:
+		\begin{enumerate}
+			\item Zahlen auf Produktlänge erweitern.
+			\item Zahlen mittels Add-Shift multiplizieren (Überflüssige Bits nach links rausschieben und ignorieren)
+		\end{enumerate}
+	\end{itemize}
+	\item Gleitkomma (IEEE Float)
+	\begin{itemize}
+		\item Addition: Exponenten auf größeren angleichen, Mantissen addieren. Vorzeichen inspizieren.
+		\item Subtraktion: 
+		\item Multiplikation: Exponenten auf größeren angleichen, Mantissen multiplizieren. Vorzeichen multiplizieren.
+		\item Division:
+	\end{itemize}
+\end{itemize}
 \section{Zeichenkodierung}
 	\subsection{ASCII}
 	American Standard Code for Information Exchange \\
@@ -566,7 +611,7 @@ $N \cdot M: n+m$ Bit
 	\begin{minipage}{0.55\linewidth}
 		\subsubsection{Laden}
 		Kondensator $C$ lädt, solange $I_D>0$\\
-		$\rightarrow C$ lädt, solange $u_{gs}-U_{th}\ge u_{ds}\ge 0$
+		$\rightarrow C$ lädt, solange $u_{gs}-U_{th}\ge 0$ und $u_{ds}\ge 0$
 		\subsubsection{Entladen}
 		Source und Drain werden vertauscht.\\
 		Auf Gatespannung achten.
