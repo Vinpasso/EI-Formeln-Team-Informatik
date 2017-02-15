@@ -291,11 +291,8 @@ $N \cdot M: n+m$ Bit
 		            & $x + \overline{x} = 1$                                & $A \cup \overline{A} = G$                             \\
 		            & $\overline{\overline{x}} = x$                         & $\overline{\overline{A}} = A$                         \\
 		De Morgan   & $\overline{x \cdot y} = \overline{x} + \overline{y}$  & $\overline{A \cap B} = \overline{A} \cup \overline{B}$\\
-		            & $\overline{x + y} = \overline{x} \cdot \overline{y}$ & $\overline{A \cup B} = \overline{A} \cap \overline{B}$ \\
-    Resolutionsgesetz (allgemein) &  $x \cdot y + x \cdot z + y \cdot z  = x \cdot y + x \cdot z$&\\
-    Resolutionsgesetz (speziell)  & $x \cdot y + \overline{x} \cdot y$ &\\
+		            & $\overline{x + y} = \overline{x} \cdot \overline{y}$  & $\overline{A \cup B} = \overline{A} \cap \overline{B}$ \\
 	\end{tabular}
-
 
 	\subsection{Boolesche Funktionen}
 	\begin{equation*}
@@ -417,7 +414,7 @@ $N \cdot M: n+m$ Bit
 	Beispiel (Quine Methode):
 
 	\begin{tabular}{l | c | c  || c | c | c || c | c | r}
-	      & 0-Kubus & A & 1-Kubus & R & A & 2-Kubus  & A \\
+	      & 0-Kubus & A & 1-Kubus & R & A & 2-Kubus  & A \\ \hline
 	$m_1$ & $\overline x_1 \overline x_2 x_3$ & $\surd$ & $\overline x_2 x_3$ & $m_1 \& m_5$ & $p_1$ & &\\
 	$m_4$ & $x_1 \overline x_2 \overline x_3$ & $\surd$ & $x_1 \overline x_2$ & $m_4 \& m_5$ & $\surd$ & $x_1$ &   $p_2$\\
 	$m_5$ & $x_1 \overline x_2  x_3$ & $\surd$  & $x_1 \overline x_3$ & $m_4 \& m_6$ & $\surd$& &\\
@@ -473,7 +470,9 @@ $N \cdot M: n+m$ Bit
 	\end{enumerate}
 	$K$: Anzahl der Primterme\\
 	$N$: Anzahl der Minterme \\
-	$L(p_i)$: Kosten/Länge der Primimplikanten
+	$L(p_i)$: Kosten/Länge der Primimplikanten\\
+  $L(z)$: Länge des Terms $z$ $=$ Summe der Literale in Teiltermen + Anzahl der Teilterme
+
 
 \section{Halbleiter}
 \begin{tabular}{l|c|c|c|c|c}
@@ -615,7 +614,18 @@ Drei Grundgatter der CMOS-Technologie:\\
 	\end{tabular}\\ \\
 	\textbf{1. Möglichkeit}: Direkt; ggf. Inverter vor die Eingänge und Ausgänge schalten.\\
 	\textbf{2. Möglichkeit}: Mit boolesche Algebra die Funktion nur mit NAND und NOR darstellen.
-
+  \subsection{Umwandlung in Nand und Nor}
+  \resizebox{0.95\linewidth}{!}{
+    \begin{tabular}{c||c|c|c}
+      Gatter & Funktion & \textbf{NAND} Form & \textbf{NOR} Form \\
+      \hline
+      \textbf{NOT} & $\overline{A}$ & $\overline{A \cdot A} $ & $\overline{A + A} $\\\hline&&&\\[-1em]
+      \textbf{AND} & $A \cdot B$ & $\overline{\overline{A \cdot B} \cdot \overline{A \cdot B}}$ & $\overline{\overline{A + A} + \overline{B + B}}$\\\hline&&&\\[-1em]
+      \textbf{OR} & $A + B$ & $\overline{\overline{A \cdot A} \cdot \overline{B \cdot B}}$ & $\overline{\overline{A + B} + \overline{A + B}}$\\\hline&&&\\[-1em]
+      \textbf{NAND} & $\overline{A \cdot B}$ & $\overline{A \cdot B}$ & $\overline{\overline{\overline{A + A} + \overline{B + B}}+ \overline{\overline{A + A} + \overline{B + B}}}$ \\\hline&&&\\[-1em]
+      \textbf{NOR} & $\overline{A+B}$ & $\overline{\overline{\overline{A \cdot A} \cdot \overline{B \cdot B}}\cdot \overline{\overline{A \cdot A} \cdot \overline{B \cdot B}}}$ &  $\overline{A+B}$\\
+    \end{tabular}
+  }
 	\subsection{CMOS Verlustleistung}
 	Inverterschaltvorgang $V_A: 0 \ra 1$:\\
 	\includegraphics{./img/ds/char_inverter.pdf}\\
@@ -668,6 +678,17 @@ $t_{cn+1} =
 	t_{xor} + t_{and} + t_{or} & a_n = b_n = 0 \qquad \qquad  (p_n = 0, g_n = 0) \\
 	t_{cn} + t_{and} + t_{or}  & a_n \ne b_n \qquad \qquad \qquad  (p_n = 1)
 \end{cases}$\\
+\subsection{Multibit Addierer / Subtrahierer}
+\begin{minipage}{0.40\linewidth}
+  Subtraktion entspricht Addition mit negiertem Subtrahenden\\
+  Zweierkomplement zur Bildung des negativen Subtrahenden\\
+  $\rightarrow$ Invertieren aller Bits des Subtrahenden und Addition von 1\\
+  $\mathit{XOR}: X \oplus 0 = X$, $X \oplus 1 = \overline{X}$
+\end{minipage}
+\begin{minipage}{0.40\linewidth}
+  \includegraphics[width=\linewidth,angle=90]{./img/ds/multibit_addierer_subtrahierer.png}
+\end{minipage}
+
 
 \section{Sequentielle Logik}
 Logik mit Gedächtnis (Speicher).
