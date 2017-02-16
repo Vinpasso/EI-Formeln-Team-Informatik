@@ -455,7 +455,19 @@ $N \cdot M: n+m$ Bit
 		\item Wenn keine Kubenbildung mehr möglich $\ra$ Primimplikanten
 	\end{enumerate}
 	Beispiel (Quine Methode):
-  $y=a\overline{c} + abc + \overline{abc} = ab\overline{c} + a\overline{bc} + abc + \overline{abc}$
+
+  	\begin{tabular}{l | c | c  || c | c | c || c | c | r}
+  	      & 0-Kubus & A & 1-Kubus & R & A & 2-Kubus  & A \\ \hline
+  	$m_1$ & $\overline x_1 \overline x_2 x_3$ & $\surd$ & $\overline x_2 x_3$ & $m_1 \& m_5$ & $p_1$ & &\\
+  	$m_4$ & $x_1 \overline x_2 \overline x_3$ & $\surd$ & $x_1 \overline x_2$ & $m_4 \& m_5$ & $\surd$ & $x_1$ &   $p_2$\\
+  	$m_5$ & $x_1 \overline x_2  x_3$ & $\surd$  & $x_1 \overline x_3$ & $m_4 \& m_6$ & $\surd$& &\\
+  	$m_6$ & $x_1 x_2 \overline x_3$ & $ \surd$ & $x_1 x_3$ & $ m_5 \& m_7$ & $ \surd$ & &\\
+  	$m_7$ & $x_1 x_2 x_3$ & $\surd$ & $x_1 x_2$ & $m_6 \& m_7 $ & $ \surd$ & &\\
+  	\end{tabular} \\ \\
+  	$\Ra f(x_1,x_2,x_3)=p_1+p_2=\ol x_2x_3 + x_1$
+
+Beispiel nach Nomenklatur der Vorlesung:
+$y=a\overline{c} + abc + \overline{abc} = ab\overline{c} + a\overline{bc} + abc + \overline{abc}$
 \begin{tabular}{r || c | c || c | c || c | l }
   Anzahl pos. & Minterme & A & Implikanten mit  & A &  Implikanten mit & A \\
   Literale & && 1 freien Variable& & 2 freien Variablen&\\
@@ -466,16 +478,7 @@ $N \cdot M: n+m$ Bit
   2 & $ab\overline{c}$ & $c_2, c_3$ & $c_3 = ab $ &&&\\\hline
   3 & $abc$ & $c_3$ &&&&\\
 \end{tabular}
-
-	\begin{tabular}{l | c | c  || c | c | c || c | c | r}
-	      & 0-Kubus & A & 1-Kubus & R & A & 2-Kubus  & A \\ \hline
-	$m_1$ & $\overline x_1 \overline x_2 x_3$ & $\surd$ & $\overline x_2 x_3$ & $m_1 \& m_5$ & $p_1$ & &\\
-	$m_4$ & $x_1 \overline x_2 \overline x_3$ & $\surd$ & $x_1 \overline x_2$ & $m_4 \& m_5$ & $\surd$ & $x_1$ &   $p_2$\\
-	$m_5$ & $x_1 \overline x_2  x_3$ & $\surd$  & $x_1 \overline x_3$ & $m_4 \& m_6$ & $\surd$& &\\
-	$m_6$ & $x_1 x_2 \overline x_3$ & $ \surd$ & $x_1 x_3$ & $ m_5 \& m_7$ & $ \surd$ & &\\
-	$m_7$ & $x_1 x_2 x_3$ & $\surd$ & $x_1 x_2$ & $m_6 \& m_7 $ & $ \surd$ & &\\
-	\end{tabular} \\ \\
-	$\Ra f(x_1,x_2,x_3)=p_1+p_2=\ol x_2x_3 + x_1$
+$\Rightarrow y = \overline{bc} + a\overline{c} + ab$
 
 	\subsection{Resolventenmethode} % (fold)
 	\label{sec:Resolventenmethode}
