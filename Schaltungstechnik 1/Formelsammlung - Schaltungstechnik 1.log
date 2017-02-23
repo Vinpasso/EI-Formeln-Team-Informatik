@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.18)  12 FEB 2017 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.18)  23 FEB 2017 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1473,63 +1473,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 523--526
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 535--550
+Underfull \hbox (badness 3009) in paragraph at lines 536--551
 \OT1/cmr/m/n/10 Gr[]o^^Ye mit kon-stan-tem Null-wert (KS, LL, Nul-la-tor)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--550
+Underfull \hbox (badness 10000) in paragraph at lines 536--551
 \OT1/cmr/m/n/10 kann kei-ne Steu-er-gr[]o^^Ye sein. Gr[]o^^Ye mit be-lie-bi-
  []
 
 
-Underfull \hbox (badness 5893) in paragraph at lines 535--550
+Underfull \hbox (badness 5893) in paragraph at lines 536--551
 \OT1/cmr/m/n/10 gem Wert (No-ra-tor) kann nicht ge-steu-ert wer-den.
  []
 
 
-Overfull \hbox (18.10295pt too wide) in paragraph at lines 535--550
+Overfull \hbox (18.10295pt too wide) in paragraph at lines 536--551
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--557
+Underfull \hbox (badness 10000) in paragraph at lines 553--558
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--557
-
- []
-
-[3 <./Grafiken/Spannungsquelle.pdf> <./Grafiken/IdealeDiode.pdf> <./Grafiken/Re
-aleDiode.pdf> <./Grafiken/Photodiode.pdf> <./Grafiken/Z-Diode.pdf> <./Grafiken/
-Tunneldiode.pdf> <./Grafiken/Rkonkav.pdf> <./Grafiken/Rkonvex.pdf> <./Grafiken/
-lineareQuellen.pdf>]
-Overfull \hbox (20.73482pt too wide) in paragraph at lines 559--574
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--579
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 584--599
+Underfull \hbox (badness 10000) in paragraph at lines 553--558
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [3 <./Grafiken/Spannungsquelle.pdf> <./Grafiken/IdealeDiode.pdf> <./Grafiken/R
+ealeDiode.pdf> <./Grafiken/Photodiode.pdf> <./Grafiken/Z-Diode.pdf> <./Grafiken
+/Tunneldiode.pdf> <./Grafiken/Rkonkav.pdf> <./Grafiken/Rkonvex.pdf> <./Grafiken
+/lineareQuellen.pdf>]
+Overfull \hbox (20.73482pt too wide) in paragraph at lines 560--575
+[] 
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--609
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--580
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--609
+Underfull \hbox (badness 10000) in paragraph at lines 585--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--610
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--610
 
  []
 
@@ -1537,15 +1537,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 602--609
 File: Grafiken/Zweitor_Parallel.pdf Graphic file (type pdf)
 
 <use Grafiken/Zweitor_Parallel.pdf>
-Package pdftex.def Info: Grafiken/Zweitor_Parallel.pdf used on input line 616.
+Package pdftex.def Info: Grafiken/Zweitor_Parallel.pdf used on input line 617.
 (pdftex.def)             Requested size: 99.46936pt x 52.51082pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 620--621
+Underfull \hbox (badness 10000) in paragraph at lines 621--622
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 620--621
+Underfull \hbox (badness 10000) in paragraph at lines 621--622
 
  []
 
@@ -1553,15 +1553,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 620--621
 File: Grafiken/Zweitor_Seriell.pdf Graphic file (type pdf)
 
 <use Grafiken/Zweitor_Seriell.pdf>
-Package pdftex.def Info: Grafiken/Zweitor_Seriell.pdf used on input line 625.
+Package pdftex.def Info: Grafiken/Zweitor_Seriell.pdf used on input line 626.
 (pdftex.def)             Requested size: 99.46936pt x 52.51082pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 629--630
+Underfull \hbox (badness 10000) in paragraph at lines 630--631
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 629--630
+Underfull \hbox (badness 10000) in paragraph at lines 630--631
 
  []
 
@@ -1569,15 +1569,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 629--630
 File: Grafiken/Zweitor_Hybrid.pdf Graphic file (type pdf)
 
 <use Grafiken/Zweitor_Hybrid.pdf>
-Package pdftex.def Info: Grafiken/Zweitor_Hybrid.pdf used on input line 634.
+Package pdftex.def Info: Grafiken/Zweitor_Hybrid.pdf used on input line 635.
 (pdftex.def)             Requested size: 99.46936pt x 52.51082pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--639
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--639
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
@@ -1587,15 +1587,15 @@ File: Grafiken/Zweitor_inversHybrid.pdf Graphic file (type pdf)
 
 <use Grafiken/Zweitor_inversHybrid.pdf>
 Package pdftex.def Info: Grafiken/Zweitor_inversHybrid.pdf used on input line 6
-43.
+44.
 (pdftex.def)             Requested size: 99.46936pt x 52.51082pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
 
  []
 
@@ -1603,10 +1603,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 647--648
 File: Grafiken/Zweitor_Kette.pdf Graphic file (type pdf)
 
 <use Grafiken/Zweitor_Kette.pdf>
-Package pdftex.def Info: Grafiken/Zweitor_Kette.pdf used on input line 651.
+Package pdftex.def Info: Grafiken/Zweitor_Kette.pdf used on input line 652.
 (pdftex.def)             Requested size: 216.23764pt x 32.74725pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--653
+Underfull \hbox (badness 10000) in paragraph at lines 652--654
 
  []
 
@@ -1615,180 +1615,180 @@ File: Grafiken/Zweitor_inversKette.pdf Graphic file (type pdf)
 
 <use Grafiken/Zweitor_inversKette.pdf>
 Package pdftex.def Info: Grafiken/Zweitor_inversKette.pdf used on input line 65
-5.
+6.
 (pdftex.def)             Requested size: 216.23764pt x 32.74725pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--657
+Underfull \hbox (badness 10000) in paragraph at lines 656--658
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 661--664
+Underfull \hbox (badness 10000) in paragraph at lines 662--665
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 661--664
+Underfull \hbox (badness 10000) in paragraph at lines 662--665
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 661--664
+Underfull \hbox (badness 10000) in paragraph at lines 662--665
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 661--664
+Underfull \hbox (badness 10000) in paragraph at lines 662--665
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--670
+Underfull \hbox (badness 10000) in paragraph at lines 668--671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--670
+Underfull \hbox (badness 10000) in paragraph at lines 668--671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--670
+Underfull \hbox (badness 10000) in paragraph at lines 668--671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--670
+Underfull \hbox (badness 10000) in paragraph at lines 668--671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 674--676
+Underfull \hbox (badness 10000) in paragraph at lines 675--677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 679--681
+Underfull \hbox (badness 10000) in paragraph at lines 680--682
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--689
+Underfull \hbox (badness 10000) in paragraph at lines 687--690
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--689
+Underfull \hbox (badness 10000) in paragraph at lines 687--690
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--695
+Underfull \hbox (badness 10000) in paragraph at lines 693--696
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--695
+Underfull \hbox (badness 10000) in paragraph at lines 693--696
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--696
+Underfull \hbox (badness 10000) in paragraph at lines 685--697
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--701
+Underfull \hbox (badness 10000) in paragraph at lines 700--702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--706
+Underfull \hbox (badness 10000) in paragraph at lines 705--707
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--719
+Underfull \hbox (badness 10000) in paragraph at lines 717--720
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--719
+Underfull \hbox (badness 10000) in paragraph at lines 717--720
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 722--725
+Underfull \hbox (badness 10000) in paragraph at lines 723--726
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 722--725
+Underfull \hbox (badness 10000) in paragraph at lines 723--726
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--726
+Underfull \hbox (badness 10000) in paragraph at lines 716--727
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--726
+Underfull \hbox (badness 10000) in paragraph at lines 716--727
 
  []
 
 
-Overfull \hbox (21.60649pt too wide) in paragraph at lines 727--747
+Overfull \hbox (21.60649pt too wide) in paragraph at lines 728--748
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--747
+Underfull \hbox (badness 10000) in paragraph at lines 728--748
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--747
+Underfull \hbox (badness 10000) in paragraph at lines 728--748
 
  []
 
 
-Overfull \hbox (18.75995pt too wide) in paragraph at lines 727--747
+Overfull \hbox (18.75995pt too wide) in paragraph at lines 728--748
 [] 
  []
 
 <Grafiken/OP_USI.pdf, id=150, 417.56pt x 90.3375pt>
 File: Grafiken/OP_USI.pdf Graphic file (type pdf)
  <use Grafiken/OP_USI.pdf>
-Package pdftex.def Info: Grafiken/OP_USI.pdf used on input line 750.
+Package pdftex.def Info: Grafiken/OP_USI.pdf used on input line 751.
 (pdftex.def)             Requested size: 243.26941pt x 52.63148pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--754
+Underfull \hbox (badness 10000) in paragraph at lines 751--755
 
  []
 
 
-Overfull \hbox (8.16425pt too wide) in paragraph at lines 750--754
+Overfull \hbox (8.16425pt too wide) in paragraph at lines 751--755
 [] 
  []
 
 <Grafiken/OP_ISI.pdf, id=151, 185.69376pt x 88.33pt>
 File: Grafiken/OP_ISI.pdf Graphic file (type pdf)
  <use Grafiken/OP_ISI.pdf>
-Package pdftex.def Info: Grafiken/OP_ISI.pdf used on input line 757.
+Package pdftex.def Info: Grafiken/OP_ISI.pdf used on input line 758.
 (pdftex.def)             Requested size: 118.11903pt x 56.1873pt.
 
-Overfull \hbox (11.6138pt too wide) in paragraph at lines 761--764
+Overfull \hbox (11.6138pt too wide) in paragraph at lines 762--765
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--764
+Underfull \hbox (badness 10000) in paragraph at lines 762--765
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--764
+Underfull \hbox (badness 10000) in paragraph at lines 762--765
 
  []
 
@@ -1798,10 +1798,10 @@ I.pdf>] <Grafiken/OP_USU.pdf, id=188, 393.47pt x 91.34125pt>
 File: Grafiken/OP_USU.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_USU.pdf>
-Package pdftex.def Info: Grafiken/OP_USU.pdf used on input line 767.
+Package pdftex.def Info: Grafiken/OP_USU.pdf used on input line 768.
 (pdftex.def)             Requested size: 243.26941pt x 56.47209pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--771
+Underfull \hbox (badness 10000) in paragraph at lines 768--772
 
  []
 
@@ -1809,10 +1809,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 767--771
 File: Grafiken/OP_ISU.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_ISU.pdf>
-Package pdftex.def Info: Grafiken/OP_ISU.pdf used on input line 773.
+Package pdftex.def Info: Grafiken/OP_ISU.pdf used on input line 774.
 (pdftex.def)             Requested size: 243.26941pt x 61.83804pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--777
+Underfull \hbox (badness 10000) in paragraph at lines 774--778
 
  []
 
@@ -1820,20 +1820,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 773--777
 File: Grafiken/OP_Nullor.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_Nullor.pdf>
-Package pdftex.def Info: Grafiken/OP_Nullor.pdf used on input line 781.
+Package pdftex.def Info: Grafiken/OP_Nullor.pdf used on input line 782.
 (pdftex.def)             Requested size: 66.76668pt x 39.96916pt.
 
-Overfull \hbox (8.32185pt too wide) in paragraph at lines 785--788
+Overfull \hbox (8.32185pt too wide) in paragraph at lines 786--789
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 785--788
+Underfull \hbox (badness 10000) in paragraph at lines 786--789
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 779--789
+Underfull \hbox (badness 10000) in paragraph at lines 780--790
 
  []
 
@@ -1841,20 +1841,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 779--789
 File: Grafiken/OP_Gyrator.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_Gyrator.pdf>
-Package pdftex.def Info: Grafiken/OP_Gyrator.pdf used on input line 793.
+Package pdftex.def Info: Grafiken/OP_Gyrator.pdf used on input line 794.
 (pdftex.def)             Requested size: 97.30627pt x 58.25214pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--804
+Underfull \hbox (badness 10000) in paragraph at lines 792--805
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--804
+Underfull \hbox (badness 10000) in paragraph at lines 792--805
 
  []
 
 
-Overfull \hbox (7.47852pt too wide) in paragraph at lines 805--809
+Overfull \hbox (7.47852pt too wide) in paragraph at lines 806--810
 [][] 
  []
 
@@ -1862,665 +1862,654 @@ Overfull \hbox (7.47852pt too wide) in paragraph at lines 805--809
 File: Grafiken/OP_Uebertrager.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_Uebertrager.pdf>
-Package pdftex.def Info: Grafiken/OP_Uebertrager.pdf used on input line 813.
+Package pdftex.def Info: Grafiken/OP_Uebertrager.pdf used on input line 814.
 (pdftex.def)             Requested size: 97.30627pt x 58.25214pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 817--821
+Underfull \hbox (badness 10000) in paragraph at lines 818--822
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--822
+Underfull \hbox (badness 10000) in paragraph at lines 812--823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--822
+Underfull \hbox (badness 10000) in paragraph at lines 812--823
+
+ []
+
+<Grafiken/NIK.png, id=193, 1056.94875pt x 357.335pt>
+File: Grafiken/NIK.png Graphic file (type png)
+ <use Grafiken/NIK.png>
+Package pdftex.def Info: Grafiken/NIK.png used on input line 831.
+(pdftex.def)             Requested size: 256.07481pt x 86.57457pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 830--841
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 829--839
+Underfull \hbox (badness 10000) in paragraph at lines 830--841
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 829--839
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 829--839
+Underfull \hbox (badness 10000) in paragraph at lines 830--841
 []
  []
 
-<Grafiken/Kennlinie_Transistor.pdf, id=193, 398.48875pt x 180.675pt>
+<Grafiken/Kennlinie_Transistor.pdf, id=195, 398.48875pt x 180.675pt>
 File: Grafiken/Kennlinie_Transistor.pdf Graphic file (type pdf)
 
 <use Grafiken/Kennlinie_Transistor.pdf>
 Package pdftex.def Info: Grafiken/Kennlinie_Transistor.pdf used on input line 8
-42.
+44.
 (pdftex.def)             Requested size: 216.23764pt x 98.04272pt.
 
-<Grafiken/Transistor_Basisschaltung.pdf, id=194, 486.81876pt x 130.4875pt>
+<Grafiken/Transistor_Basisschaltung.pdf, id=196, 486.81876pt x 130.4875pt>
 File: Grafiken/Transistor_Basisschaltung.pdf Graphic file (type pdf)
 
 <use Grafiken/Transistor_Basisschaltung.pdf>
 Package pdftex.def Info: Grafiken/Transistor_Basisschaltung.pdf used on input l
-ine 844.
+ine 846.
 (pdftex.def)             Requested size: 216.23764pt x 57.96022pt.
 
-<Grafiken/Transistor_Emitterschaltung.pdf, id=195, 340.27126pt x 133.49875pt>
+<Grafiken/Transistor_Emitterschaltung.pdf, id=197, 340.27126pt x 133.49875pt>
 File: Grafiken/Transistor_Emitterschaltung.pdf Graphic file (type pdf)
 
 <use Grafiken/Transistor_Emitterschaltung.pdf>
 Package pdftex.def Info: Grafiken/Transistor_Emitterschaltung.pdf used on input
- line 846.
+ line 848.
 (pdftex.def)             Requested size: 216.23764pt x 84.83592pt.
 
-<Grafiken/Ebers-Moll.pdf, id=196, 296.10625pt x 118.4425pt>
+<Grafiken/Ebers-Moll.pdf, id=198, 296.10625pt x 118.4425pt>
 File: Grafiken/Ebers-Moll.pdf Graphic file (type pdf)
 
 <use Grafiken/Ebers-Moll.pdf>
-Package pdftex.def Info: Grafiken/Ebers-Moll.pdf used on input line 849.
+Package pdftex.def Info: Grafiken/Ebers-Moll.pdf used on input line 851.
 (pdftex.def)             Requested size: 216.23764pt x 86.49844pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--852
+Underfull \hbox (badness 10000) in paragraph at lines 851--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--852
+Underfull \hbox (badness 10000) in paragraph at lines 851--854
 
  []
 
 [6 <./Grafiken/OP_ISI.pdf> <./Grafiken/OP_USU.pdf> <./Grafiken/OP_ISU.pdf> <./G
 rafiken/OP_Nullor.pdf> <./Grafiken/OP_Gyrator.pdf> <./Grafiken/OP_Uebertrager.p
-df> <./Grafiken/Kennlinie_Transistor.pdf> <./Grafiken/Transistor_Basisschaltung
-.pdf> <./Grafiken/Transistor_Emitterschaltung.pdf> <./Grafiken/Ebers-Moll.pdf>]
-<Grafiken/Basisschaltung_Vereinfachung.pdf, id=256, 226.8475pt x 111.41624pt>
+df> <./Grafiken/NIK.png> <./Grafiken/Kennlinie_Transistor.pdf> <./Grafiken/Tran
+sistor_Basisschaltung.pdf> <./Grafiken/Transistor_Emitterschaltung.pdf>]
+<Grafiken/Basisschaltung_Vereinfachung.pdf, id=254, 226.8475pt x 111.41624pt>
 File: Grafiken/Basisschaltung_Vereinfachung.pdf Graphic file (type pdf)
 
 <use Grafiken/Basisschaltung_Vereinfachung.pdf>
 Package pdftex.def Info: Grafiken/Basisschaltung_Vereinfachung.pdf used on inpu
-t line 857.
+t line 859.
 (pdftex.def)             Requested size: 124.33623pt x 61.06831pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 857--858
+Underfull \hbox (badness 10000) in paragraph at lines 859--860
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 857--858
+Underfull \hbox (badness 10000) in paragraph at lines 859--860
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 861--863
+Underfull \hbox (badness 10000) in paragraph at lines 863--865
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 861--863
+Underfull \hbox (badness 10000) in paragraph at lines 863--865
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 861--863
+Underfull \hbox (badness 10000) in paragraph at lines 863--865
 
  []
 
 
-<Grafiken/Emitterschaltung_Vereinfachung.pdf, id=257, 226.8475pt x 114.4275pt>
+<Grafiken/Emitterschaltung_Vereinfachung.pdf, id=255, 226.8475pt x 114.4275pt>
 File: Grafiken/Emitterschaltung_Vereinfachung.pdf Graphic file (type pdf)
 
 <use Grafiken/Emitterschaltung_Vereinfachung.pdf>
 Package pdftex.def Info: Grafiken/Emitterschaltung_Vereinfachung.pdf used on in
-put line 867.
+put line 869.
 (pdftex.def)             Requested size: 124.33623pt x 62.71881pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--868
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--868
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 871--874
+Underfull \hbox (badness 10000) in paragraph at lines 873--876
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 871--874
+Underfull \hbox (badness 10000) in paragraph at lines 873--876
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 871--874
+Underfull \hbox (badness 10000) in paragraph at lines 873--876
 
  []
 
-<Grafiken/Transistor_GSE.pdf, id=258, 226.8475pt x 207.77625pt>
+<Grafiken/Transistor_GSE.pdf, id=256, 226.8475pt x 207.77625pt>
 File: Grafiken/Transistor_GSE.pdf Graphic file (type pdf)
 
 <use Grafiken/Transistor_GSE.pdf>
-Package pdftex.def Info: Grafiken/Transistor_GSE.pdf used on input line 881.
+Package pdftex.def Info: Grafiken/Transistor_GSE.pdf used on input line 883.
 (pdftex.def)             Requested size: 124.33623pt x 113.88414pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--882
+Underfull \hbox (badness 10000) in paragraph at lines 882--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--882
+Underfull \hbox (badness 10000) in paragraph at lines 882--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--882
+Underfull \hbox (badness 10000) in paragraph at lines 882--884
 
  []
 
-<Grafiken/Transistor_KSE.pdf, id=259, 226.8475pt x 125.46875pt>
+<Grafiken/Transistor_KSE.pdf, id=257, 226.8475pt x 125.46875pt>
 File: Grafiken/Transistor_KSE.pdf Graphic file (type pdf)
 
 <use Grafiken/Transistor_KSE.pdf>
-Package pdftex.def Info: Grafiken/Transistor_KSE.pdf used on input line 886.
+Package pdftex.def Info: Grafiken/Transistor_KSE.pdf used on input line 888.
 (pdftex.def)             Requested size: 124.33623pt x 68.77061pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 885--887
+Underfull \hbox (badness 10000) in paragraph at lines 887--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 885--887
+Underfull \hbox (badness 10000) in paragraph at lines 887--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 885--887
+Underfull \hbox (badness 10000) in paragraph at lines 887--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 878--888
+Underfull \hbox (badness 10000) in paragraph at lines 880--890
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 878--888
+Underfull \hbox (badness 10000) in paragraph at lines 880--890
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 890--894
+Underfull \hbox (badness 10000) in paragraph at lines 892--896
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 890--894
+Underfull \hbox (badness 10000) in paragraph at lines 892--896
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 890--894
+Underfull \hbox (badness 10000) in paragraph at lines 892--896
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 890--894
+Underfull \hbox (badness 10000) in paragraph at lines 892--896
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 890--894
+Underfull \hbox (badness 10000) in paragraph at lines 892--896
 
  []
 
-<Grafiken/Nullormodell.pdf, id=260, 226.8475pt x 126.4725pt>
+<Grafiken/Nullormodell.pdf, id=258, 226.8475pt x 126.4725pt>
 File: Grafiken/Nullormodell.pdf Graphic file (type pdf)
 
 <use Grafiken/Nullormodell.pdf>
-Package pdftex.def Info: Grafiken/Nullormodell.pdf used on input line 898.
+Package pdftex.def Info: Grafiken/Nullormodell.pdf used on input line 900.
 (pdftex.def)             Requested size: 124.33623pt x 69.32079pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 897--900
+Underfull \hbox (badness 10000) in paragraph at lines 899--902
 
  []
 
-<Grafiken/nMOS.pdf, id=261, 339.2675pt x 176.66pt>
+<Grafiken/nMOS.pdf, id=259, 339.2675pt x 176.66pt>
 File: Grafiken/nMOS.pdf Graphic file (type pdf)
  <use Grafiken/nMOS.pdf>
-Package pdftex.def Info: Grafiken/nMOS.pdf used on input line 912.
+Package pdftex.def Info: Grafiken/nMOS.pdf used on input line 914.
 (pdftex.def)             Requested size: 54.06354pt x 28.15025pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 926--929
+Underfull \hbox (badness 10000) in paragraph at lines 928--931
 
  []
 
-<Grafiken/pMOS.pdf, id=262, 336.25626pt x 178.6675pt>
+<Grafiken/pMOS.pdf, id=260, 336.25626pt x 178.6675pt>
 File: Grafiken/pMOS.pdf Graphic file (type pdf)
  <use Grafiken/pMOS.pdf>
-Package pdftex.def Info: Grafiken/pMOS.pdf used on input line 939.
+Package pdftex.def Info: Grafiken/pMOS.pdf used on input line 941.
 (pdftex.def)             Requested size: 54.06354pt x 28.72641pt.
 
-Overfull \hbox (2.89844pt too wide) in paragraph at lines 944--952
+Overfull \hbox (2.89844pt too wide) in paragraph at lines 946--954
 []$\OML/cmm/m/it/10 i[] \OT1/cmr/m/n/10 = []$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 953--955
+Underfull \hbox (badness 10000) in paragraph at lines 955--957
 
  []
 
-<Grafiken/FET_KSE_lin.pdf, id=263, 194.7275pt x 96.36pt>
+<Grafiken/FET_KSE_lin.pdf, id=261, 194.7275pt x 96.36pt>
 File: Grafiken/FET_KSE_lin.pdf Graphic file (type pdf)
 
 <use Grafiken/FET_KSE_lin.pdf>
-Package pdftex.def Info: Grafiken/FET_KSE_lin.pdf used on input line 958.
+Package pdftex.def Info: Grafiken/FET_KSE_lin.pdf used on input line 960.
 (pdftex.def)             Requested size: 162.18236pt x 80.25812pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 958--961
+Underfull \hbox (badness 10000) in paragraph at lines 960--963
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 958--961
+Underfull \hbox (badness 10000) in paragraph at lines 960--963
 
  []
 
-<Grafiken/FET_KSE_sat.pdf, id=264, 130.4875pt x 95.35625pt>
+[7 <./Grafiken/Ebers-Moll.pdf> <./Grafiken/Basisschaltung_Vereinfachung.pdf> <.
+/Grafiken/Emitterschaltung_Vereinfachung.pdf> <./Grafiken/Transistor_GSE.pdf> <
+./Grafiken/Transistor_KSE.pdf> <./Grafiken/Nullormodell.pdf> <./Grafiken/nMOS.p
+df> <./Grafiken/pMOS.pdf> <./Grafiken/FET_KSE_lin.pdf>]
+<Grafiken/FET_KSE_sat.pdf, id=312, 130.4875pt x 95.35625pt>
 File: Grafiken/FET_KSE_sat.pdf Graphic file (type pdf)
 
 <use Grafiken/FET_KSE_sat.pdf>
-Package pdftex.def Info: Grafiken/FET_KSE_sat.pdf used on input line 964.
+Package pdftex.def Info: Grafiken/FET_KSE_sat.pdf used on input line 966.
 (pdftex.def)             Requested size: 121.6347pt x 88.88844pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 968--970
+Underfull \hbox (badness 10000) in paragraph at lines 970--972
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 968--970
+Underfull \hbox (badness 10000) in paragraph at lines 970--972
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 968--970
+Underfull \hbox (badness 10000) in paragraph at lines 970--972
 
  []
 
-<Grafiken/OP.pdf, id=265, 344.28625pt x 99.37125pt>
+<Grafiken/OP.pdf, id=313, 344.28625pt x 99.37125pt>
 File: Grafiken/OP.pdf Graphic file (type pdf)
  <use Grafiken/OP.pdf>
-Package pdftex.def Info: Grafiken/OP.pdf used on input line 973.
+Package pdftex.def Info: Grafiken/OP.pdf used on input line 975.
 (pdftex.def)             Requested size: 243.26941pt x 70.21442pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--975
+Underfull \hbox (badness 10000) in paragraph at lines 975--977
 
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 973--975
+Underfull \hbox (badness 1701) in paragraph at lines 975--977
 \OT1/cmr/m/n/10 Operationsverst[]arker m[]ussen im-mer []uber ih-ren in-ver-
  []
 
-[7 <./Grafiken/Basisschaltung_Vereinfachung.pdf> <./Grafiken/Emitterschaltung_V
-ereinfachung.pdf> <./Grafiken/Transistor_GSE.pdf> <./Grafiken/Transistor_KSE.pd
-f> <./Grafiken/Nullormodell.pdf> <./Grafiken/nMOS.pdf> <./Grafiken/pMOS.pdf> <.
-/Grafiken/FET_KSE_lin.pdf> <./Grafiken/FET_KSE_sat.pdf>]
-<Grafiken/OP_ESBI.pdf, id=317, 158.5925pt x 94.3525pt>
+<Grafiken/OP_ESBI.pdf, id=314, 158.5925pt x 94.3525pt>
 File: Grafiken/OP_ESBI.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_ESBI.pdf>
-Package pdftex.def Info: Grafiken/OP_ESBI.pdf used on input line 978.
+Package pdftex.def Info: Grafiken/OP_ESBI.pdf used on input line 981.
 (pdftex.def)             Requested size: 145.96312pt x 86.84564pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 982--984
+Underfull \hbox (badness 10000) in paragraph at lines 985--987
 
  []
 
-<Grafiken/OP_ESBII.pdf, id=318, 157.58875pt x 94.3525pt>
+<Grafiken/OP_ESBII.pdf, id=315, 157.58875pt x 94.3525pt>
 File: Grafiken/OP_ESBII.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_ESBII.pdf>
-Package pdftex.def Info: Grafiken/OP_ESBII.pdf used on input line 988.
+Package pdftex.def Info: Grafiken/OP_ESBII.pdf used on input line 991.
 (pdftex.def)             Requested size: 145.96312pt x 87.39705pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 992--994
+Underfull \hbox (badness 10000) in paragraph at lines 995--997
 
  []
 
-<Grafiken/OP_ESBIII.pdf, id=319, 158.5925pt x 94.3525pt>
+<Grafiken/OP_ESBIII.pdf, id=316, 158.5925pt x 94.3525pt>
 File: Grafiken/OP_ESBIII.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_ESBIII.pdf>
-Package pdftex.def Info: Grafiken/OP_ESBIII.pdf used on input line 998.
+Package pdftex.def Info: Grafiken/OP_ESBIII.pdf used on input line 1001.
 (pdftex.def)             Requested size: 145.96312pt x 86.84564pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1002--1004
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1007
 
  []
 
-<Grafiken/OP_SF.pdf, id=320, 210.7875pt x 156.585pt>
+<Grafiken/OP_SF.pdf, id=317, 210.7875pt x 156.585pt>
 File: Grafiken/OP_SF.pdf Graphic file (type pdf)
  <use Grafiken/OP_SF.pdf>
-Package pdftex.def Info: Grafiken/OP_SF.pdf used on input line 1009.
+Package pdftex.def Info: Grafiken/OP_SF.pdf used on input line 1012.
 (pdftex.def)             Requested size: 145.96312pt x 108.43082pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1013--1015
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1018
 
  []
 
-<Grafiken/OP_NiV.pdf, id=321, 211.79124pt x 156.585pt>
+<Grafiken/OP_NiV.pdf, id=318, 211.79124pt x 156.585pt>
 File: Grafiken/OP_NiV.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_NiV.pdf>
-Package pdftex.def Info: Grafiken/OP_NiV.pdf used on input line 1019.
+Package pdftex.def Info: Grafiken/OP_NiV.pdf used on input line 1022.
 (pdftex.def)             Requested size: 145.96312pt x 107.91951pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1025
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1028
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1025
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1028
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1025
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1028
 
  []
 
-<Grafiken/OP_IV.pdf, id=322, 235.88126pt x 186.6975pt>
+<Grafiken/OP_IV.pdf, id=319, 235.88126pt x 186.6975pt>
 File: Grafiken/OP_IV.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_IV.pdf>
-Package pdftex.def Info: Grafiken/OP_IV.pdf used on input line 1029.
+Package pdftex.def Info: Grafiken/OP_IV.pdf used on input line 1032.
 (pdftex.def)             Requested size: 145.96312pt x 115.52904pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1035
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1038
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1035
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1038
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1035
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1038
 
  []
 
-<Grafiken/OP_Diff.pdf, id=323, 234.8775pt x 187.70125pt>
+<Grafiken/OP_Diff.pdf, id=320, 234.8775pt x 187.70125pt>
 File: Grafiken/OP_Diff.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_Diff.pdf>
-Package pdftex.def Info: Grafiken/OP_Diff.pdf used on input line 1039.
+Package pdftex.def Info: Grafiken/OP_Diff.pdf used on input line 1042.
 (pdftex.def)             Requested size: 145.96312pt x 116.64566pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1044
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1044
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
 
  []
 
-<Grafiken/OP_Int.pdf, id=324, 235.88126pt x 187.70125pt>
+<Grafiken/OP_Int.pdf, id=321, 235.88126pt x 187.70125pt>
 File: Grafiken/OP_Int.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_Int.pdf>
-Package pdftex.def Info: Grafiken/OP_Int.pdf used on input line 1048.
+Package pdftex.def Info: Grafiken/OP_Int.pdf used on input line 1051.
 (pdftex.def)             Requested size: 145.96312pt x 116.15016pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1048--1050
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1053
 
  []
 
-<Grafiken/OP_PDiffV.pdf, id=325, 274.02374pt x 187.70125pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./Grafiken/FET_KSE_sat.pdf> <./Grafiken/OP.pdf> <./Grafiken/OP_ESBI.pdf> <
+./Grafiken/OP_ESBII.pdf> <./Grafiken/OP_ESBIII.pdf> <./Grafiken/OP_SF.pdf> <./G
+rafiken/OP_NiV.pdf> <./Grafiken/OP_IV.pdf> <./Grafiken/OP_Diff.pdf>]
+<Grafiken/OP_PDiffV.pdf, id=368, 274.02374pt x 187.70125pt>
 File: Grafiken/OP_PDiffV.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_PDiffV.pdf>
-Package pdftex.def Info: Grafiken/OP_PDiffV.pdf used on input line 1054.
+Package pdftex.def Info: Grafiken/OP_PDiffV.pdf used on input line 1057.
 (pdftex.def)             Requested size: 135.15059pt x 92.57587pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1058--1062
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1065
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1058--1062
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1065
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1058--1062
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1065
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1058--1062
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1065
 
  []
 
-<Grafiken/OP_Log.pdf, id=326, 235.88126pt x 190.7125pt>
+<Grafiken/OP_Log.pdf, id=369, 235.88126pt x 190.7125pt>
 File: Grafiken/OP_Log.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_Log.pdf>
-Package pdftex.def Info: Grafiken/OP_Log.pdf used on input line 1066.
+Package pdftex.def Info: Grafiken/OP_Log.pdf used on input line 1069.
 (pdftex.def)             Requested size: 135.15059pt x 109.27179pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1071
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1071
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
 
  []
 
-[8 <./Grafiken/OP.pdf> <./Grafiken/OP_ESBI.pdf> <./Grafiken/OP_ESBII.pdf> <./Gr
-afiken/OP_ESBIII.pdf> <./Grafiken/OP_SF.pdf> <./Grafiken/OP_NiV.pdf> <./Grafike
-n/OP_IV.pdf> <./Grafiken/OP_Diff.pdf> <./Grafiken/OP_Int.pdf> <./Grafiken/OP_PD
-iffV.pdf>] <Grafiken/OP_Exp.pdf, id=375, 235.88126pt x 189.70876pt>
+<Grafiken/OP_Exp.pdf, id=370, 235.88126pt x 189.70876pt>
 File: Grafiken/OP_Exp.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_Exp.pdf>
-Package pdftex.def Info: Grafiken/OP_Exp.pdf used on input line 1075.
+Package pdftex.def Info: Grafiken/OP_Exp.pdf used on input line 1078.
 (pdftex.def)             Requested size: 135.15059pt x 108.69669pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1080
+Underfull \hbox (badness 10000) in paragraph at lines 1082--1083
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1080
+Underfull \hbox (badness 10000) in paragraph at lines 1082--1083
 
  []
 
-<Grafiken/OP_IdealeDiode.pdf, id=376, 213.79875pt x 161.60374pt>
+<Grafiken/OP_IdealeDiode.pdf, id=371, 213.79875pt x 161.60374pt>
 File: Grafiken/OP_IdealeDiode.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_IdealeDiode.pdf>
-Package pdftex.def Info: Grafiken/OP_IdealeDiode.pdf used on input line 1084.
+Package pdftex.def Info: Grafiken/OP_IdealeDiode.pdf used on input line 1087.
 (pdftex.def)             Requested size: 135.15059pt x 102.15611pt.
 
-<Grafiken/OP_Rkonkav.pdf, id=377, 212.795pt x 161.60374pt>
+<Grafiken/OP_Rkonkav.pdf, id=372, 212.795pt x 161.60374pt>
 File: Grafiken/OP_Rkonkav.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_Rkonkav.pdf>
-Package pdftex.def Info: Grafiken/OP_Rkonkav.pdf used on input line 1089.
+Package pdftex.def Info: Grafiken/OP_Rkonkav.pdf used on input line 1092.
 (pdftex.def)             Requested size: 135.15059pt x 102.64189pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
 
  []
 
-<Grafiken/OP_Rkonvex.pdf, id=378, 260.975pt x 161.60374pt>
+<Grafiken/OP_Rkonvex.pdf, id=373, 260.975pt x 161.60374pt>
 File: Grafiken/OP_Rkonvex.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_Rkonvex.pdf>
-Package pdftex.def Info: Grafiken/OP_Rkonvex.pdf used on input line 1098.
+Package pdftex.def Info: Grafiken/OP_Rkonvex.pdf used on input line 1101.
 (pdftex.def)             Requested size: 135.15059pt x 83.68921pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
+Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
 
  []
 
-<Grafiken/OP_NIK.pdf, id=379, 494.84875pt x 407.5225pt>
+<Grafiken/OP_NIK.pdf, id=374, 494.84875pt x 407.5225pt>
 File: Grafiken/OP_NIK.pdf Graphic file (type pdf)
 
 <use Grafiken/OP_NIK.pdf>
-Package pdftex.def Info: Grafiken/OP_NIK.pdf used on input line 1106.
+Package pdftex.def Info: Grafiken/OP_NIK.pdf used on input line 1109.
 (pdftex.def)             Requested size: 243.26941pt x 200.34068pt.
 
-Underfull \vbox (badness 2409) has occurred while \output is active []
-
-
-Overfull \hbox (13.97862pt too wide) in paragraph at lines 1109--1116
+Overfull \hbox (13.97862pt too wide) in paragraph at lines 1112--1119
 [] 
  []
 
 
-Overfull \hbox (6.92882pt too wide) in paragraph at lines 1118--1123
+Overfull \hbox (6.92882pt too wide) in paragraph at lines 1121--1126
 [] 
  []
 
-<Grafiken/KSA_Quellwandlung.pdf, id=380, 260.975pt x 74.2775pt>
+[9 <./Grafiken/OP_Int.pdf> <./Grafiken/OP_PDiffV.pdf> <./Grafiken/OP_Log.pdf> <
+./Grafiken/OP_Exp.pdf> <./Grafiken/OP_IdealeDiode.pdf> <./Grafiken/OP_Rkonkav.p
+df> <./Grafiken/OP_Rkonvex.pdf> <./Grafiken/OP_NIK.pdf>]
+<Grafiken/KSA_Quellwandlung.pdf, id=415, 260.975pt x 74.2775pt>
 File: Grafiken/KSA_Quellwandlung.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_Quellwandlung.pdf>
-Package pdftex.def Info: Grafiken/KSA_Quellwandlung.pdf used on input line 1137
+Package pdftex.def Info: Grafiken/KSA_Quellwandlung.pdf used on input line 1140
 .
 (pdftex.def)             Requested size: 189.21413pt x 53.85376pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1141--1142
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1141--1142
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
 
  []
 
-<Grafiken/KSA_Quellwandlung2.pdf, id=381, 368.37625pt x 77.28876pt>
+<Grafiken/KSA_Quellwandlung2.pdf, id=416, 368.37625pt x 77.28876pt>
 File: Grafiken/KSA_Quellwandlung2.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_Quellwandlung2.pdf>
 Package pdftex.def Info: Grafiken/KSA_Quellwandlung2.pdf used on input line 114
-3.
+6.
 (pdftex.def)             Requested size: 259.48683pt x 54.44258pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1136--1145
+Underfull \hbox (badness 10000) in paragraph at lines 1139--1148
 
  []
 
 
-Overfull \hbox (3.41202pt too wide) in paragraph at lines 1136--1145
+Overfull \hbox (3.41202pt too wide) in paragraph at lines 1139--1148
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1136--1145
+Underfull \hbox (badness 10000) in paragraph at lines 1139--1148
 
  []
 
-<Grafiken/KSA_Uebertrager.pdf, id=382, 310.15875pt x 79.29625pt>
+<Grafiken/KSA_Uebertrager.pdf, id=417, 310.15875pt x 79.29625pt>
 File: Grafiken/KSA_Uebertrager.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_Uebertrager.pdf>
-Package pdftex.def Info: Grafiken/KSA_Uebertrager.pdf used on input line 1146.
+Package pdftex.def Info: Grafiken/KSA_Uebertrager.pdf used on input line 1149.
 (pdftex.def)             Requested size: 259.48683pt x 66.34097pt.
 
-Overfull \hbox (3.41202pt too wide) in paragraph at lines 1146--1147
+Overfull \hbox (3.41202pt too wide) in paragraph at lines 1149--1150
 [] 
  []
 
-[9 <./Grafiken/OP_Log.pdf> <./Grafiken/OP_Exp.pdf> <./Grafiken/OP_IdealeDiode.p
-df> <./Grafiken/OP_Rkonkav.pdf> <./Grafiken/OP_Rkonvex.pdf> <./Grafiken/OP_NIK.
-pdf> <./Grafiken/KSA_Quellwandlung.pdf> <./Grafiken/KSA_Quellwandlung2.pdf>]
-<Grafiken/KSA_USU.pdf, id=434, 309.155pt x 76.285pt>
+<Grafiken/KSA_USU.pdf, id=418, 309.155pt x 76.285pt>
 File: Grafiken/KSA_USU.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_USU.pdf>
-Package pdftex.def Info: Grafiken/KSA_USU.pdf used on input line 1148.
+Package pdftex.def Info: Grafiken/KSA_USU.pdf used on input line 1151.
 (pdftex.def)             Requested size: 259.48683pt x 64.03471pt.
 
-<Grafiken/KSA_USU2.pdf, id=435, 337.26pt x 69.25874pt>
+<Grafiken/KSA_USU2.pdf, id=419, 337.26pt x 69.25874pt>
 File: Grafiken/KSA_USU2.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_USU2.pdf>
-Package pdftex.def Info: Grafiken/KSA_USU2.pdf used on input line 1150.
+Package pdftex.def Info: Grafiken/KSA_USU2.pdf used on input line 1153.
 (pdftex.def)             Requested size: 259.48683pt x 53.28816pt.
 
-Overfull \hbox (3.41202pt too wide) in paragraph at lines 1148--1152
+Overfull \hbox (3.41202pt too wide) in paragraph at lines 1151--1155
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1152
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1152
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1152
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
 
  []
 
 
-Overfull \hbox (3.41202pt too wide) in paragraph at lines 1148--1152
+Overfull \hbox (3.41202pt too wide) in paragraph at lines 1151--1155
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1152
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
 
  []
 
-<Grafiken/KSA_ISI.pdf, id=436, 324.21124pt x 72.27pt>
+<Grafiken/KSA_ISI.pdf, id=420, 324.21124pt x 72.27pt>
 File: Grafiken/KSA_ISI.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_ISI.pdf>
-Package pdftex.def Info: Grafiken/KSA_ISI.pdf used on input line 1153.
+Package pdftex.def Info: Grafiken/KSA_ISI.pdf used on input line 1156.
 (pdftex.def)             Requested size: 259.48683pt x 57.84583pt.
-
-Overfull \hbox (3.41202pt too wide) in paragraph at lines 1153--1155
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1153--1155
-
- []
-
-<Grafiken/KSA_ISU.pdf, id=437, 384.43625pt x 72.27pt>
-File: Grafiken/KSA_ISU.pdf Graphic file (type pdf)
-
-<use Grafiken/KSA_ISU.pdf>
-Package pdftex.def Info: Grafiken/KSA_ISU.pdf used on input line 1156.
-(pdftex.def)             Requested size: 259.48683pt x 48.78343pt.
 
 Overfull \hbox (3.41202pt too wide) in paragraph at lines 1156--1158
 [] 
@@ -2531,100 +2520,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 1156--1158
 
  []
 
-<Grafiken/KSA_Widerstand.pdf, id=438, 23.08624pt x 72.27pt>
+<Grafiken/KSA_ISU.pdf, id=421, 384.43625pt x 72.27pt>
+File: Grafiken/KSA_ISU.pdf Graphic file (type pdf)
+
+<use Grafiken/KSA_ISU.pdf>
+Package pdftex.def Info: Grafiken/KSA_ISU.pdf used on input line 1159.
+(pdftex.def)             Requested size: 259.48683pt x 48.78343pt.
+
+Overfull \hbox (3.41202pt too wide) in paragraph at lines 1159--1161
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1161
+
+ []
+
+
+Underfull \vbox (badness 1259) has occurred while \output is active []
+
+
+<Grafiken/KSA_Widerstand.pdf, id=422, 23.08624pt x 72.27pt>
 File: Grafiken/KSA_Widerstand.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_Widerstand.pdf>
-Package pdftex.def Info: Grafiken/KSA_Widerstand.pdf used on input line 1163.
+Package pdftex.def Info: Grafiken/KSA_Widerstand.pdf used on input line 1166.
 (pdftex.def)             Requested size: 27.03177pt x 84.6217pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1168
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1171
 
  []
 
-<Grafiken/KSA_Gyrator.pdf, id=439, 96.36pt x 71.26625pt>
+<Grafiken/KSA_Gyrator.pdf, id=423, 96.36pt x 71.26625pt>
 File: Grafiken/KSA_Gyrator.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_Gyrator.pdf>
-Package pdftex.def Info: Grafiken/KSA_Gyrator.pdf used on input line 1171.
+Package pdftex.def Info: Grafiken/KSA_Gyrator.pdf used on input line 1174.
 (pdftex.def)             Requested size: 97.30446pt x 71.96417pt.
 
-Overfull \hbox (5.63422pt too wide) in paragraph at lines 1170--1182
+Overfull \hbox (5.63422pt too wide) in paragraph at lines 1173--1185
 []  []
  []
 
-<Grafiken/KSA_USI.pdf, id=440, 118.4425pt x 69.25874pt>
+<Grafiken/KSA_USI.pdf, id=424, 118.4425pt x 69.25874pt>
 File: Grafiken/KSA_USI.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_USI.pdf>
-Package pdftex.def Info: Grafiken/KSA_USI.pdf used on input line 1184.
+Package pdftex.def Info: Grafiken/KSA_USI.pdf used on input line 1187.
 (pdftex.def)             Requested size: 108.11882pt x 63.22421pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1192
 
  []
 
 
-Overfull \hbox (5.63422pt too wide) in paragraph at lines 1183--1190
+Overfull \hbox (5.63422pt too wide) in paragraph at lines 1186--1193
 []  [] 
  []
 
-<Grafiken/KSA_Stromquelle.pdf, id=441, 26.0975pt x 73.27374pt>
+<Grafiken/KSA_Stromquelle.pdf, id=425, 26.0975pt x 73.27374pt>
 File: Grafiken/KSA_Stromquelle.pdf Graphic file (type pdf)
 
 <use Grafiken/KSA_Stromquelle.pdf>
-Package pdftex.def Info: Grafiken/KSA_Stromquelle.pdf used on input line 1193.
+Package pdftex.def Info: Grafiken/KSA_Stromquelle.pdf used on input line 1196.
 (pdftex.def)             Requested size: 21.62508pt x 60.7199pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1197--1198
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1201
 
  []
 
-[10 <./Grafiken/KSA_Uebertrager.pdf> <./Grafiken/KSA_USU.pdf> <./Grafiken/KSA_U
-SU2.pdf> <./Grafiken/KSA_ISI.pdf> <./Grafiken/KSA_ISU.pdf> <./Grafiken/KSA_Wide
-rstand.pdf> <./Grafiken/KSA_Gyrator.pdf> <./Grafiken/KSA_USI.pdf> <./Grafiken/K
-SA_Stromquelle.pdf>] [11
-
-] (./Formelsammlung - Schaltungstechnik 1.aux) ) 
+[10 <./Grafiken/KSA_Quellwandlung.pdf> <./Grafiken/KSA_Quellwandlung2.pdf> <./G
+rafiken/KSA_Uebertrager.pdf> <./Grafiken/KSA_USU.pdf> <./Grafiken/KSA_USU2.pdf>
+ <./Grafiken/KSA_ISI.pdf> <./Grafiken/KSA_ISU.pdf> <./Grafiken/KSA_Widerstand.p
+df> <./Grafiken/KSA_Gyrator.pdf> <./Grafiken/KSA_USI.pdf> <./Grafiken/KSA_Strom
+quelle.pdf>] [11] (./Formelsammlung - Schaltungstechnik 1.aux) ) 
 Here is how much of TeX's memory you used:
- 30651 strings out of 494280
- 733958 string characters out of 6168462
- 1003587 words of memory out of 5000000
- 33340 multiletter control sequences out of 15000+600000
+ 30656 strings out of 494280
+ 734048 string characters out of 6168462
+ 1007587 words of memory out of 5000000
+ 33344 multiletter control sequences out of 15000+600000
  12810 words of font info for 48 fonts, out of 8000000 for 9000
  497 hyphenation exceptions out of 8191
  68i,25n,96p,768b,2150s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Formelsammlung - Schaltungstechnik 1.pdf" (11 pages, 510989 
+</usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+mextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Formelsammlung - Schaltungstechnik 1.pdf" (11 pages, 526552 
 bytes).
 PDF statistics:
- 616 PDF objects out of 1000 (max. 8388607)
- 403 compressed objects within 5 object streams
+ 619 PDF objects out of 1000 (max. 8388607)
+ 404 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 373 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 378 words of extra memory for PDF output out of 10000 (max. 10000000)
 
