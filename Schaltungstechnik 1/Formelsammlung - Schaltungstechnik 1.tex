@@ -530,7 +530,8 @@ Spannungs/Stromgesteuert ($R>0$/$G>0$), gepolt, aktiv ($I_0>0 \Leftrightarrow U_
 \begin{tabular}{ll}
 $\underbrace{\begin{bmatrix}\textbf{M} & \textbf{N}\end{bmatrix}\cdot \left.\begin{matrix}\underline{u}\\\underline{i}\end{matrix}\right]=\underline{0}}_{Kern\begin{bmatrix}\textbf{M} & \textbf{N}\end{bmatrix}}$ & quellenfrei\\\\
 $F=Kern\begin{bmatrix}\textbf{M} & \textbf{N}\end{bmatrix}+\left.\begin{matrix}\underline{u_0}\\\underline{i_0}\end{matrix}\right]$ & nicht quellenfrei
-\end{tabular}
+\end{tabular}\\
+Explizit $\Rightarrow$ Implizit: $i=Gu\Rightarrow 0=Gu-1\Rightarrow [M N]=[G -1]$
 \subsubsection*{Explizit}
 Größe mit konstantem Nullwert (KS, LL, Nullator) kann keine Steuergröße sein. Größe mit beliebigem Wert (Norator) kann nicht gesteuert werden.
 \begin{tabular}{ll}
@@ -827,6 +828,7 @@ $\textbf{H'}=\begin{bmatrix}0 & -\frac{1}{\ddot{u}}\\ \frac{1}{\ddot{u}} & 0\end
 
 \subsubsection*{NIK}
 Negativ-Immittanz-Konverter (NIK)\\\\
+\includegraphics[width=1\linewidth, keepaspectratio]{Grafiken/NIK.png}
 Aktiv, antireziprok, für $|k|=1$ symmetrisch\\\\
 \begin{tabular}{ll}
 $k=1$ & $F$ ist an der $i_1$-Achse gespiegelter Zweipol\\
@@ -973,6 +975,7 @@ $g_m=\beta \cdot (U_{gs}-U_T)$\\\\
 \includegraphics[width=0.45\textwidth]{Grafiken/OP}\\\\
 Operationsverstärker müssen immer über ihren invertierenden Eingang rückgekoppelt werden, da sich sonst eine Z-Kennlinie ergibt und der Arbeitspunkt somit nicht mehr eindeutig ist.
 \subsection*{Ersatzschaltbilder}
+\textbf{$u_d$ mit einzeichnen.}
 \subsubsection*{ESB I}
 \begin{minipage}[b]{0.3\textwidth}
 \includegraphics[width=0.9\textwidth]{Grafiken/OP_ESBI}
