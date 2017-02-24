@@ -11,6 +11,12 @@
 *.cb
 *.cb2
 
+# Old Git versions
+*.aux
+*.lof
+*.log
+
+
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
@@ -34,6 +40,15 @@
 **/*.synctex.gz
 **/*.synctex.gz(busy)
 **/*.pdfsync
+
+# For older Git versions @Rechnerhalle
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms
