@@ -130,8 +130,7 @@ $u=R\cdot i$ & $R=\frac{1}{G}$ & $R_1||R_2 = \frac{R_1\cdot R_2}{R_1+R_2}$ (Para
 \end{tabular}\\\\
 \begin{tabular}{ll}
 Reihenschaltung: & $R_{gesamt}=R_1+...+R_i$\\
-Parallelschaltung: & $\frac{1}{R_{gesamt}}=\frac{1}{R_1}+...+\frac{1}{R_i}$\\ & \\
-& 
+Parallelschaltung: & $\frac{1}{R_{gesamt}}=\frac{1}{R_1}+...+\frac{1}{R_i}$ 
 \end{tabular}
 
 \subsection*{Leitwerte}
@@ -340,11 +339,10 @@ $i_{F,lin}=\left.\frac{\partial i_F}{\partial u_F} \right|_{AP}\cdot (u_F-U_{AP}
 $i_{F,lin}=\underbrace{\left.\frac{\partial i_F}{\partial u_F} \right|_{AP}}_{g}\cdot u_F-\underbrace{\left.\frac{\partial i_F}{\partial u_F} \right|_{AP}\cdot U_{AP}+I_{AP}}_{I_{0,AP}}$
 
 \subsection*{Ersatzschaltbilder}
-Zuerst alle Bauteile im Arbeitspunkt linearisieren. Erhalte $u_1=U+\Delta u$
-\subsubsection*{Großsignal}
-Alle Wechselquellen weglassen. $u_1=U$
-\subsubsection*{Kleinsignal}
-Alle Konstantquellen weglassen. $U_1=\Delta u$ 
+Zuerst alle Bauteile im Arbeitspunkt linearisieren. Erhalte $u_1=U+\Delta u$\\
+%\subsubsection*{Groß-/Kleinsignal}
+\textbf{Großsignal:} Alle Wechselquellen weglassen. $u_1=U$\\
+\textbf{Kleinsignal:} Alle Konstantquellen weglassen. $U_1=\Delta u$ 
 \subsubsection*{Ersetzen von Quellen}
 \begin{figure}[h]
 	\centering
@@ -361,7 +359,7 @@ Alle Konstantquellen weglassen. $U_1=\Delta u$
 			to[short] (0,0);
 		\end{circuitikz}
 	\end{minipage}
-	\&
+	\&  
 	\begin{minipage}{0.1\textwidth}
 		\begin{circuitikz}
 			\draw(0,2)
@@ -573,6 +571,24 @@ Dualität & $\begin{bmatrix}\textbf{U} \\ \textbf{I}\end{bmatrix}^d=\begin{bmatr
 & $\textbf{G}^d=\frac{1}{{R_d}^2}\textbf{R};\;\;\textbf{R}^d={R_d}^2\textbf{G}$
 \end{tabular}
 
+\subsubsection*{Kurzschluss/Leerlauf-Methode}
+Verfahre nach ''Berechnung Beschreibungsmatrix''. 
+Jeweils eine steuernde Größe auf Null setzen (Spannungsquelle $\rightarrow$ KS; Stromquelle $\rightarrow$ LL).\\\\
+\begin{tabular}{lll}
+	\textbf{G} & $g_{11}=\left.\frac{i_1}{u_1}\right|_{u_2=0}$ & $g_{12}=\left.\frac{i_1}{u_2}\right|_{u_1=0}$\\
+	& $g_{21}=\left.\frac{i_2}{u_1}\right|_{u_2=0}$ & $g_{22}=\left.\frac{i_2}{u_2}\right|_{u_1=0}$\\
+	\textbf{R} & $r_{11}=\left.\frac{u_1}{i_1}\right|_{i_2=0}$ & $r_{12}=\left.\frac{u_1}{i_2}\right|_{i_1=0}$\\
+	& $r_{21}=\left.\frac{u_2}{i_1}\right|_{i_2=0}$ & $r_{22}=\left.\frac{u_2}{i_2}\right|_{i_1=0}$\\
+	\textbf{H} & $h_{11}=\left.\frac{u_1}{i_1}\right|_{u_2=0}$ & $h_{12}=\left.\frac{u_1}{u_2}\right|_{i_1=0}$\\
+	& $h_{21}=\left.\frac{i_2}{i_1}\right|_{u_2=0}$ & $h_{22}=\left.\frac{i_2}{u_2}\right|_{i_1=0}$\\
+	\textbf{H'} & $h'_{11}=\left.\frac{i_1}{u_1}\right|_{i_2=0}$ & $h'_{12}=\left.\frac{i_1}{i_2}\right|_{u_1=0}$\\
+	& $h'_{21}=\left.\frac{u_2}{u_1}\right|_{i_2=0}$ & $h'_{22}=\left.\frac{u_2}{i_2}\right|_{u_1=0}$\\
+	\textbf{A} & $a_{11}=\left.\frac{u_1}{u_2}\right|_{i_2=0}$ & $a_{12}=\left.-\frac{u_1}{i_2}\right|_{u_2=0}$\\
+	& $a_{21}=\left.\frac{i_1}{u_2}\right|_{i_2=0}$ & $a_{22}=\left.-\frac{i_1}{i_2}\right|_{u_2=0}$\\
+	\textbf{A'} & $a'_{11}=\left.\frac{u_2}{u_1}\right|_{i_1=0}$ & $a'_{12}=\left.-\frac{u_2}{i_1}\right|_{u_1=0}$\\
+	& $a'_{21}=\left.\frac{i_2}{u_1}\right|_{i_1=0}$ & $a'_{22}=\left.-\frac{i_2}{i_1}\right|_{u_1=0}$
+\end{tabular}
+
 \subsection*{Berechnung Beschreibungsmatrix}
 Bei quellenbehafteten Zweitoren:\\\\
 z.B. $\underline{i}=\textbf{G}\cdot \underline{u}+\underline{I_0}$
@@ -580,23 +596,6 @@ z.B. $\underline{i}=\textbf{G}\cdot \underline{u}+\underline{I_0}$
 	\item Setze interne Quellen zu Null (Spannungsquelle $\rightarrow$ KS; Stromquelle $\rightarrow$ LL) $\rightarrow$ bestimme Funktionen der Matrix (hier: $\underline{i}=\textbf{G}\cdot \underline{u}$)
 	\item Setze Steuergrößen zu Null $\rightarrow$ bestimme Quellenvektor (hier: $\underline{i}=\underline{I}_0$ für $\underline{u}=0$)).
 \end{enumerate}
-
-\subsubsection*{Kurzschluss/Leerlauf-Methode}
-Jeweils eine steuernde Größe auf Null setzen (Spannungsquelle $\rightarrow$ KS; Stromquelle $\rightarrow$ LL).\\\\
-\begin{tabular}{lll}
-\textbf{G} & $g_{11}=\left.\frac{i_1}{u_1}\right|_{u_2=0}$ & $g_{12}=\left.\frac{i_1}{u_2}\right|_{u_1=0}$\\
- & $g_{21}=\left.\frac{i_2}{u_1}\right|_{u_2=0}$ & $g_{22}=\left.\frac{i_2}{u_2}\right|_{u_1=0}$\\
-\textbf{R} & $r_{11}=\left.\frac{u_1}{i_1}\right|_{i_2=0}$ & $r_{12}=\left.\frac{u_1}{i_2}\right|_{i_1=0}$\\
- & $r_{21}=\left.\frac{u_2}{i_1}\right|_{i_2=0}$ & $r_{22}=\left.\frac{u_2}{i_2}\right|_{i_1=0}$\\
-\textbf{H} & $h_{11}=\left.\frac{u_1}{i_1}\right|_{u_2=0}$ & $h_{12}=\left.\frac{u_1}{u_2}\right|_{i_1=0}$\\
- & $h_{21}=\left.\frac{i_2}{i_1}\right|_{u_2=0}$ & $h_{22}=\left.\frac{i_2}{u_2}\right|_{i_1=0}$\\
-\textbf{H'} & $h'_{11}=\left.\frac{i_1}{u_1}\right|_{i_2=0}$ & $h'_{12}=\left.\frac{i_1}{i_2}\right|_{u_1=0}$\\
- & $h'_{21}=\left.\frac{u_2}{u_1}\right|_{i_2=0}$ & $h'_{22}=\left.\frac{u_2}{i_2}\right|_{u_1=0}$\\
-\textbf{A} & $a_{11}=\left.\frac{u_1}{u_2}\right|_{i_2=0}$ & $a_{12}=\left.-\frac{u_1}{i_2}\right|_{u_2=0}$\\
- & $a_{21}=\left.\frac{i_1}{u_2}\right|_{i_2=0}$ & $a_{22}=\left.-\frac{i_1}{i_2}\right|_{u_2=0}$\\
-\textbf{A'} & $a'_{11}=\left.\frac{u_2}{u_1}\right|_{i_1=0}$ & $a'_{12}=\left.-\frac{u_2}{i_1}\right|_{u_1=0}$\\
- & $a'_{21}=\left.\frac{i_2}{u_1}\right|_{i_1=0}$ & $a'_{22}=\left.-\frac{i_2}{i_1}\right|_{u_1=0}$
-\end{tabular}
 
 \subsection*{Linearisierung im AP}
 \subsubsection*{Explizit}
@@ -649,11 +648,11 @@ $\textbf{H'}_{ges}=\textbf{H'}_1+\textbf{H'}_2$\\\\
 \end{minipage}
 
 \subsubsection*{Kettenschaltung}
-\includegraphics[width=0.4\textwidth]{Grafiken/Zweitor_Kette}\\\\
+\includegraphics[width=0.3\textwidth, keepaspectratio]{Grafiken/Zweitor_Kette}
 $\textbf{A}_{ges}=\textbf{A}_1\cdot \textbf{A}_2$
 
 \subsubsection*{Inverse Kettenschaltung}
-\includegraphics[width=0.4\textwidth]{Grafiken/Zweitor_inversKette}\\\\
+\includegraphics[width=0.3\textwidth]{Grafiken/Zweitor_inversKette}
 $\textbf{A'}_{ges}=\textbf{A'}_2\cdot \textbf{A'}_1$
 
 \subsection*{Umrechnung der Zweitor-Matrizen}
@@ -777,7 +776,7 @@ $\textbf{A}=\begin{bmatrix}0 & 0\\ \frac{1}{r} & 0\end{bmatrix}\;\;\textbf{R}=\b
 \end{tabular}
 
 \subsubsection*{Nullor}
-Quellenfrei, streng linear\\\\
+Quellenfrei, streng linear, nicht verlustlos\\\\
 \begin{minipage}[b]{0.13\textwidth}
 \includegraphics[width=0.95\textwidth]{Grafiken/OP_Nullor}
 \end{minipage}
@@ -856,7 +855,7 @@ $i_c=\alpha_FI_{es}\cdot (e^{-\frac{u_{eb}}{U_T}}-1)-I_{cs}\cdot (e^{-\frac{u_{c
 \textbf{Bedingung} für den Vorwärtsbetrieb: $u_{be}>0 \wedge u_{cb}\geq 0$
 \subsubsection*{Basisschaltung}
 \begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/Basisschaltung_Vereinfachung}\\\\
+\includegraphics[width=\textwidth]{Grafiken/Basisschaltung_Vereinfachung}\\
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -866,7 +865,7 @@ $i_c=-\alpha_Fi_e$\\\\
 
 \subsubsection*{Emitterschaltung}
 \begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/Emitterschaltung_Vereinfachung}\\\\
+\includegraphics[width=\textwidth]{Grafiken/Emitterschaltung_Vereinfachung}\\
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -1017,40 +1016,41 @@ $u_{out}=u_{in}$\\\\
 $v_u=1$
 \end{minipage}
 
-\subsubsection*{Nichtinvertierender Verstärker}
+\subsubsection*{}
 \begin{minipage}[b]{0.3\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_NiV}
+
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.16\textwidth}
-$u_{out}=(1+\frac{R_0}{R_1})\cdot u_{in}$\\\\
-$v_u=1+\frac{R_0}{R_1}$\\\\
+
+
 \end{minipage}
 
-\subsubsection*{Invertierender Verstärker}
+\subsubsection*{}
 \begin{minipage}[b]{0.3\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_IV}
+
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.16\textwidth}
-$u_{out}=-\frac{R_0}{R_1}\cdot u_{in}$\\\\
-$v_u=\frac{R_0}{R_1}$\\\\
+
+
 \end{minipage}
 
-\subsubsection*{Differenzierer}
-\begin{minipage}[b]{0.3\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_Diff}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.16\textwidth}
-$u_{out}=-RC\cdot \dot{u}_{in}$\\\\
-\end{minipage}
+\begin{tabular}{c|c}
+	Nichtinvertierender Verstärker & Invertierender Verstärker\\
+	\includegraphics[width=0.2\textwidth]{Grafiken/OP_NiV} &
+	\includegraphics[width=0.2\textwidth]{Grafiken/OP_IV}\\
+	$u_{out}=(1+\frac{R_0}{R_1})\cdot u_{in}$ & $u_{out}=-\frac{R_0}{R_1}\cdot u_{in}$\\
+	$v_u=1+\frac{R_0}{R_1}$ & $v_u=\frac{R_0}{R_1}$
+\end{tabular}
 
-\subsubsection*{Integrierer}
-\begin{minipage}[b]{0.3\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_Int}\\\\
-$u_{out}=-u_c(t_0)-\frac{1}{RC}\cdot \int\limits_{t_0}^{t_1}u_{in}dt$
-\end{minipage}
+
+\begin{tabular}{c|c}
+	Differenzierer & Integrierer\\
+	\includegraphics[width=0.2\textwidth]{Grafiken/OP_Diff} & \includegraphics[width=0.2\textwidth]{Grafiken/OP_Int}\\
+	$u_{out}=-RC\cdot \dot{u}_{in}$ & 
+	$u_{out}=-u_c(t_0)-\frac{1}{RC}\cdot \int\limits_{t_0}^{t_1}u_{in}dt$
+\end{tabular}
 
 \subsubsection*{Differenzverstärker/Subtrahierer}
 \begin{minipage}[b]{0.25\textwidth}
@@ -1064,46 +1064,23 @@ $u_{out}=\frac{R_2}{R_1}\cdot (u_2-u_1)$\\\\
 $u_{out}=\frac{R_4}{R_3}\cdot (u_2-u_1)$\\\\
 \end{minipage}
 
-\subsubsection*{Logarithmierer}
-\begin{minipage}[b]{0.25\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/OP_Log}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.2\textwidth}
-$u_{out}=-U_T\cdot ln(\frac{u_{in}}{R\cdot I_S})$\\\\
-\end{minipage}
-
-\subsubsection*{Exponentierer}
-\begin{minipage}[b]{0.25\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/OP_Exp}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.2\textwidth}
-$u_{out}=-R\cdot I_S\cdot e^{\frac{u_{in}}{U_T}}$\\\\
-\end{minipage}
+\begin{tabular}{c|c}
+	\emph{Logarithmierer} & \emph{Exponentierer}\\
+	\includegraphics[width=0.2\textwidth]{Grafiken/OP_Log} & \includegraphics[width=0.2\textwidth]{Grafiken/OP_Exp}\\
+	$u_{out}=-U_T\cdot ln(\frac{u_{in}}{R\cdot I_S})$ & 
+	$u_{out}=-R\cdot I_S\cdot e^{\frac{u_{in}}{U_T}}$
+\end{tabular}
 
 \subsubsection*{Ideale Diode}
-\begin{minipage}[b]{0.25\textwidth}
+\begin{minipage}[b]{0.2\textwidth}
 \includegraphics[width=\textwidth]{Grafiken/OP_IdealeDiode}
 \end{minipage}
 
-\subsubsection*{Konkaver Widerstand}
-\begin{minipage}[b]{0.25\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/OP_Rkonkav}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.2\textwidth}
-$U_0<U_{SAT}$\\\\
-\end{minipage}
-
-\subsubsection*{Konvexer Widerstand}
-\begin{minipage}[b]{0.25\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/OP_Rkonvex}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.2\textwidth}
-$I_0<G\cdot U_{SAT}$\\\\
-\end{minipage}
+\begin{tabular}{c|c}
+	\emph{Konkaver Widerstand} & \emph{Konvexer Widerstand}\\
+\includegraphics[width=0.2\textwidth]{Grafiken/OP_Rkonkav} & \includegraphics[width=0.2\textwidth]{Grafiken/OP_Rkonvex}\\
+$U_0<U_{SAT}$ & $I_0<G\cdot U_{SAT}$
+\end{tabular}
 
 \subsubsection*{NIK}
 \includegraphics[width=0.45\textwidth]{Grafiken/OP_NIK}
@@ -1232,23 +1209,24 @@ Gilt für unabhängige Quellen in linearem Netzwerk für $u,i$.
 	to[short] (0,0);
 \end{circuitikz}
 \\
-$\mathcal{N}_1$ Spannungsgesteuert $\rightarrow$
-\begin{circuitikz}
-	\draw(0,0)
-	to[twoport, t=$\mathcal{N}_1$, v=$u$, i<=$i$] (0,2)
-	to[short] (2,2)
-	to[V, v=$u$] (2,0)
-	to[short] (0,0);
-\end{circuitikz}
+\begin{tabular}{c|c}
+	$\mathcal{N}_1$ Spannungsgesteuert & $\mathcal{N}_1$ Stromgesteuert\\
+	\begin{circuitikz}
+		\draw(0,0)
+		to[twoport, t=$\mathcal{N}_1$, v=$u$, i<=$i$] (0,2)
+		to[short] (2,2)
+		to[V, v=$u$] (2,0)
+		to[short] (0,0);
+	\end{circuitikz} &
+	\begin{circuitikz}
+		\draw(0,0)
+		to[twoport, t=$\mathcal{N}_1$, v=$u$, i<=$i$] (0,2)
+		to[short] (2,2)
+		to[I, i<^=$i$] (2,0)
+		to[short] (0,0);
+	\end{circuitikz}
+\end{tabular}
 
-$\mathcal{N}_1$ Stromgesteuert $\rightarrow$
-\begin{circuitikz}
-	\draw(0,0)
-	to[twoport, t=$\mathcal{N}_1$, v=$u$, i<=$i$] (0,2)
-	to[short] (2,2)
-	to[I, i<^=$i$] (2,0)
-	to[short] (0,0);
-\end{circuitikz}
 
 \subsection*{Helmholtz/Thévenin}
 $\mathcal{N}_1$ linear + resistiv $\rightarrow$\\
@@ -1262,7 +1240,7 @@ $\mathcal{N}_1$ linear + resistiv $\rightarrow$\\
 $\Rightarrow$
 \begin{circuitikz}
 	\draw(0,0)
-	to[V, v=$U_0$] (0,2)
+	to[V, v<=$U_0$] (0,2)
 	to[R=$R_i$] (2,2)
 	to[twoport, t=$\mathcal{N}_2$] (2,0)
 	to[short] (0,0);
@@ -1288,7 +1266,11 @@ $\Rightarrow$
 	to[I, i=$I_0$] (2,0);
 \end{circuitikz}
 \subsection*{Newton-Raphson}
-TODO\\
+Findet Nullstellen, nicht zwingend konvergent.
+\begin{enumerate}
+	\item Für Schätzwert $\tilde{x}_k$ linearisiere am Punkt $(\tilde{x}_k, f(\tilde{x}_k))$
+	\item Finde Nullstelle der Gerade. Dieser Punkt ist neuer Schätzwert $\tilde{x}_{k+1}$.
+\end{enumerate}
 Lizenz: CC BY-NC-SA 3.0\\
 http://creativecommons.org/licenses/by-nc-sa/3.0/de/
 
