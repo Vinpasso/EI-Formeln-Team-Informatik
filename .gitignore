@@ -1,7 +1,7 @@
 ## Core latex/pdflatex auxiliary files:
-**/*.aux
-**/*.lof
-**/*.log
+#**/*.aux
+#**/*.lof
+#**/*.log
 *.lot
 *.fls
 *.out
@@ -35,11 +35,11 @@
 *.run.xml
 
 ## Build tool auxiliary files:
-**/*.fdb_latexmk
-**/*.synctex
-**/*.synctex.gz
-**/*.synctex.gz(busy)
-**/*.pdfsync
+#**/*.fdb_latexmk
+#**/*.synctex
+#**/*.synctex.gz
+#**/*.synctex.gz(busy)
+#**/*.pdfsync
 
 # For older Git versions @Rechnerhalle
 *.fdb_latexmk
