@@ -73,6 +73,17 @@ $d<<\lambda = \frac{c}{f}$\\
 d: Größe der Schaltung\\
 $\lambda$: Wellenlänge
 
+\subsection*{Netzwerktheorie}
+Zweige: Anzahl Kanten\\
+Knoten: Anzahl Spannungsknoten (inklusive Masse wenn existiert).\\
+Richtung Kantenpfeil $\equiv$ Richtung Kantenstrom und Kantenspannung.\\
+Graph besteht aus Baum und Verbindungskanten.
+
+\subsection*{Knoteninzidenzmatrix}
+Matrix $A\in \{-1, 0, 1\}^{(n-1)\times(b)}$\\
+Eintrag $a_{\alpha\beta}=\begin{cases}+1,&\text{Zweig }\beta\leftarrow\text{Knoten }\alpha\\-1,&\text{Zweig }\beta\rightarrow\text{Knoten }\alpha\\\pm0,&\text{Kein Zweig }\beta\leftrightarrow\text{Knoten }\alpha\end{cases}$\\
+Beinhaltet nicht den Bezugsknoten (da linear abhängig).
+
 \subsection*{Knotenregel (KCL)}
 Für jeden Knoten gilt:\\
 Die Summe aller Ströme ist Null.\\
@@ -80,7 +91,9 @@ $\sum\limits_{Knoten}^{} i_j(t)=0$\\\\
 (herausfließende Ströme positiv)\\\\
 Anzahl linear unabhängiger Knotengleichungen: $\textbf{(n-1)}$\\
 n: Anzahl der Knoten\\\\
-KCL in Matrixform: $\textbf{A}\cdot \underline{i}=\underline{0}$
+KCL in Matrixform:\\
+Nullraumdarstellung: $\textbf{A}\cdot \underline{i}=\underline{0}$\\
+Mit Knoteninzidenzmatrix \textbf{A}
 
 \subsection*{Maschenregel (KVL)}
 Für jede Masche gilt:\\
@@ -90,7 +103,10 @@ $\sum\limits_{Umlauf}^{} u_j(t)=0$\\\\
 Anzahl linear unabhängiger Schleifengleichungen: $\textbf{b-(n-1)}$\\
 b: Anzahl der Zweige\\
 n: Anzahl der Knoten\\\\
-KVL in Matrixform: $\underline{u}-\textbf{A}^T\cdot \underline{u_k}=\underline{0}\;\;\;\;\;(\textbf{M}=\textbf{A}^T)$
+KVL in Matrixform:\\
+Nullraumdarstellung: $\underline{u}-\textbf{A}^T\cdot \underline{u_k}=\underline{0}$\\
+Bildraumdarstellung: $\underline{u}=\textbf{A}^T\cdot\underline{u_k}$\\
+$(\textbf{M}=\textbf{A}^T)$ Mit Inzidenzmatrix $\textbf{A}$
 
 \section*{Resistive Eintore}
 \subsection*{Darstellungsformen}
@@ -1061,9 +1077,6 @@ $u_{out}=\frac{R_4}{R_3}\cdot (u_2-u_1)$\\\\
 \includegraphics[width=0.2\textwidth]{Grafiken/OP_Rkonkav} & \includegraphics[width=0.2\textwidth]{Grafiken/OP_Rkonvex}\\
 $U_0<U_{SAT}$ & $I_0<G\cdot U_{SAT}$
 \end{tabular}
-
-\subsubsection*{NIK}
-\includegraphics[width=0.45\textwidth]{Grafiken/OP_NIK}
 
 \subsubsection*{VCVS Voltage Controlled Voltage Source}
 \begin{tabular}{ll}
