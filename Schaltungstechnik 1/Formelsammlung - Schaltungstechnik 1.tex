@@ -81,8 +81,12 @@ Graph besteht aus Baum und Verbindungskanten.
 
 \subsection*{Knoteninzidenzmatrix}
 Matrix $A\in \{-1, 0, 1\}^{(n-1)\times(b)}$\\
-Eintrag $a_{\alpha\beta}=\begin{cases}+1,&\text{Zweig }\beta\leftarrow\text{Knoten }\alpha\\-1,&\text{Zweig }\beta\rightarrow\text{Knoten }\alpha\\\pm0,&\text{Kein Zweig }\beta\leftrightarrow\text{Knoten }\alpha\end{cases}$\\
+Eintrag $a_{\alpha\beta}=\begin{cases}+1,&\text{Outgoing, Zweig }\beta\leftarrow\text{Knoten }\alpha\\-1,&\text{Incoming, Zweig }\beta\rightarrow\text{Knoten }\alpha\\\pm0,&\text{Kein Zweig }\beta\leftrightarrow\text{Knoten }\alpha\end{cases}$\\
 Beinhaltet nicht den Bezugsknoten (da linear abhängig).
+
+\subsection{KVL Matrix}
+Matrix $B\in \{-1, 0, 1\}^{b\times b-(n-1)}$\\
+Eintrag $b_{\alpha\beta}=\begin{cases}+1,&\text{Zweig in Richtung Masche}\\-1,&\text{Zweig entgegen Masche}\\\pm0,&\text{Kein Zweig in Masche}\end{cases}$\\
 
 \subsection*{Knotenregel (KCL)}
 Für jeden Knoten gilt:\\
@@ -104,7 +108,8 @@ Anzahl linear unabhängiger Schleifengleichungen: $\textbf{b-(n-1)}$\\
 b: Anzahl der Zweige\\
 n: Anzahl der Knoten\\\\
 KVL in Matrixform:\\
-Nullraumdarstellung: $\underline{u}-\textbf{A}^T\cdot \underline{u_k}=\underline{0}$\\
+Nullraumdarstellung: $\textbf{B}\underline{u}=0$\\
+$\underline{u}$ ist Spannungen der Kanten\\$\underline{u}-\textbf{A}^T\cdot \underline{u_k}=\underline{0}$\\
 Bildraumdarstellung: $\underline{u}=\textbf{A}^T\cdot\underline{u_k}$\\
 $(\textbf{M}=\textbf{A}^T)$ Mit Inzidenzmatrix $\textbf{A}$
 
@@ -1167,7 +1172,7 @@ $\textbf{Y}_k=\;\;\begin{matrix}\begin{matrix} & & \;\;\;\kreis{$\gamma$} & \;\;
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.30\textwidth}
-$\textbf{Y}_k=\;\;\begin{matrix} \; \\ \kreis{$\alpha$} \\ \kreis{$\beta$} \\ \; \end{matrix} \left[\begin{matrix} ... \\ i_q \\ -i_q \\ ... \end{matrix}\right]$\\
+$\textbf{I}_q=\;\;\begin{matrix} \; \\ \kreis{$\alpha$} \\ \kreis{$\beta$} \\ \; \end{matrix} \left[\begin{matrix} ... \\ I_0 \\ -I_0 \\ ... \end{matrix}\right]$\\
 \end{minipage}
 
 \subsection*{5. Reduzierte Knotenleitwertsmatrix $Y_k$}
@@ -1184,6 +1189,7 @@ Der Spannungsvektor steht immer senkrecht zum Stromvektor ($\textbf{A}\textbf{B}
 
 \subsection*{Tableau-Gleichungssystem}
 $\begin{bmatrix}\textbf{B} & \textbf{0} \\ \textbf{0} & \textbf{A} \\ \textbf{M} & \textbf{N}\end{bmatrix}\cdot \left.\begin{matrix}\underline{u}\\\underline{i}\end{matrix}\right]=\left.\begin{matrix}\underline{0}\\ \underline{0} \\ \underline{e}\end{matrix}\right]$
+Dimension $2b\times 2b$
 
 \subsection*{Superpositionsprinzip}
 Gilt für unabhängige Quellen in linearem Netzwerk für $u,i$.
