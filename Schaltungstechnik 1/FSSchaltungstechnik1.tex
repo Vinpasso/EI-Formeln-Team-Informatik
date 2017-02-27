@@ -574,8 +574,8 @@ $\underbrace{\left.\begin{matrix}\underline{u}\\\underline{i}\end{matrix}\right]
 $F=Bild\begin{bmatrix}\textbf{U} \\ \textbf{I}\end{bmatrix}+\left.\begin{matrix}\underline{u_0}\\\underline{i_0}\end{matrix}\right]$ & nicht quellenfrei
 \end{tabular}\\\\\\
 mit $\frac{1}{V}\underline{u},\frac{1}{A}\underline{i},\underline{c}\in \mathbb{R}^{n\times 1}$ und $\frac{1}{V}\textbf{U},\frac{1}{A}\textbf{I}\in \mathbb{R}^{n\times n}$
-
-\subsection*{Eigenschaften}
+\begin{figure}
+\textbf{Eigenschaften Zweitore}\\\\
 \begin{tabular}{p{20mm}l}
 \textbf{$F$ ist...} & \textbf{wenn...} \\
 - passiv & $\forall \left.\begin{matrix}\underline{u}\\\underline{i}\end{matrix}\right] \in F: P=\underline{u}^T\cdot \underline{i} \geq 0$\\\\
@@ -583,7 +583,7 @@ mit $\frac{1}{V}\underline{u},\frac{1}{A}\underline{i},\underline{c}\in \mathbb{
 - verlustlos & $\forall \left.\begin{matrix}\underline{u}\\\underline{i}\end{matrix}\right] \in F: \underline{u}^T\cdot \underline{i}=0$\\\\
 & $\textbf{U}^T\textbf{I}+\textbf{I}^T\textbf{U}=\textbf{0}$\\
 & $\textbf{R}=-\textbf{R}^T;\;\;\;\;\;\textbf{G}=-\textbf{G}^T$\\\\
-- umkehrbar Symmetrisch& $\textbf{G}=\textbf{P}\cdot \textbf{G}\cdot \textbf{P};\;\;\textbf{R}=\textbf{P}\cdot \textbf{R}\cdot \textbf{P};\;\; \textbf{A}=\textbf{A'}$\\
+- umkehrbar symmetrisch& $\textbf{G}=\textbf{P}\cdot \textbf{G}\cdot \textbf{P};\;\;\textbf{R}=\textbf{P}\cdot \textbf{R}\cdot \textbf{P};\;\; \textbf{A}=\textbf{A'}$\\
 & $\textbf{P}=\begin{bmatrix}0 & 1\\1 & 0\end{bmatrix}$\;\;\glqq Zeilentausch + Spaltentausch\grqq\\\\
 - reziprok & $\textbf{U}^T\textbf{I}-\textbf{I}^T\textbf{U}=\textbf{0}; \textbf{G}=\textbf{G}^T; \textbf{R}=\textbf{R}^T$\\
 & $det(\textbf{A})=det(\textbf{A'})=1$\\
@@ -591,6 +591,15 @@ mit $\frac{1}{V}\underline{u},\frac{1}{A}\underline{i},\underline{c}\in \mathbb{
 Dualität & $\begin{bmatrix}\textbf{U} \\ \textbf{I}\end{bmatrix}^d=\begin{bmatrix}R_d\textbf{I} \\ \frac{1}{R_d}\textbf{U}\end{bmatrix} = \begin{bmatrix}0 & R_d\textbf{1}\\ \frac{1}{R_d}\textbf{1} & 0\end{bmatrix}\cdot \left.\begin{matrix}\textbf{U} \\ \textbf{I}\end{matrix}\right]$\\\\
 & $\textbf{G}^d=\frac{1}{{R_d}^2}\textbf{R};\;\;\textbf{R}^d={R_d}^2\textbf{G}$
 \end{tabular}
+\end{figure}
+
+\subsection*{Berechnung Beschreibungsmatrix}
+Bei quellenbehafteten Zweitoren:\\\\
+z.B. $\underline{i}=\textbf{G}\cdot \underline{u}+\underline{I_0}$
+\begin{enumerate}
+	\item Setze interne Quellen zu Null (Spannungsquelle $\rightarrow$ KS; Stromquelle $\rightarrow$ LL) $\rightarrow$ bestimme Funktionen der Matrix (hier: $\underline{i}=\textbf{G}\cdot \underline{u}$)
+	\item Setze Steuergrößen zu Null $\rightarrow$ bestimme Quellenvektor (hier: $\underline{i}=\underline{I}_0$ für $\underline{u}=0$)).
+\end{enumerate}
 
 \subsubsection*{Kurzschluss/Leerlauf-Methode}
 Verfahre nach ''Berechnung Beschreibungsmatrix''. 
@@ -610,13 +619,7 @@ Jeweils eine steuernde Größe auf Null setzen (Spannungsquelle $\rightarrow$ KS
 	& $a'_{21}=\left.\frac{i_2}{u_1}\right|_{i_1=0}$ & $a'_{22}=\left.-\frac{i_2}{i_1}\right|_{u_1=0}$
 \end{tabular}
 
-\subsection*{Berechnung Beschreibungsmatrix}
-Bei quellenbehafteten Zweitoren:\\\\
-z.B. $\underline{i}=\textbf{G}\cdot \underline{u}+\underline{I_0}$
-\begin{enumerate}
-	\item Setze interne Quellen zu Null (Spannungsquelle $\rightarrow$ KS; Stromquelle $\rightarrow$ LL) $\rightarrow$ bestimme Funktionen der Matrix (hier: $\underline{i}=\textbf{G}\cdot \underline{u}$)
-	\item Setze Steuergrößen zu Null $\rightarrow$ bestimme Quellenvektor (hier: $\underline{i}=\underline{I}_0$ für $\underline{u}=0$)).
-\end{enumerate}
+
 
 \subsection*{Linearisierung im AP}
 \subsubsection*{Explizit}
@@ -631,50 +634,23 @@ $\left.\begin{matrix}i_1\\ i_2\end{matrix}\right]=\underbrace{\left.\begin{bmatr
 $\underbrace{\left.\begin{bmatrix}\frac{\partial f_1}{\partial u_1} & \frac{\partial f_1}{\partial u_2}\\ \frac{\partial f_2}{\partial u_1} & \frac{\partial f_2}{\partial u_2}\end{bmatrix}\right|_{AP}}_{\textbf{M}}\cdot \left.\begin{matrix}\Delta u_1\\ \Delta u_2\end{matrix}\right]+ \underbrace{\left.\begin{bmatrix}\frac{\partial f_1}{\partial i_1} & \frac{\partial f_1}{\partial i_2}\\ \frac{\partial f_2}{\partial i_1} & \frac{\partial f_2}{\partial i_2}\end{bmatrix}\right|_{AP}}_{\textbf{N}}\cdot \left.\begin{matrix}\Delta i_1\\ \Delta i_2\end{matrix}\right]=\textbf{0}$
 
 \subsection*{Zusammenschaltung von Zweitoren}
-Es muss immer darauf geachtet werden, dass die Torbedingungen eingehalten werden (außer bei Kettenschaltung)!
-\subsubsection*{Parallelschaltung}
-\begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=0.8\textwidth]{img/Zweitor_Parallel}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.23\textwidth}
-$\textbf{G}_{ges}=\textbf{G}_1+\textbf{G}_2$\\\\
-\end{minipage}
+Es muss immer darauf geachtet werden, dass die Torbedingungen eingehalten werden (außer bei Kettenschaltung)!\\\\
 
-\subsubsection*{Serienschaltung}
-\begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=0.8\textwidth]{img/Zweitor_Seriell}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.23\textwidth}
-$\textbf{R}_{ges}=\textbf{R}_1+\textbf{R}_2$\\\\
-\end{minipage}
-
-\subsubsection*{Hybride Verschaltung}
-\begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=0.8\textwidth]{img/Zweitor_Hybrid}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.23\textwidth}
-$\textbf{H}_{ges}=\textbf{H}_1+\textbf{H}_2$\\\\
-\end{minipage}
-
-\subsubsection*{Inverse hybride Verschaltung}
-\begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=0.8\textwidth]{img/Zweitor_inversHybrid}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.23\textwidth}
-$\textbf{H'}_{ges}=\textbf{H'}_1+\textbf{H'}_2$\\\\
-\end{minipage}
-
-\subsubsection*{Kettenschaltung}
-\includegraphics[width=0.3\textwidth, keepaspectratio]{img/Zweitor_Kette}
-$\textbf{A}_{ges}=\textbf{A}_1\cdot \textbf{A}_2$
-
-\subsubsection*{Inverse Kettenschaltung}
-\includegraphics[width=0.3\textwidth]{img/Zweitor_inversKette}
-$\textbf{A'}_{ges}=\textbf{A'}_2\cdot \textbf{A'}_1$
+\begin{tabular}{c|c}
+	\textbf{Parallelschaltung} & \textbf{Serienschaltung}\\
+	\includegraphics[width=0.2\textwidth]{img/Zweitor_Parallel} & \includegraphics[width=0.2\textwidth]{img/Zweitor_Seriell} \\
+	$\textbf{G}_{ges}=\textbf{G}_1+\textbf{G}_2$ & $\textbf{R}_{ges}=\textbf{R}_1+\textbf{R}_2$
+\\&\\
+	\textbf{Hybride Verschaltung} & \textbf{Inverse hybride Verschaltung}\\
+	\includegraphics[width=0.2\textwidth]{img/Zweitor_Hybrid} & \includegraphics[width=0.2\textwidth]{img/Zweitor_inversHybrid} \\
+	$\textbf{H}_{ges}=\textbf{H}_1+\textbf{H}_2$ & $\textbf{H'}_{ges}=\textbf{H'}_1+\textbf{H'}_2$
+\\&\\
+	\textbf{Kettenschaltung} & \textbf{Inverse Kettenschaltung}\\
+	\includegraphics[width=0.21\textwidth, keepaspectratio]{img/Zweitor_Kette} &
+	\includegraphics[width=0.21\textwidth]{img/Zweitor_inversKette}\\
+	$\textbf{A}_{ges}=\textbf{A}_1\cdot \textbf{A}_2$ &
+	$\textbf{A'}_{ges}=\textbf{A'}_2\cdot \textbf{A'}_1$
+\end{tabular}
 
 \subsection*{Umrechnung der Zweitor-Matrizen}
 \subsubsection*{Implizit $\rightarrow$ explizit}
