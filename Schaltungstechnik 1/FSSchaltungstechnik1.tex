@@ -55,7 +55,7 @@
 \rhead[\leftmark]{Erstelldatum: \today}
 \lfoot[\leftmark]{Keine Garantie auf Vollständigkeit und Richtigkeit!}
 \cfoot[\leftmark]{}
-\rfoot[\leftmark]{\thepage}
+\rfoot[\leftmark]{\textbf{Seite \thepage}}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
 
@@ -169,7 +169,7 @@ Parallelschaltung: & $G_{gesamt}=G_1+...+G_i$
 \centering
 Spannungsteiler\\
 \vspace{0.3 cm}
-\includegraphics[width=0.8\textwidth]{Grafiken/Spannungsteiler}\\
+\includegraphics[width=0.8\textwidth]{img/Spannungsteiler}\\
 \vspace{0.5 cm}
 $u_i=u_{ges}\cdot \frac{R_i}{R_{ges}}=u_{ges}\cdot \frac{G_{ges}}{G_i}$
 $R_{ges}=R_1+...+R_n$
@@ -180,7 +180,7 @@ $G_{1+2}=\frac{G_1\cdot G_2}{G_1+G_2}$
 \centering
 Stromteiler\\
 \vspace{0.3 cm}
-\includegraphics[width=0.5\textwidth]{Grafiken/Stromteiler}\\
+\includegraphics[width=0.5\textwidth]{img/Stromteiler}\\
 \vspace{0.5 cm}
 $i_i=i_{ges}\cdot \frac{R_{ges}}{R_i}=i_{ges}\cdot \frac{G_i}{G_{ges}}$
 $G_{ges}=G_1+...+G_n$
@@ -218,7 +218,7 @@ $R_{1+2}=\frac{R_1\cdot R_2}{R_1+R_2}$
 
 
 \subsection*{Quellwandlung linearer Quellen}
-\includegraphics[width=0.45\textwidth]{Grafiken/Quellwandlung}\\\\
+\includegraphics[width=0.45\textwidth]{img/Quellwandlung}\\\\
 \textbf{Wichtig: Pfeilrichtung $I_0$} \\
 Für jede lineare Quelle gilt:\\
 $u=R_i\cdot i+U_0$ bzw. $i=G_i\cdot u-I_0$
@@ -344,7 +344,7 @@ $F$: & Lasteintor
 \end{tabular}
 \begin{minipage}[b]{0.23\textwidth}
 \centering
-\includegraphics[width=0.8\textwidth]{Grafiken/Arbeitspunkt}\\
+\includegraphics[width=0.8\textwidth]{img/Arbeitspunkt}\\
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -401,7 +401,7 @@ Zuerst alle Bauteile im Arbeitspunkt linearisieren. Erhalte $u_1=U+\Delta u$\\
 \subsection*{Bauelemente}
 \subsubsection*{Nullator}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/Nullator}
+\includegraphics[width=0.95\textwidth]{img/Nullator}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -412,7 +412,7 @@ Strom/spannungsgesteuert, ungepolt, passiv, verlustlos, quellenfrei, streng line
 
 \subsubsection*{Norator}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/Norator}
+\includegraphics[width=0.95\textwidth]{img/Norator}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -423,7 +423,7 @@ Ungepolt, aktiv, quellenfrei, streng linear. Dual zu Norator.
 
 \subsubsection*{Leerlauf}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/Leerlauf}
+\includegraphics[width=0.95\textwidth]{img/Leerlauf}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -434,7 +434,7 @@ Spannungsgesteuert, ungepolt, passiv, verlustlos, quellenfrei, streng linear. Du
 
 \subsubsection*{Kurzschluss}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/Kurzschluss}
+\includegraphics[width=0.95\textwidth]{img/Kurzschluss}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -445,7 +445,7 @@ Stromgesteuert, ungepolt, passiv, verlustlos, quellenfrei, streng linear. Dual z
 
 \subsubsection*{Ohmscher Widerstand}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/Widerstand}
+\includegraphics[width=0.95\textwidth]{img/Widerstand}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -456,7 +456,7 @@ Spannungs-/Stromgesteuert ($R>0$/$G>0$), ungepolt, passiv für $R\ge 0$, aktiv f
 
 \subsubsection*{Ideale Stromquelle}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/Stromquelle}
+\includegraphics[width=0.95\textwidth]{img/Stromquelle}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -467,7 +467,7 @@ Für $I>0$: Spannungsgesteuert, gepolt, aktiv, nicht verlustlos, nicht quellenfr
 
 \subsubsection*{Ideale Spannungsquelle}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/Spannungsquelle}
+\includegraphics[width=0.95\textwidth]{img/Spannungsquelle}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -478,7 +478,7 @@ Für $U>0$: Stromgesteuert, gepolt, aktiv, nicht verlustlos, nicht quellenfrei, 
 
 \subsubsection*{Ideale Diode}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/IdealeDiode}
+\includegraphics[width=0.95\textwidth]{img/IdealeDiode}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -489,7 +489,7 @@ Nicht Strom/Spannungsgesteuert, gepolt, passiv, quellenfrei, stückweise linear.
 
 \subsubsection*{Reale Diode}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/RealeDiode}
+\includegraphics[width=0.95\textwidth]{img/RealeDiode}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -500,7 +500,7 @@ Spannungs/Stromgesteuert, gepolt, passiv, quellenfrei, nicht linear.
 
 \subsubsection*{Photodiode}
 \begin{minipage}[b]{0.24\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/Photodiode}
+\includegraphics[width=\textwidth]{img/Photodiode}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.22\textwidth}
@@ -511,7 +511,7 @@ Nicht Strom/Spannungsgesteuert, gepolt, aktiv, nicht linear.
 
 \subsubsection*{Zenerdiode}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/Z-Diode}
+\includegraphics[width=0.95\textwidth]{img/Z-Diode}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -521,25 +521,25 @@ Strom/Spannungsgesteuert, gepolt, passiv, quellenfrei, nicht linear.
 
 \subsubsection*{Tunneldiode}
 \begin{minipage}[b]{0.26\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/Tunneldiode}
+\includegraphics[width=0.95\textwidth]{img/Tunneldiode}
 \end{minipage}
 \\
 Spannungsgesteuert, gepolt, passiv, quellenfrei, nicht linear.
 
 \subsubsection*{Konkaver Widerstand}
-\includegraphics[width=0.48\textwidth]{Grafiken/Rkonkav}\\\\
+\includegraphics[width=0.48\textwidth]{img/Rkonkav}\\\\
 $i=0$ für $u\leq U_0$\\
 $i=G\cdot (u-U_0)$ für $u\geq U_0$\\
 Spannungsgesteuert, gepolt, passiv, quellenfrei ($U_0\ge 0$), stückweise linear. Dual zu konvexem Widerstand.
 
 \subsubsection*{Konvexer Widerstand}
-\includegraphics[width=0.48\textwidth]{Grafiken/Rkonvex}\\\\
+\includegraphics[width=0.48\textwidth]{img/Rkonvex}\\\\
 $u=0$ für $i\leq I_0$\\
 $u=R\cdot (i-I_0)$ für $i\geq I_0$\\
 Stromgesteuert, gepolt, passiv, quellenfrei ($I_0\geq 0$), stückweise linear.
 
 \subsubsection*{Lineare Quellen}
-\includegraphics[width=0.48\textwidth]{Grafiken/lineareQuellen}\\\\
+\includegraphics[width=0.48\textwidth]{img/lineareQuellen}\\\\
 $U_0=I_0\cdot R;\;\;\;I_0=U_0\cdot G$
 Spannungs/Stromgesteuert ($R>0$/$G>0$), gepolt, aktiv ($I_0>0 \Leftrightarrow U_0>0$), linear.
 
@@ -634,7 +634,7 @@ $\underbrace{\left.\begin{bmatrix}\frac{\partial f_1}{\partial u_1} & \frac{\par
 Es muss immer darauf geachtet werden, dass die Torbedingungen eingehalten werden (außer bei Kettenschaltung)!
 \subsubsection*{Parallelschaltung}
 \begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=0.8\textwidth]{Grafiken/Zweitor_Parallel}
+\includegraphics[width=0.8\textwidth]{img/Zweitor_Parallel}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -643,7 +643,7 @@ $\textbf{G}_{ges}=\textbf{G}_1+\textbf{G}_2$\\\\
 
 \subsubsection*{Serienschaltung}
 \begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=0.8\textwidth]{Grafiken/Zweitor_Seriell}
+\includegraphics[width=0.8\textwidth]{img/Zweitor_Seriell}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -652,7 +652,7 @@ $\textbf{R}_{ges}=\textbf{R}_1+\textbf{R}_2$\\\\
 
 \subsubsection*{Hybride Verschaltung}
 \begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=0.8\textwidth]{Grafiken/Zweitor_Hybrid}
+\includegraphics[width=0.8\textwidth]{img/Zweitor_Hybrid}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -661,7 +661,7 @@ $\textbf{H}_{ges}=\textbf{H}_1+\textbf{H}_2$\\\\
 
 \subsubsection*{Inverse hybride Verschaltung}
 \begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=0.8\textwidth]{Grafiken/Zweitor_inversHybrid}
+\includegraphics[width=0.8\textwidth]{img/Zweitor_inversHybrid}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -669,11 +669,11 @@ $\textbf{H'}_{ges}=\textbf{H'}_1+\textbf{H'}_2$\\\\
 \end{minipage}
 
 \subsubsection*{Kettenschaltung}
-\includegraphics[width=0.3\textwidth, keepaspectratio]{Grafiken/Zweitor_Kette}
+\includegraphics[width=0.3\textwidth, keepaspectratio]{img/Zweitor_Kette}
 $\textbf{A}_{ges}=\textbf{A}_1\cdot \textbf{A}_2$
 
 \subsubsection*{Inverse Kettenschaltung}
-\includegraphics[width=0.3\textwidth]{Grafiken/Zweitor_inversKette}
+\includegraphics[width=0.3\textwidth]{img/Zweitor_inversKette}
 $\textbf{A'}_{ges}=\textbf{A'}_2\cdot \textbf{A'}_1$
 
 \subsection*{Umrechnung der Zweitor-Matrizen}
@@ -768,14 +768,14 @@ $\underline{i}=\textbf{G}\cdot\underline{u}-\textbf{G}\cdot\underline{U}_0$
 
 \subsection*{Spezielle Zweitore}
 \subsubsection*{VCCS Spannungsgesteuerte Stromquelle}
-\includegraphics[width=0.45\textwidth]{Grafiken/OP_USI}\\\\
+\includegraphics[width=0.45\textwidth]{img/OP_USI}\\\\
 \begin{tabular}{ll}
 $\textbf{A}=\begin{bmatrix}0 & -\frac{1}{g}\\ 0 & 0\end{bmatrix}\;\;\textbf{G}=\begin{bmatrix}0 & 0\\ g & 0\end{bmatrix}\;\;\textbf{M}=\begin{bmatrix}0 & 0\\ -g & 0\end{bmatrix}\;\;\textbf{N}=\begin{bmatrix}1 & 0\\ 0 & 1\end{bmatrix}$
 \end{tabular}
 
 \subsubsection*{CCCS Stromggesteuerte Stromquelle}
 \begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/OP_ISI}
+\includegraphics[width=0.95\textwidth]{img/OP_ISI}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -785,13 +785,13 @@ $\textbf{A}=\begin{bmatrix}0 & 0\\ 0 & -\frac{1}{\beta}\end{bmatrix}\;\;\textbf{
 \end{minipage}
 
 \subsubsection*{VCVS Spannungsgesteurte Spannungsquelle}
-\includegraphics[width=0.45\textwidth]{Grafiken/OP_USU}\\\\
+\includegraphics[width=0.45\textwidth]{img/OP_USU}\\\\
 \begin{tabular}{ll}
 $\textbf{A}=\begin{bmatrix}\frac{1}{\mu} & 0\\ 0 & 0\end{bmatrix}\;\;\textbf{H'}=\begin{bmatrix}0 & 0\\ \mu & 0\end{bmatrix}$
 \end{tabular}
 
 \subsubsection*{CCVS Stromgesteuerte Spannungsquelle}
-\includegraphics[width=0.45\textwidth]{Grafiken/OP_ISU}\\\\
+\includegraphics[width=0.45\textwidth]{img/OP_ISU}\\\\
 \begin{tabular}{ll}
 $\textbf{A}=\begin{bmatrix}0 & 0\\ \frac{1}{r} & 0\end{bmatrix}\;\;\textbf{R}=\begin{bmatrix}0 & 0\\ r & 0\end{bmatrix}\;\;\textbf{M}=\begin{bmatrix}1 & 0\\ 0 & 1\end{bmatrix}\;\;\textbf{N}=\begin{bmatrix}0 & 0\\ -r & 0\end{bmatrix}$
 \end{tabular}
@@ -799,7 +799,7 @@ $\textbf{A}=\begin{bmatrix}0 & 0\\ \frac{1}{r} & 0\end{bmatrix}\;\;\textbf{R}=\b
 \subsubsection*{Nullor}
 Quellenfrei, streng linear, nicht verlustlos\\\\
 \begin{minipage}[b]{0.13\textwidth}
-\includegraphics[width=0.95\textwidth]{Grafiken/OP_Nullor}
+\includegraphics[width=0.95\textwidth]{img/OP_Nullor}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.33\textwidth}
@@ -811,7 +811,7 @@ $\textbf{A}=\begin{bmatrix}0 & 0\\ 0 & 0\end{bmatrix}\;\;\textbf{M}=\begin{bmatr
 \subsubsection*{Gyrator}
 Dualwandler, Positiv-Immittanz-Inverter (PII)\\\\
 \begin{minipage}[b]{0.2\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_Gyrator}
+\includegraphics[width=0.9\textwidth]{img/OP_Gyrator}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.26\textwidth}
@@ -831,7 +831,7 @@ $\textbf{A'}=\begin{bmatrix}0 & -R_2\\ -\frac{1}{R_1} & 0\end{bmatrix}$ & $\text
 \subsubsection*{Idealer Übertrager}
 Positiv-Immittanz-Konverter (PIK)\\\\
 \begin{minipage}[b]{0.2\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_Uebertrager}
+\includegraphics[width=0.9\textwidth]{img/OP_Uebertrager}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.26\textwidth}
@@ -848,7 +848,7 @@ $\textbf{H'}=\begin{bmatrix}0 & -\frac{1}{\ddot{u}}\\ \frac{1}{\ddot{u}} & 0\end
 
 \subsubsection*{NIK}
 Negativ-Immittanz-Konverter (NIK)\\\\
-\includegraphics[width=1\linewidth, keepaspectratio]{Grafiken/NIK.png}
+\includegraphics[width=1\linewidth, keepaspectratio]{img/NIK.png}
 Aktiv, antireziprok, für $|k|=1$ symmetrisch\\\\
 \begin{tabular}{ll}
 $k=1$ & $F$ ist an der $i_1$-Achse gespiegelter Zweipol\\
@@ -861,14 +861,14 @@ $\textbf{H'}=\begin{bmatrix}0 & -\frac{1}{k}\\ -\frac{1}{k} & 0\end{bmatrix}$ & 
 
 \section*{Bipolar-Transistoren}
 \subsection*{Kennlinien eines npn-Transistors}
-\includegraphics[width=0.4\textwidth]{Grafiken/Kennlinie_Transistor}
+\includegraphics[width=0.4\textwidth]{img/Kennlinie_Transistor}
 \subsection*{Basisschaltung}
-\includegraphics[width=0.4\textwidth]{Grafiken/Transistor_Basisschaltung}
+\includegraphics[width=0.4\textwidth]{img/Transistor_Basisschaltung}
 \subsection*{Emitterschaltung}
-\includegraphics[width=0.4\textwidth]{Grafiken/Transistor_Emitterschaltung}
+\includegraphics[width=0.4\textwidth]{img/Transistor_Emitterschaltung}
 
 \subsection*{Ebers-Moll-Modell (Basisschaltung, npn)}
-\includegraphics[width=0.4\textwidth]{Grafiken/Ebers-Moll}\\\\
+\includegraphics[width=0.4\textwidth]{img/Ebers-Moll}\\\\
 $i_e=-I_{es}\cdot (e^{-\frac{u_{eb}}{U_T}}-1)+\alpha_RI_{cs}\cdot (e^{-\frac{u_{cb}}{U_T}}-1)$\\\\
 $i_c=\alpha_FI_{es}\cdot (e^{-\frac{u_{eb}}{U_T}}-1)-I_{cs}\cdot (e^{-\frac{u_{cb}}{U_T}}-1)$
 
@@ -876,7 +876,7 @@ $i_c=\alpha_FI_{es}\cdot (e^{-\frac{u_{eb}}{U_T}}-1)-I_{cs}\cdot (e^{-\frac{u_{c
 \textbf{Bedingung} für den Vorwärtsbetrieb: $u_{be}>0 \wedge u_{cb}\geq 0$
 \subsubsection*{Basisschaltung}
 \begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/Basisschaltung_Vereinfachung}\\
+\includegraphics[width=\textwidth]{img/Basisschaltung_Vereinfachung}\\
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -886,7 +886,7 @@ $i_c=-\alpha_Fi_e$\\\\
 
 \subsubsection*{Emitterschaltung}
 \begin{minipage}[b]{0.23\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/Emitterschaltung_Vereinfachung}\\
+\includegraphics[width=\textwidth]{img/Emitterschaltung_Vereinfachung}\\
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.23\textwidth}
@@ -900,12 +900,12 @@ $i_c=\overbrace{\underbrace{\alpha_F}_{\approx 1}\cdot I_{es}}^{\approx \beta_F\
 (Emitterschaltung, Vorwärtsbetrieb, npn)\\\\
 \begin{minipage}[t]{0.23\textwidth}
 Großsignal-ESB:\\\\
-\includegraphics[width=\textwidth]{Grafiken/Transistor_GSE}\\\\
+\includegraphics[width=\textwidth]{img/Transistor_GSE}\\\\
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.23\textwidth}
 Kleinsignal-ESB:\\\\
-\includegraphics[width=\textwidth]{Grafiken/Transistor_KSE}\\\\
+\includegraphics[width=\textwidth]{img/Transistor_KSE}\\\\
 \end{minipage}\\
 
 \begin{minipage}[t]{0.23\textwidth}
@@ -917,7 +917,7 @@ $g\approx \frac{I_b}{U_T}=\frac{I_c}{\beta_F\cdot U_T}$\\\\
 \hfill
 \begin{minipage}[t]{0.23\textwidth}
 Wenn $\beta_F \rightarrow \infty$:\\\\
-\includegraphics[width=\textwidth]{Grafiken/Nullormodell}
+\includegraphics[width=\textwidth]{img/Nullormodell}
 Dreipol Nullor $\textbf{A}=\begin{bmatrix}0 & 0\\ 0 & 0\end{bmatrix}$. Wie normaler Nullor.
 \end{minipage}
 
@@ -931,7 +931,7 @@ Source am niedrigeren Potential ($u_{DS} > 0$)
 \hfill
 \begin{minipage}[b]{0.1\textwidth}
 \centering
-\includegraphics[width=\textwidth]{Grafiken/nMOS}
+\includegraphics[width=\textwidth]{img/nMOS}
 \end{minipage}
 
 \begin{itemize}[label=,leftmargin=0mm]
@@ -958,7 +958,7 @@ Source am höheren Potential ($u_{DS} < 0$)
 \hfill
 \begin{minipage}[b]{0.1\textwidth}
 \centering
-\includegraphics[width=\textwidth]{Grafiken/pMOS}
+\includegraphics[width=\textwidth]{img/pMOS}
 \end{minipage}
 
 \begin{itemize}[label=,leftmargin=0mm]
@@ -977,13 +977,13 @@ Enhancement-Typ (selbstsperrend): $U_t \approx -1V$\\\\
 
 \subsection*{Kleinsignal-Ersatzschaltbilder (nMOS)}
 \subsubsection*{Linearer Bereich}
-\includegraphics[width=0.30\textwidth]{Grafiken/FET_KSE_lin}\\\\
+\includegraphics[width=0.30\textwidth]{img/FET_KSE_lin}\\\\
 $g_m=\left.\frac{\partial i_d}{\partial u_{gs}}\right|_{AP}=\beta \cdot U_{ds}$\\\\
 $g_0=\left.\frac{\partial i_d}{\partial u_{ds}}\right|_{AP}=\beta \cdot (U_{gs}-U_T-U_{ds})$
 
 \subsubsection*{Sättigungsbereich}
 \begin{minipage}[b]{0.25\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/FET_KSE_sat}
+\includegraphics[width=0.9\textwidth]{img/FET_KSE_sat}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -992,13 +992,13 @@ $g_m=\beta \cdot (U_{gs}-U_T)$\\\\
 \end{minipage}
 
 \section*{Operationsverstärker}
-\includegraphics[width=0.45\textwidth]{Grafiken/OP}\\\\
+\includegraphics[width=0.45\textwidth]{img/OP}\\\\
 Operationsverstärker müssen immer über ihren invertierenden Eingang rückgekoppelt werden, da sich sonst eine Z-Kennlinie ergibt und der Arbeitspunkt somit nicht mehr eindeutig ist.
 \subsection*{Ersatzschaltbilder}
 \textbf{$u_d$ mit einzeichnen.}
 \subsubsection*{ESB I}
 \begin{minipage}[b]{0.3\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_ESBI}
+\includegraphics[width=0.9\textwidth]{img/OP_ESBI}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.16\textwidth}
@@ -1008,7 +1008,7 @@ $u_{out}=-U_{SAT}$
 
 \subsubsection*{ESB II}
 \begin{minipage}[b]{0.3\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_ESBII}
+\includegraphics[width=0.9\textwidth]{img/OP_ESBII}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.16\textwidth}
@@ -1018,7 +1018,7 @@ $|u_{out}|\leq |U_{SAT}|$
 
 \subsubsection*{ESB III}
 \begin{minipage}[b]{0.3\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_ESBIII}
+\includegraphics[width=0.9\textwidth]{img/OP_ESBIII}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.16\textwidth}
@@ -1029,7 +1029,7 @@ $u_{out}=U_{SAT}$
 \subsection*{OP-Schaltungen}
 \subsubsection*{Spannungsfolger (Impedanzwandler)}
 \begin{minipage}[b]{0.3\textwidth}
-\includegraphics[width=0.9\textwidth]{Grafiken/OP_SF}
+\includegraphics[width=0.9\textwidth]{img/OP_SF}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.16\textwidth}
@@ -1039,8 +1039,8 @@ $v_u=1$
 
 \begin{tabular}{c|c}
 	Nichtinvertierender Verstärker & Invertierender Verstärker\\
-	\includegraphics[width=0.2\textwidth]{Grafiken/OP_NiV} &
-	\includegraphics[width=0.2\textwidth]{Grafiken/OP_IV}\\
+	\includegraphics[width=0.2\textwidth]{img/OP_NiV} &
+	\includegraphics[width=0.2\textwidth]{img/OP_IV}\\
 	$u_{out}=(1+\frac{R_0}{R_1})\cdot u_{in}$ & $u_{out}=-\frac{R_0}{R_1}\cdot u_{in}$\\
 	$v_u=1+\frac{R_0}{R_1}$ & $v_u=\frac{R_0}{R_1}$
 \end{tabular}
@@ -1048,14 +1048,14 @@ $v_u=1$
 
 \begin{tabular}{c|c}
 	Differenzierer & Integrierer\\
-	\includegraphics[width=0.2\textwidth]{Grafiken/OP_Diff} & \includegraphics[width=0.2\textwidth]{Grafiken/OP_Int}\\
+	\includegraphics[width=0.2\textwidth]{img/OP_Diff} & \includegraphics[width=0.2\textwidth]{img/OP_Int}\\
 	$u_{out}=-RC\cdot \dot{u}_{in}$ & 
 	$u_{out}=-u_c(t_0)-\frac{1}{RC}\cdot \int\limits_{t_0}^{t_1}u_{in}dt$
 \end{tabular}
 
 \subsubsection*{Differenzverstärker/Subtrahierer}
 \begin{minipage}[b]{0.25\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/OP_PDiffV}
+\includegraphics[width=\textwidth]{img/OP_PDiffV}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
@@ -1067,19 +1067,19 @@ $u_{out}=\frac{R_4}{R_3}\cdot (u_2-u_1)$\\\\
 
 \begin{tabular}{c|c}
 	\emph{Logarithmierer} & \emph{Exponentierer}\\
-	\includegraphics[width=0.2\textwidth]{Grafiken/OP_Log} & \includegraphics[width=0.2\textwidth]{Grafiken/OP_Exp}\\
+	\includegraphics[width=0.2\textwidth]{img/OP_Log} & \includegraphics[width=0.2\textwidth]{img/OP_Exp}\\
 	$u_{out}=-U_T\cdot ln(\frac{u_{in}}{R\cdot I_S})$ & 
 	$u_{out}=-R\cdot I_S\cdot e^{\frac{u_{in}}{U_T}}$
 \end{tabular}
 
 \subsubsection*{Ideale Diode}
 \begin{minipage}[b]{0.2\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/OP_IdealeDiode}
+\includegraphics[width=\textwidth]{img/OP_IdealeDiode}
 \end{minipage}
 
 \begin{tabular}{c|c}
 	\emph{Konkaver Widerstand} & \emph{Konvexer Widerstand}\\
-\includegraphics[width=0.2\textwidth]{Grafiken/OP_Rkonkav} & \includegraphics[width=0.2\textwidth]{Grafiken/OP_Rkonvex}\\
+\includegraphics[width=0.2\textwidth]{img/OP_Rkonkav} & \includegraphics[width=0.2\textwidth]{img/OP_Rkonvex}\\
 $U_0<U_{SAT}$ & $I_0<G\cdot U_{SAT}$
 \end{tabular}
 
@@ -1112,33 +1112,33 @@ $\textbf{Y}_k\cdot \underline{u}_k=\underline{i}_q$
 \subsection*{1. Nichtspannungsgesteuerte Elemente ersetzen}
 \subsubsection*{Ideale Spannungsquelle}
 \begin{minipage}[b]{0.35\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/KSA_Quellwandlung}
+\includegraphics[width=\textwidth]{img/KSA_Quellwandlung}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.1\textwidth}
 $I_0=\frac{U_0}{R}$\\\\
 \end{minipage}\\\\
-\includegraphics[width=0.48\textwidth]{Grafiken/KSA_Quellwandlung2}\\\\
+\includegraphics[width=0.48\textwidth]{img/KSA_Quellwandlung2}\\\\
 $I_0=G\cdot U_0$
 \subsubsection*{Idealer Übertrager}
-\includegraphics[width=0.48\textwidth]{Grafiken/KSA_Uebertrager}
+\includegraphics[width=0.48\textwidth]{img/KSA_Uebertrager}
 \subsubsection*{VCVS Voltage Controlled Voltage Source}
-\includegraphics[width=0.48\textwidth]{Grafiken/KSA_USU}\\\\
+\includegraphics[width=0.48\textwidth]{img/KSA_USU}\\\\
 $u_2=\mu \cdot u_1\;\;\;\;\;i_2=-\frac{\mu \cdot u_1}{R_D}$\\\\\\
-\includegraphics[width=0.48\textwidth]{Grafiken/KSA_USU2}\\\\
+\includegraphics[width=0.48\textwidth]{img/KSA_USU2}\\\\
 $i_2=-G\cdot \mu\cdot u_1$
 \subsubsection*{CCCS Current Controlled Current Source}
-\includegraphics[width=0.48\textwidth]{Grafiken/KSA_ISI}\\\\
+\includegraphics[width=0.48\textwidth]{img/KSA_ISI}\\\\
 $i_2=\beta \cdot i_1\;\;\;\;\;u=R_d\cdot i_1\;\;\;\;\;i_2=\frac{\beta \cdot u}{R_d}$
 \subsubsection*{CCVS Current Controlled Voltage Source}
-\includegraphics[width=0.48\textwidth]{Grafiken/KSA_ISU}\\\\
+\includegraphics[width=0.48\textwidth]{img/KSA_ISU}\\\\
 $u_2=\beta \cdot i_1\;\;\;\;\;u=R_d\cdot i_1\;\;\;\;\;i_2=\frac{u}{R_d}\;\;\;\;\;u_2=-R_d\cdot i_1$
 
 \subsection*{2. Knotenspannungsvektor $U_k$ aufstellen}
 \subsection*{3. Knotenleitwertsmatrix $Y_k$ aufstellen}
 \subsubsection*{Leitwert}
 \begin{minipage}[b]{0.05\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/KSA_Widerstand}
+\includegraphics[width=\textwidth]{img/KSA_Widerstand}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.4\textwidth}
@@ -1146,7 +1146,7 @@ $\textbf{Y}_k=\;\;\begin{matrix}\begin{matrix} & & \;\;\;\kreis{$\alpha$} & \;\;
 \end{minipage}
 \subsubsection*{Gyrator}
 \begin{minipage}[b]{0.18\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/KSA_Gyrator}
+\includegraphics[width=\textwidth]{img/KSA_Gyrator}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.30\textwidth}
@@ -1159,7 +1159,7 @@ $\textbf{Y}_k=\begin{matrix}\begin{matrix}\;\;\;\;\;\;\;\;\;\;\;\kreis{$\gamma$}
 $i_1=Gu_2$, $i_2=-Gu_1$
 \subsubsection*{VCCS Voltage Controlled Current Source}
 \begin{minipage}[b]{0.20\textwidth}
-\includegraphics[width=\textwidth]{Grafiken/KSA_USI}
+\includegraphics[width=\textwidth]{img/KSA_USI}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.28\textwidth}
@@ -1168,7 +1168,7 @@ $\textbf{Y}_k=\;\;\begin{matrix}\begin{matrix} & & \;\;\;\kreis{$\gamma$} & \;\;
 
 \subsection*{4. Quellvektor $I_q$ aufstellen}
 \begin{minipage}[b]{0.10\textwidth}
-\includegraphics[width=0.4\textwidth]{Grafiken/KSA_Stromquelle}
+\includegraphics[width=0.4\textwidth]{img/KSA_Stromquelle}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.30\textwidth}
