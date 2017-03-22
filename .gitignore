@@ -2,6 +2,7 @@
 **/*.aux
 **/*.lof
 **/*.log
+
 *.lot
 *.fls
 *.out
@@ -10,6 +11,12 @@
 *.fot
 *.cb
 *.cb2
+
+# Old Git versions
+*.aux
+*.lof
+*.log
+
 
 ## Intermediate documents:
 *.dvi
@@ -29,11 +36,28 @@
 *.run.xml
 
 ## Build tool auxiliary files:
+<<<<<<< HEAD
 **/*.fdb_latexmk
 **/*.synctex
 **/*.synctex.gz
 **/*.synctex.gz(busy)
 **/*.pdfsync
+=======
+#**/*.fdb_latexmk
+#**/*.synctex
+#**/*.synctex.gz
+#**/*.synctex.gz(busy)
+#**/*.pdfsync
+
+# For older Git versions @Rechnerhalle
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+>>>>>>> c8d93f43108248d965b91c5e96b7ade1fdcea93b
+
+
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms
