@@ -34,7 +34,6 @@
 \usepackage{fancyhdr}
 % for highlighting with \hl{}
 \usepackage{soul}
-% \usepackage{titlesec}
 \setlist{itemsep=.01mm}
 \setenumerate{label=\emph{\arabic*})}
 \setlength{\columnsep}{1cm}
@@ -44,11 +43,6 @@
 \sectionfont{\Large \sc\bf}
 \subsectionfont{\normalsize}
 \subsubsectionfont{\small\textit}
-% \titlespacing*{\section}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
-% \titlespacing*{\subsection}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
-% \titlespacing*{\section}{0pt}{1.1\baselineskip}{\baselineskip}
-% \titlespacing*{\subsubsection}{0pt}{1.1\baselineskip}{\baselineskip}
-% \titleformat*{\subsubsection}{\normalsize\bfseries}
 
 \pagestyle{fancy}
 \lhead[\leftmark]{Schaltungstechnik 2}
@@ -483,7 +477,9 @@ $\underline{\dot{x}}(t)=\textbf{A}\underline{x}(t)+\underbrace{\textbf{B}\underl
 \underline{Falls $\textbf{A}$ invertierbar:}\\\\
 Koordinatentransformation:\\\\ $\underline{x}'=\underline{x}+\underbrace{\textbf{A}^{-1}\overbrace{\textbf{B}\underline{v}_0}^{\underline{\nu}}}_{-\underline{x}_{\infty}};\;\;\;\;\;\underline{\dot{x'}}=\underline{\dot{x}} \;\;\;\;\; \underline{x}_\infty= -\textbf{A}^{-1}\textbf{B}\underline{v}_0$\\\\
 $\Rightarrow$ homogene DGL: $\underline{\dot{x'}}=\textbf{A}\underline{x'}\;\;\;\;\;\rightarrow$ \hl{siehe oben}\\\\
-Rücktransformation: $\underline{x}=\underline{x}'\underbrace{-\textbf{A}^{-1} \overbrace{\textbf{B}\underline{v}_0}^{\underline{\nu}}}_{\underline{x}_{\infty}}$ \\\\
+Rücktransformation: $\underline{x}=\underline{x}'\underbrace{-\textbf{A}^{-1} \overbrace{\textbf{B}\underline{v}_0}^{\underline{\nu}}}_{\underline{x}_{\infty}}$
+\quad
+$= \underline{x}'-\underline{x}_{\infty} $\\\\
 Graphisch: Verschiebung des Ursprungs in $\underline{x}_{\infty}$
 
 \subsubsection*{Zustandsgleichung mit allgemeiner Erregung}
@@ -678,7 +674,7 @@ $(1): H(j\omega)=\frac{j\omega}{\alpha};\;\;\;\;\;\;\;(2): H(j\omega)=\frac{\alp
 $H(j\omega)=1+\frac{j\omega}{\alpha}$\\\\
 \includegraphics[width=0.48\textwidth]{img/Bode-Diagramm3}\\\\
 $H(j\omega)=\frac{1}{1+\frac{j\omega}{\alpha}}$\\\\
-\includegraphics[width=0.48\textwidth]{img/Bode-Diagramm4}\\\\\\\newpage
+\includegraphics[width=0.48\textwidth]{img/Bode-Diagramm4}\\\\\\
 \underline{Typische Übertragungsfunktionen:}\\\\
 \includegraphics[width=0.48\textwidth]{img/Bode-Diagramm_typisch}\\
 \subsection*{Komplexe Leistung}
@@ -699,7 +695,7 @@ http://creativecommons.org/licenses/by-nc-sa/3.0/de/
 \newpage
 \begin{figure*}
 \begin{center}
-\includegraphics[width=0.85\textwidth]{img/Phasenportraits}
+\includegraphics[width=0.85\textwidth]{img/Phasenportraits-annotated}
 \end{center}
 \end{figure*}
 
