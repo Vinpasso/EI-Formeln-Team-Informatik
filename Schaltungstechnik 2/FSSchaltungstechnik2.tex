@@ -61,7 +61,12 @@
 
 \newcommand{\entspr}{\widehat{=}}
 \newcommand{\sollsein}{\stackrel{!}{=}}
-
+% for spacing
+\usepackage{titlesec}
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 % for the sin/cos graph
 
@@ -719,8 +724,8 @@ $H(j\omega)=k=konst.\;\;\Rightarrow v(\omega)=20lg|k|$\\\\
 \includegraphics[width=0.48\textwidth]{img/Bode-Diagramm1}\\\\
 $(1): H(j\omega)=\frac{j\omega}{\alpha};\;\;\;\;\;\;\;(2): H(j\omega)=\frac{\alpha}{j\omega}$\\\\
 \includegraphics[width=0.48\textwidth]{img/Bode-Diagramm2}\\\\
-$H(j\omega)=1+\frac{j\omega}{\alpha}$\\\\
-\includegraphics[width=0.48\textwidth]{img/Bode-Diagramm3}\\\\
+{$H(j\omega)=1+\frac{j\omega}{\alpha}$\\\\
+\includegraphics[width=0.48\textwidth]{img/Bode-Diagramm3}\\\\}
 $H(j\omega)=\frac{1}{1+\frac{j\omega}{\alpha}}$\\\\
 \includegraphics[width=0.48\textwidth]{img/Bode-Diagramm4}\\\\\\
 \underline{Typische Übertragungsfunktionen:}\\\\
@@ -773,6 +778,19 @@ $\textbf{A} = \begin{bmatrix}
   d & -b \\
   -c & a \\
 \end{bmatrix} $
+
+\subsubsection*{Komplexe Zahlen}
+$z_1 = a+\mathrm{j}b;\;\; z_2 = c+\mathrm{j}d;\;\; z_1, z_2 \in \mathbb{C}$\\
+Addition: $ z_{1}+z_{2}=(a+c)+(b+d)\mathrm{j}$\\
+Multiplikation: $ z_{1} \cdot z_{2} = (ac-bd)+\mathrm{j}(ad+bc)$ \\
+Division: $\frac{z_1}{z_2}= \frac{(a+\mathrm{j}b)(c-\mathrm{j}d)}{(c+\mathrm{j}d)(c-\mathrm{j}d)} = \frac{ac+bd}{c^{2}+d^{2}}+ \frac {bc-ad}{c^{2}+d^{2}}\mathrm{j}$\\
+Betrag: $|z| = \sqrt{a^2 + b^2}$\\
+Komplexe Konjugation: $\overline{y+z}=\bar y+\bar z; \quad \overline{y\cdot z}=\bar y\cdot \bar z.$\\\\
+${z\cdot {\bar {z}}=(a+\mathrm{j}b)(a-\mathrm{j}b)=a^{2}+b^{2}=|z|^{2}}$\\\\
+${z+{\bar {z}}=(a+\mathrm{j}b)+(a-\mathrm{j}b)=2a=2Re(z)}$\\\\
+${z-{\bar {z}}=(a+\mathrm{j}b)-(a-\mathrm{j}b)=\mathrm{j}2b=2\mathrm{j}Im(z)}$
+\includegraphics[height=0.95\textwidth, angle=-90]{img/Bode_diagramm_fs}
+
 \\\\
 Lizenz: CC BY-NC-SA 3.0\\
 http://creativecommons.org/licenses/by-nc-sa/3.0/de/
