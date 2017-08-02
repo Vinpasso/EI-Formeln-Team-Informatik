@@ -34,6 +34,11 @@
 \usepackage{fancyhdr}
 % for highlighting with \hl{}
 \usepackage{soul}
+
+\usepackage{tikz}
+\usetikzlibrary{datavisualization}
+\usetikzlibrary{datavisualization.formats.functions}
+
 \setlist{itemsep=.01mm}
 \setenumerate{label=\emph{\arabic*})}
 \setlength{\columnsep}{1cm}
@@ -50,12 +55,37 @@
 \rhead[\leftmark]{Erstelldatum: \today}
 \lfoot[\leftmark]{Keine Garantie auf Vollständigkeit und Richtigkeit!}
 \cfoot[\leftmark]{}
-\rfoot[\leftmark]{\thepage}
+\rfoot[\leftmark]{Seite \thepage}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
 
 \newcommand{\entspr}{\widehat{=}}
 \newcommand{\sollsein}{\stackrel{!}{=}}
+
+
+% for the sin/cos graph
+
+\def\mytypesetter#1{
+  \pgfmathparse{#1/pi}
+  \pgfkeys{/pgf/number format/precision=2}
+  \pgfmathroundtozerofill{\pgfmathresult}
+  \pgfmathifisint{\pgfmathresult}{
+    \pgfmathprintnumber{\pgfmathresult}$\pi$
+  }{
+    \pgfmathprintnumber[/pgf/number format/frac, frac denom=2, frac whole=false]{\pgfmathresult}$\pi$
+  }
+}
+\def\quarter#1{
+  \pgfmathparse{#1/pi}
+  \pgfkeys{/pgf/number format/precision=2}
+  \pgfmathroundtozerofill{\pgfmathresult}
+  \pgfmathifisint{\pgfmathresult}{
+    \pgfmathprintnumber{\pgfmathresult}$\pi$
+  }{
+    \pgfmathprintnumber[/pgf/number format/frac, frac denom=8, frac whole=false]{\pgfmathresult}$\pi$
+  }
+}
+
 
 \begin{document}
 
@@ -438,17 +468,19 @@ $\underline{x}(t)=$ \= $c_1e^{\alpha t}[cos(\beta t)\underline{q}_r-sin(\beta t)
 $\underline{\dot{x}}=\textbf{A}\underline{x}\;\;\;\;\;|\textbf{A}=\textbf{Q}\mathbf{\Lambda} \textbf{Q}^{-1}$\\\\
 $\rightarrow\underline{\dot{x}}=\textbf{Q}\mathbf{\Lambda} \textbf{Q}^{-1}\underline{x}\;\;\;\;\;|\underline{x}=\textbf{Q}\underline{\xi}$\\\\
 $\rightarrow\textbf{Q}\underline{\dot\xi}=\textbf{Q}\mathbf{\Lambda} \textbf{Q}^{-1}\textbf{Q}\underline{\xi}$\\\\
-$\Rightarrow$ Normalform: $\underline{\dot{\xi}}= \mathbf{\Lambda} \underline{\xi}$\\\\
+$\Rightarrow$ Normalform: $\underline{\dot{\xi}}(t)= \mathbf{\Lambda} \underline{\xi}(t)$\\\\
 $\textbf{Q}=\begin{bmatrix}\underline{q}_1 & \underline{q}_2\end{bmatrix};\;\;\;\;\;\textbf{Q}^{-1}\textbf{A}\textbf{Q}=\mathbf{\Lambda} =\begin{bmatrix}\lambda_1 & 0 \\ 0 & \lambda_2\end{bmatrix}$\\\\
 $\underline{\xi}=\textbf{Q}^{-1}\underline{x};\;\;\;\;\underline{\xi}_0=\textbf{Q}^{-1}\underline{x}_0;\;\;\;\;$\\\\
-Lösung: $\underline{\xi} (t)=\left.\begin{matrix}e^{\lambda_1 t}\xi_{01} \\ e^{\lambda_2 t}\xi_{02}\end{matrix}\right]$\\\\
+Lösung: $\underline{\xi} (t)=\left.\begin{matrix}e^{\lambda_1 (t-t_0)}\xi_{01} \\ e^{\lambda_2 (t-t_0)}\xi_{02}\end{matrix}\right]$\\\\
 Rücktransformation: $\underline{x}(t)=\textbf{Q}\underline{\xi}(t)$\\
 $\Rightarrow \underline{x}(t)= \textbf{q}_1 e^{\lambda_1 (t-t_0)} \xi_{01}+ \textbf{q}_2 e^{\lambda_2 (t-t_0)} \xi_{02} $
 \begin{tabbing}\\
-\underline{2. Fall:} \=$\lambda_1 = \lambda_2 =\lambda;\;\;\;\lambda_1,\lambda_2\in \mathbb{R}$\\
-\> und $\textbf{A}\neq \begin{bmatrix}\lambda & 0 \\ 0 & \lambda\end{bmatrix}$
+
+  \underline{2. Fall: \=$\lambda_1 = \lambda_2 =\lambda;\;\;\;\lambda_1,\lambda_2\in \mathbb{R}$\\}
+  \> und $\textbf{A}\neq \begin{bmatrix}\lambda & 0 \\ 0 & \lambda\end{bmatrix}$
 \end{tabbing}
-Problem: $\textbf{Q}=\begin{bmatrix}\underline{q}_1 & \underline{q}_2\end{bmatrix}$ nicht invertierbar!\\\\
+
+Problem: $\textbf{Q}=\begin{bmatrix}\underline{q}_1 & \underline{q}_2\end{bmatrix}$ nicht invertierbar! (wg. Jordan Form)\\\\
 $\underline{\dot{x}}=\textbf{A}\underline{x}\;\;\;\;\;|\textbf{A}=\textbf{Q'}\textbf{J}\textbf{Q'}^{-1}$\\\\
 $\rightarrow\underline{\dot{x}}=\textbf{Q'}\textbf{J}\textbf{Q'}^{-1}\underline{x}\;\;\;\;\;|\underline{x}=\textbf{Q'}\underline{\xi}$\\\\
 $\rightarrow\textbf{Q'}\underline{\dot\xi}=\textbf{Q'}\textbf{J}\textbf{Q'}^{-1}\textbf{Q'}\underline{\xi}$\\\\
@@ -463,14 +495,30 @@ $a_{21}\neq 0:\;\;\Rightarrow$\=$\textbf{Q'}=\begin{bmatrix}\frac{a_{22}-a_{11}}
 \end{tabbing}
 $\textbf{J}=\begin{bmatrix}\lambda & 1 \\ 0 & \lambda\end{bmatrix};\;\;\;\underline{\xi}_0=\textbf{Q'}^{-1}\underline{x}_0;\;\;\;$\\\\
 Lösung: $\underline{\xi} (t)=\left.\begin{matrix}e^{\lambda t}(\xi_{01}+t\xi_{02}) \\ e^{\lambda t}\xi_{02}\end{matrix}\right]$\\\\
-Rücktransformation: $\underline{x}(t)=\textbf{Q'}\underline{\xi} (t)$\\\\\\
-\underline{3. Fall:} $\lambda_{1,2} =\alpha \pm j\beta;\;\lambda_{1,2}\in \mathbb{C}$ (reellwertige NF)\\\\
+Rücktransformation: $\underline{x}(t)=\textbf{Q'}\underline{\xi} (t)$\\
+$\Rightarrow \underline{x}(t)= \textbf{q}_1 (e^{\lambda(t-t_0)}\xi'_{01} + (t-t_0)e^{\lambda(t-t_0)}\xi'_{02}) + \textbf{q}'_2e^{\lambda(t-t_0)}\xi'_02 $\\\\
+
+\underline{3. Fall:} $\lambda_{1,2} =\alpha \pm j\beta;\;(\lambda=\lambda^*)\;\lambda_{1,2}\in \mathbb{C}$ (reellwertige NF)\\\\
 Die reellwertige Normalform ($\underline{\xi}'$) wird für eine zweidimensionale Darstellung des Phasenportraits benötigt.\\\\
-$\textbf{Q}=\begin{bmatrix}\underline{q} & \underline{q}*\end{bmatrix};\;\;\;\;\;\textbf{Q'}=\begin{bmatrix}\underline{q}_r & -\underline{q}_i\end{bmatrix}$\\\\
-$\mathbf{\Lambda} =\begin{bmatrix}\alpha +j\beta & 0 \\ 0 & \alpha -j\beta\end{bmatrix};\;\;\;\;\;\mathbf{\Lambda'} =\begin{bmatrix}\alpha & -\beta \\ \beta & \alpha\end{bmatrix}$\\\\
+$\textbf{Q}=\begin{bmatrix}\underline{q} & \underline{q}*\end{bmatrix};\;\;\;\;\;\textbf{Q}_{reell}=\begin{bmatrix}\underline{q}_r & -\underline{q}_i\end{bmatrix}$\\\\
+$\mathbf{\Lambda} =\begin{bmatrix}\alpha +j\beta & 0 \\ 0 & \alpha -j\beta\end{bmatrix};\;\;\;\;\;\mathbf{\Lambda}_{reell} =\begin{bmatrix}\alpha & -\beta \\ \beta & \alpha\end{bmatrix}$\\\\
 Für $\underline{\xi}$ siehe 1.Fall mit $\lambda_1 =\alpha +j\beta$ und $\lambda_2 = \alpha -j\beta$\\\\
-$\underline{\xi}' =\textbf{Q'}^{-1}\underline{x};\;\;\;\;\;\;\underline{\xi}_0' =\textbf{Q'}^{-1}\underline{x_0}$\\\\
-$\underline{\xi}'=\textbf{Q'}^{-1}\textbf{Q}\underline{\xi} =\begin{bmatrix}\ 1 & 1 \\ -j & j\end{bmatrix}\underline{\xi}=\left.\begin{matrix}\ 2Re(\xi_1) \\ 2Im(\xi_1)\end{matrix}\right]$
+$\underline{\xi}_{reell} =\textbf{Q}_{reell}^{-1}\underline{x};\;\;\;\;\;\;\underline{\xi}_{reell0} =\textbf{Q}_{reell}^{-1}\underline{x_0}$
+\\\\
+$\underline{\xi}_{reell}=\textbf{Q}_{reell}^{-1}\textbf{Q}\underline{\xi} =\begin{bmatrix}\ 1 & 1 \\ -j & j\end{bmatrix}\underline{\xi}=\left.\begin{matrix}\ 2Re(\xi_1) \\ 2Im(\xi_1)\end{matrix}\right] =
+\begin{bmatrix}
+  2\gamma\\
+  2\delta
+\end{bmatrix}
+$ ($\underline{\xi}_0= \begin{bmatrix}
+  \xi_0\\
+  \xi_0^*
+\end{bmatrix} = \begin{bmatrix}
+  \gamma+j\delta\\
+  \gamma-j\delta
+\end{bmatrix}\; \gamma, \delta \in \mathbb{R}$)\\
+\end{matrix}
+
 
 \subsubsection*{Autonome Zustandsgleichung (konstante Erregung)}
 $\underline{\dot{x}}(t)=\textbf{A}\underline{x}(t)+\underbrace{\textbf{B}\underline{v}_0}_{\underline{\nu}}$\\\\
@@ -689,7 +737,43 @@ $|Re(Y)|=|Im(Y)|;\;\;\;\;|Re(Z)|=|Im(Z)|$\\\\
 $f_g=\frac{R}{2\pi L};\;\;\;\;f_g=\frac{1}{2\pi RC}$
 \subsubsection*{Güte}
 $Q=\frac{\omega_0 C}{G}=\frac{1}{\omega_0 LG}=\frac{1}{G}\sqrt{\frac{C}{L}}$
-\\\\\\\\
+\\\\
+
+\begin{tikzpicture}
+\datavisualization [scientific axes=clean,
+                    y axis=grid,
+                    visualize as smooth line/.list={sin,cos},
+                    style sheet=strong colors,
+                    style sheet=vary dashing,
+                    sin={label in legend={text=$\sin x$}},
+                    cos={label in legend={text=$\cos x$}},
+                    data/format=function,
+                    x axis={
+                      ticks and grid={
+                        % stack,
+                        step=(pi/2),
+                        tick typesetter/.code=\mytypesetter{##1},
+                    }}
+                    ]
+data [set=sin] {
+  var x : interval [0:2*pi];
+  func y = sin(\value x r);
+}
+data [set=cos] {
+  var x : interval [0:2*pi];
+  func y = cos(\value x r);
+};
+\end{tikzpicture}
+
+\subsubsection*{Matrix Invertieren}
+$\textbf{A} = \begin{bmatrix}
+  a & b \\
+  c & d \\
+\end{bmatrix}\;\;\;\; \textbf{A}^{-1} = \frac{1}{\det \textbf{A}} \begin{bmatrix}
+  d & -b \\
+  -c & a \\
+\end{bmatrix} $
+\\\\
 Lizenz: CC BY-NC-SA 3.0\\
 http://creativecommons.org/licenses/by-nc-sa/3.0/de/
 \newpage
